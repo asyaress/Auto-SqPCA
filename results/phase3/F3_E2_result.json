@@ -1,0 +1,14 @@
+{
+  "E2_frozen_sha256": "7a4597814baad09c6fe1ca781f991181c7286ba1c6fca2f376c7e6cf8592a34e",
+  "holdout_cases_sha256": "30cb6b1c401e1cfc30131a8abaac626d1b20e3e8019fa36beca5cfc5fdd4642d",
+  "theta_s": 0.5,
+  "theta_w": "INF",
+  "theta_d": 0.9,
+  "C2_X_success": false,
+  "C3_success": false,
+  "unmasked_coverage": 0.7418091168091168,
+  "masked_abstain_fraction": 1.0,
+  "C2_CI_resamples": 2000,
+  "C3_CI_resamples": 2000,
+  "analysis_code_sha256": "a65f9dcf9b65de1ae17c76e87aa21ff72a47c5a833aa2191dacb73782ac8ecc9"
+}

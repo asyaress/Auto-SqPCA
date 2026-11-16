@@ -1,0 +1,104 @@
+[
+  {
+    "year": 2017,
+    "month": 6,
+    "component": "X",
+    "pc_norms": [
+      122.69030367835573,
+      110.03767831613261,
+      72.62288488125992
+    ],
+    "pc_eof_mode_max_abs_error": [
+      5.1514348342607263e-14,
+      7.460698725481052e-14,
+      0.0
+    ],
+    "mode3_source": "DERIVED_PC3_TIMES_EOF3_NO_MODE3_DAT",
+    "eof_rmse_applicable": false
+  },
+  {
+    "year": 2017,
+    "month": 6,
+    "component": "Y",
+    "pc_norms": [
+      417.7111667252737,
+      78.48737103619341,
+      59.83984980758184
+    ],
+    "pc_eof_mode_max_abs_error": [
+      1.3855583347321954e-13,
+      4.796163466380676e-14,
+      0.0
+    ],
+    "mode3_source": "DERIVED_PC3_TIMES_EOF3_NO_MODE3_DAT",
+    "eof_rmse_applicable": false
+  },
+  {
+    "year": 2017,
+    "month": 6,
+    "component": "Z",
+    "pc_norms": [
+      292.3223143113697,
+      56.86695485192235,
+      43.129028504602154
+    ],
+    "pc_eof_mode_max_abs_error": [
+      1.5987211554602254e-13,
+      4.440892098500626e-14,
+      0.0
+    ],
+    "mode3_source": "DERIVED_PC3_TIMES_EOF3_NO_MODE3_DAT",
+    "eof_rmse_applicable": false
+  },
+  {
+    "year": 2017,
+    "month": 10,
+    "component": "X",
+    "pc_norms": [
+      233.0963294585449,
+      118.81714711674086,
+      70.2627623096903
+    ],
+    "pc_eof_mode_max_abs_error": [
+      8.526512829121202e-14,
+      7.460698725481052e-14,
+      0.0
+    ],
+    "mode3_source": "DERIVED_PC3_TIMES_EOF3_NO_MODE3_DAT",
+    "eof_rmse_applicable": false
+  },
+  {
+    "year": 2017,
+    "month": 10,
+    "component": "Y",
+    "pc_norms": [
+      304.17504678285036,
+      99.52003436353297,
+      62.40392491280209
+    ],
+    "pc_eof_mode_max_abs_error": [
+      1.4921397450962104e-13,
+      7.105427357601002e-14,
+      0.0
+    ],
+    "mode3_source": "DERIVED_PC3_TIMES_EOF3_NO_MODE3_DAT",
+    "eof_rmse_applicable": false
+  },
+  {
+    "year": 2017,
+    "month": 10,
+    "component": "Z",
+    "pc_norms": [
+      261.9094483866133,
+      65.93190142883591,
+      38.159081314231244
+    ],
+    "pc_eof_mode_max_abs_error": [
+      1.5631940186722204e-13,
+      2.3092638912203256e-14,
+      0.0
+    ],
+    "mode3_source": "DERIVED_PC3_TIMES_EOF3_NO_MODE3_DAT",
+    "eof_rmse_applicable": false
+  }
+]

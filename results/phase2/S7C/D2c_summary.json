@@ -1,0 +1,18 @@
+{
+  "status": "NOT_RUN_WDC_FORMAT_INCONSISTENT",
+  "valid_D2b_rows_available": 10953,
+  "D2c_comparison_rows": 0,
+  "reason": "Pre-D2c stop 0a: WDC format/IAGA >0.1 nT mismatch on >0.1% paired hours",
+  "comparison_csv_sha256": "18a1be405a550604ce09a0439c6193a0763e3d5c2ec257597eef3637c7b06a5b",
+  "schema": "Auto-SqPCA-D2c-v1",
+  "crosscheck_status": "WDC_FORMAT_INCONSISTENT",
+  "source_archive_sha256": "5fa0161e935fa759d133f733ba769dda9f000ce1e45bc1e3a49ec565a0d0c9d3",
+  "D2b_summary_sha256": "afbcee57ff3d171d99997799f23de8e0369e08566508b55d9ed91aad461d5bf5",
+  "D2b_comparison_sha256": "845c04a032b643438854c6440d9f4710e8714ba1f84c02cf1dad8fbce2f845ed",
+  "environment": {
+    "python": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]",
+    "numpy": "2.5.3",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "executed_utc": "2026-11-13T13:32:31.880030+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "cases": 2808,
+  "accepted": 0,
+  "abstain_fraction": 1.0,
+  "reason_counts_overlapping": {
+    "A3": 2808,
+    "A2": 611,
+    "A1": 194
+  },
+  "primary_reason_counts_fixed_priority": {
+    "A3": 2087,
+    "A2": 527,
+    "A1": 194
+  },
+  "accepted_median_error": null,
+  "theta_d": 0.9
+}

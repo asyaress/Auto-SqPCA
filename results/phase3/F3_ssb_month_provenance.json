@@ -1,0 +1,4065 @@
+{
+  "model": "DIFI8",
+  "pydifi_version": "8.1.5",
+  "DIFI8_coeff_sha256": "69ac93ed533e6654af7582942cab90c8e200c93fc442ae80300f7c246e7e34bf",
+  "f107_coeff_sha256": "b62b2605522a47a977d64c2e82a6a55461e281db4544a77310579a9c2317577a",
+  "height_km_WGS84": 0,
+  "sample_time": "UTC HH:30 at each local-calendar hour after integer longitude/15 shift",
+  "month_truth": "daily DIFI8 field averaged by local hour across all calendar days, then 24-hour mean removed",
+  "residual": "frozen M-EM filled observation; V1 daily mean removed; monthly mean curve removed",
+  "source_months": 162,
+  "cases": 8748,
+  "month_rows": [
+    {
+      "station": "COI",
+      "year": 2014,
+      "month": 1,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/COI_2014_01.npz",
+      "cache_sha256": "3173291540ece424754fb17acf09cd96b56d0285de92a13669aecf3b977cb971",
+      "source_matrix_sha256": "169eff8c234c423decfc9d529f35962aad01143fec80ec2576e8500c5d232403",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        20.061355751755528,
+        28.970254454075246,
+        14.047270043759164
+      ],
+      "GFZ_IQD_sha256": "9be0d2c40a565beaa80b6e7c834c46e0f45cbda7320915ad2b3bb6f2cb2f3f85"
+    },
+    {
+      "station": "COI",
+      "year": 2014,
+      "month": 2,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/COI_2014_02.npz",
+      "cache_sha256": "823866b4f18c6f920b711451b6d16077e87429bc5c209b2ebd603fbbb429ad46",
+      "source_matrix_sha256": "340222e1a066048e43784629ee2a44cca0660fb71775e235195fe5df3869f543",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        16.134121727178126,
+        38.118760903433895,
+        21.057320849448782
+      ],
+      "GFZ_IQD_sha256": "9be0d2c40a565beaa80b6e7c834c46e0f45cbda7320915ad2b3bb6f2cb2f3f85"
+    },
+    {
+      "station": "COI",
+      "year": 2014,
+      "month": 4,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/COI_2014_04.npz",
+      "cache_sha256": "1c4a5a55cff6f047c3f7f53db23f0783996b5ba6a0aa20f1d5e66150620ee1fa",
+      "source_matrix_sha256": "926e487535ba268604df71e050ee33232a9af9a7649d9246ba907b2ac7eeb708",
+      "M_EM_iterations_XYZ": [
+        500,
+        500,
+        500
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        3.2932046451605856e-05,
+        0.004737082746714805,
+        0.03521182384429267
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        24.582044935314407,
+        53.2509454010317,
+        37.06021957061378
+      ],
+      "GFZ_IQD_sha256": "9be0d2c40a565beaa80b6e7c834c46e0f45cbda7320915ad2b3bb6f2cb2f3f85"
+    },
+    {
+      "station": "COI",
+      "year": 2014,
+      "month": 5,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/COI_2014_05.npz",
+      "cache_sha256": "9856a65a68d7da2d59a1f6bf21e45e53cc8ae334952851a8ef1ce484e37d330f",
+      "source_matrix_sha256": "15106b575f788b4d2749584e65f4b73434b96d546aa60a539da29842b5d18a7f",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        26.44215204446256,
+        54.001315704454605,
+        36.961954358688764
+      ],
+      "GFZ_IQD_sha256": "9be0d2c40a565beaa80b6e7c834c46e0f45cbda7320915ad2b3bb6f2cb2f3f85"
+    },
+    {
+      "station": "COI",
+      "year": 2014,
+      "month": 6,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/COI_2014_06.npz",
+      "cache_sha256": "a23d9c5e49bf11a5928f7b61641a58cced09b6eac7d4824f9c145e1ca1909c54",
+      "source_matrix_sha256": "a685b7aedc9f57d217ececbeb84a9ee8af58c80e141eaa111a4248d39d851375",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        26.83908446866184,
+        54.16330674914303,
+        34.81929162112378
+      ],
+      "GFZ_IQD_sha256": "9be0d2c40a565beaa80b6e7c834c46e0f45cbda7320915ad2b3bb6f2cb2f3f85"
+    },
+    {
+      "station": "COI",
+      "year": 2014,
+      "month": 7,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/COI_2014_07.npz",
+      "cache_sha256": "fe7acb66668c7fe84c1a69900ae81aa6d49ce81db32307b8a29ad008c956baf3",
+      "source_matrix_sha256": "d4f06c2a0b94bef8810dc3c6234fb668c49ccadf3dcd71be31ae16b3c92d4c39",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        27.17552659789331,
+        54.38768976333043,
+        31.62493691177407
+      ],
+      "GFZ_IQD_sha256": "9be0d2c40a565beaa80b6e7c834c46e0f45cbda7320915ad2b3bb6f2cb2f3f85"
+    },
+    {
+      "station": "COI",
+      "year": 2014,
+      "month": 8,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/COI_2014_08.npz",
+      "cache_sha256": "990e2ea70464b7c176a43cba1b47e508080e60840f73f131cd8b58681abb831e",
+      "source_matrix_sha256": "debcf58c3119e5386bdfaa1a7652df2e6df477a4a5def5acf7dd0b2ccb01ab9f",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        24.94275584261412,
+        55.26252456041166,
+        31.05140472819912
+      ],
+      "GFZ_IQD_sha256": "9be0d2c40a565beaa80b6e7c834c46e0f45cbda7320915ad2b3bb6f2cb2f3f85"
+    },
+    {
+      "station": "COI",
+      "year": 2014,
+      "month": 9,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/COI_2014_09.npz",
+      "cache_sha256": "0640372fcce3060298673d1c2a9882d24acb87a4013e4f28d8c109acb5b069f1",
+      "source_matrix_sha256": "0adbde2049b2662322d63f3d127d5e0b7cfadb97316de815e893de038d55f331",
+      "M_EM_iterations_XYZ": [
+        23,
+        22,
+        22
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        9.60062607191503e-09,
+        3.833974915323779e-09,
+        5.704350769519806e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        18.13196152246797,
+        54.14461710396645,
+        33.368179080542944
+      ],
+      "GFZ_IQD_sha256": "9be0d2c40a565beaa80b6e7c834c46e0f45cbda7320915ad2b3bb6f2cb2f3f85"
+    },
+    {
+      "station": "COI",
+      "year": 2014,
+      "month": 10,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/COI_2014_10.npz",
+      "cache_sha256": "be155c5b4defe5a3e911828f2ad06fcba3bfc40b72f4225ea957e788805df0b5",
+      "source_matrix_sha256": "066f79cea332eee7a4d041c5e98fc243d3168f9b2b86bb36edcb27aa6ee140e5",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        11.250013596596876,
+        50.99825496734459,
+        32.13142566386014
+      ],
+      "GFZ_IQD_sha256": "9be0d2c40a565beaa80b6e7c834c46e0f45cbda7320915ad2b3bb6f2cb2f3f85"
+    },
+    {
+      "station": "COI",
+      "year": 2014,
+      "month": 11,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/COI_2014_11.npz",
+      "cache_sha256": "06fb12421939b2370b016734c63e3bde9eb6a0da278deef58e5db2313a23669f",
+      "source_matrix_sha256": "e6891ad9a0c29233b1f0a1acedba86fff0bcd10ffc559a53d685be8eb8785e88",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        17.592386757941423,
+        40.70161926289563,
+        23.33888458257038
+      ],
+      "GFZ_IQD_sha256": "9be0d2c40a565beaa80b6e7c834c46e0f45cbda7320915ad2b3bb6f2cb2f3f85"
+    },
+    {
+      "station": "COI",
+      "year": 2014,
+      "month": 12,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/COI_2014_12.npz",
+      "cache_sha256": "9e3ec6c664ff28f9ec8cf0ca4bfe351dfffd5983f7f70bef87032239cc7e9cc5",
+      "source_matrix_sha256": "979a4a398f104fea7a6916d5c688a0f6881c4b76fbb5d2ea9bb31ec0fba61d3b",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        23.05167751630847,
+        30.181083937654083,
+        14.814459366501412
+      ],
+      "GFZ_IQD_sha256": "9be0d2c40a565beaa80b6e7c834c46e0f45cbda7320915ad2b3bb6f2cb2f3f85"
+    },
+    {
+      "station": "COI",
+      "year": 2015,
+      "month": 1,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/COI_2015_01.npz",
+      "cache_sha256": "9c1606b2738a9b49d58d94923df6aab2aa3480e24a968695476c3e3c67d463fb",
+      "source_matrix_sha256": "7776e17a7c8dc3e3cf1a548b312fa158910444d6543ac6d1dc7319b6c17c4908",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        18.867368604832247,
+        27.13151148172674,
+        13.146608436449156
+      ],
+      "GFZ_IQD_sha256": "a13688d1408590be02daf5036870a0f837ae66d5a7c37eba7e492201144be899"
+    },
+    {
+      "station": "COI",
+      "year": 2015,
+      "month": 2,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/COI_2015_02.npz",
+      "cache_sha256": "329d5f7154c97b362c2238d6affb2c6f0f6235b48b80999cfa1a71bd1f4172eb",
+      "source_matrix_sha256": "217b39dff8d900d73126d5b4ccfdaf04e68ba337067d557865f2b92baa4404b4",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        14.225897085501735,
+        33.61342000391309,
+        18.570641513841373
+      ],
+      "GFZ_IQD_sha256": "a13688d1408590be02daf5036870a0f837ae66d5a7c37eba7e492201144be899"
+    },
+    {
+      "station": "COI",
+      "year": 2015,
+      "month": 3,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/COI_2015_03.npz",
+      "cache_sha256": "89fd29299e36d72d7a14326661aca9186fdfa6323157746c31455ebd6b2eea24",
+      "source_matrix_sha256": "331ee2ec98a0f9eac189f5211458c9826e50addb6cd7c19b89eb2d4be57c98cd",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        16.365624964838307,
+        42.7854505844668,
+        27.53693144875803
+      ],
+      "GFZ_IQD_sha256": "a13688d1408590be02daf5036870a0f837ae66d5a7c37eba7e492201144be899"
+    },
+    {
+      "station": "COI",
+      "year": 2015,
+      "month": 4,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/COI_2015_04.npz",
+      "cache_sha256": "d4cf40571980fdc7230c89ce8c2faa6b6aaddb8996b52f6339c0660db134cd4a",
+      "source_matrix_sha256": "1d25e7c4eb41181731627c3a5ca07f4a01c538454ea5e1ce8ff3c528915aea02",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        22.70816675265081,
+        49.164559000963294,
+        34.22035100894965
+      ],
+      "GFZ_IQD_sha256": "a13688d1408590be02daf5036870a0f837ae66d5a7c37eba7e492201144be899"
+    },
+    {
+      "station": "COI",
+      "year": 2015,
+      "month": 5,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/COI_2015_05.npz",
+      "cache_sha256": "38f6ca961bd00e9f4de2a1918aa514816a8b3c9bcbb4d3e91d4c3634c9c30ca7",
+      "source_matrix_sha256": "4c23ecb9f9250ef7974894f727ade5d7b22776c7801757b366d4c43071eb97d1",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        25.357865775323173,
+        51.787752544863054,
+        35.44455949789136
+      ],
+      "GFZ_IQD_sha256": "a13688d1408590be02daf5036870a0f837ae66d5a7c37eba7e492201144be899"
+    },
+    {
+      "station": "COI",
+      "year": 2015,
+      "month": 6,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/COI_2015_06.npz",
+      "cache_sha256": "9df5c2d7186344df0633d1dfe64d6afbfce01557d89b1ff69a9e7b03af6ef60d",
+      "source_matrix_sha256": "89b4f2765c601fd3356a9cb64304fb146305b9716efa62b23688b02feff5e1a1",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        25.186120563485282,
+        50.83443925053871,
+        32.68644923343592
+      ],
+      "GFZ_IQD_sha256": "a13688d1408590be02daf5036870a0f837ae66d5a7c37eba7e492201144be899"
+    },
+    {
+      "station": "COI",
+      "year": 2015,
+      "month": 7,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/COI_2015_07.npz",
+      "cache_sha256": "f3affef4b64a4dda9031d217a7b671e8b82fba02baa042f5144fc13ed21c94e2",
+      "source_matrix_sha256": "4f628e6211c7e27f52e3d9a3465d76a698327b5b081d66e48e560d3810381c5e",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        24.907362119167697,
+        49.84773562803106,
+        28.993310869485732
+      ],
+      "GFZ_IQD_sha256": "a13688d1408590be02daf5036870a0f837ae66d5a7c37eba7e492201144be899"
+    },
+    {
+      "station": "COI",
+      "year": 2015,
+      "month": 8,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/COI_2015_08.npz",
+      "cache_sha256": "4ae7e5de7da44b103788ef2fcc4dd659c387492016564fad398354a51d6424eb",
+      "source_matrix_sha256": "97ca9e138a728f6929a563463ca408ab18e0e4a4ba57c805e8798dec5c4a4488",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        21.282026642778163,
+        47.155283652814376,
+        26.49343363420429
+      ],
+      "GFZ_IQD_sha256": "a13688d1408590be02daf5036870a0f837ae66d5a7c37eba7e492201144be899"
+    },
+    {
+      "station": "COI",
+      "year": 2015,
+      "month": 9,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/COI_2015_09.npz",
+      "cache_sha256": "daf5299685d55bc591d4eaab5333c3988f187dbce81c488cfb989cb53c1446ac",
+      "source_matrix_sha256": "d9c8021b3aa3c0bba2d25833cb4591b58fcabbdfbbd9c8d125f78cb9cbb4b6bb",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        14.928240322900123,
+        44.50190284832638,
+        27.420157895763424
+      ],
+      "GFZ_IQD_sha256": "a13688d1408590be02daf5036870a0f837ae66d5a7c37eba7e492201144be899"
+    },
+    {
+      "station": "COI",
+      "year": 2015,
+      "month": 10,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/COI_2015_10.npz",
+      "cache_sha256": "bf905a39aa7bb218ffa83215502ef364ccfa7b98b2234bb8107b3df35909d26c",
+      "source_matrix_sha256": "4e2617da1bfd883d66aa7db92172140ec6814363261b65f75115576fc29d70c6",
+      "M_EM_iterations_XYZ": [
+        52,
+        91,
+        83
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        9.087671060115099e-09,
+        8.639062798465602e-09,
+        9.269570000469685e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        8.943649924845976,
+        40.5518739747844,
+        25.552000348073506
+      ],
+      "GFZ_IQD_sha256": "a13688d1408590be02daf5036870a0f837ae66d5a7c37eba7e492201144be899"
+    },
+    {
+      "station": "COI",
+      "year": 2015,
+      "month": 11,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/COI_2015_11.npz",
+      "cache_sha256": "170b1c1652e4e16cdf3f930174e7d74c7c115565169e7e1c8670345900507d26",
+      "source_matrix_sha256": "de878527bd55768549d034069341d19a89dffb9d53e390ee02425eb8b866b1bc",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        13.779693233088029,
+        31.89132380825628,
+        18.28841890318482
+      ],
+      "GFZ_IQD_sha256": "a13688d1408590be02daf5036870a0f837ae66d5a7c37eba7e492201144be899"
+    },
+    {
+      "station": "COI",
+      "year": 2015,
+      "month": 12,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/COI_2015_12.npz",
+      "cache_sha256": "0c3ade49130d3d74fb324979fee5b5fe820bc0c716d6e30174aa469d051048c3",
+      "source_matrix_sha256": "f5f726beefdba2ab2ec06295fb26a67af15caf97738e35140222c6af3e1ca336",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        18.32934988488101,
+        23.996977512751222,
+        11.779402590643906
+      ],
+      "GFZ_IQD_sha256": "a13688d1408590be02daf5036870a0f837ae66d5a7c37eba7e492201144be899"
+    },
+    {
+      "station": "COI",
+      "year": 2016,
+      "month": 1,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/COI_2016_01.npz",
+      "cache_sha256": "972c3bbd3a8dd09c301371a0a2484aad4b089337ff6c529498a506838aa99c53",
+      "source_matrix_sha256": "2cc9dee5820916bd64cb89df8d01aebd9abf0070c8ecc892e55a44d1b4fd290f",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        15.55058380846909,
+        22.382235314654007,
+        10.848063986003362
+      ],
+      "GFZ_IQD_sha256": "8d0671405e87f6c8a3f4159ec3e6d42ad9386b81973aac557274ac74cb5a4551"
+    },
+    {
+      "station": "COI",
+      "year": 2016,
+      "month": 2,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/COI_2016_02.npz",
+      "cache_sha256": "98707cd486eb5af0438dbaf9e29c2ac399b738a491424bd67a4f1c9283e92347",
+      "source_matrix_sha256": "9bf459d922efdb3f7d51770f7ae7182eac6d66f8b424d645a2c7554ce7fd1622",
+      "M_EM_iterations_XYZ": [
+        16,
+        17,
+        10
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        7.807102520018816e-09,
+        3.923787517123856e-09,
+        8.68749339133501e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        11.962560071350968,
+        28.447582528510825,
+        15.75851949421913
+      ],
+      "GFZ_IQD_sha256": "8d0671405e87f6c8a3f4159ec3e6d42ad9386b81973aac557274ac74cb5a4551"
+    },
+    {
+      "station": "COI",
+      "year": 2016,
+      "month": 3,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/COI_2016_03.npz",
+      "cache_sha256": "f8b25546066cb6e525561c0b18762bbd84e5c30b482b87afbab213a6a5e52a88",
+      "source_matrix_sha256": "4bda23d2744ee3a09e49b879470c01093dc9249d18594090d7a731746c341ef1",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        13.82716245288745,
+        35.89411902767001,
+        23.16204871156768
+      ],
+      "GFZ_IQD_sha256": "8d0671405e87f6c8a3f4159ec3e6d42ad9386b81973aac557274ac74cb5a4551"
+    },
+    {
+      "station": "COI",
+      "year": 2016,
+      "month": 4,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/COI_2016_04.npz",
+      "cache_sha256": "b9c811917ba3cb62e5304ab2d75102e5b5448a472a16c23389fb65c98aba3f80",
+      "source_matrix_sha256": "9c607a1a95d46a948061784388100656d3cb353b5a082b611bb2bc7f90f64e16",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        18.78827747616839,
+        40.49593964297631,
+        28.20417933252709
+      ],
+      "GFZ_IQD_sha256": "8d0671405e87f6c8a3f4159ec3e6d42ad9386b81973aac557274ac74cb5a4551"
+    },
+    {
+      "station": "COI",
+      "year": 2016,
+      "month": 5,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/COI_2016_05.npz",
+      "cache_sha256": "0557388aba38ca198fa93866633bc35762f11ab92955b5f92285f9f13f4c9c2a",
+      "source_matrix_sha256": "13a88fbafe95a847eadb1335f616fd7e37a56ba57c2664c80d2e59794ef2f984",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        20.632197282729788,
+        42.16903041290924,
+        28.83168400790867
+      ],
+      "GFZ_IQD_sha256": "8d0671405e87f6c8a3f4159ec3e6d42ad9386b81973aac557274ac74cb5a4551"
+    },
+    {
+      "station": "COI",
+      "year": 2016,
+      "month": 6,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/COI_2016_06.npz",
+      "cache_sha256": "fcd32a626bd9c2f8bdfd3e5f0b8a89ff72be628885573aaecefbd9fb3960a49e",
+      "source_matrix_sha256": "34bc3409e5e431345fff39de5565fbeea9e08601a04ddd4de47bf02f658e870c",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        20.987157877463552,
+        42.32121986465458,
+        27.151152045544144
+      ],
+      "GFZ_IQD_sha256": "8d0671405e87f6c8a3f4159ec3e6d42ad9386b81973aac557274ac74cb5a4551"
+    },
+    {
+      "station": "COI",
+      "year": 2016,
+      "month": 7,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/COI_2016_07.npz",
+      "cache_sha256": "a1ad9d162b731d15be05bb864e96fd8f7c418fe0ab1c0bc830bd0360cd51fc3f",
+      "source_matrix_sha256": "bb2f61d32316b24f5f8072279e165bf6e40898568bd93a582de8b8266eb52190",
+      "M_EM_iterations_XYZ": [
+        17,
+        18,
+        18
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        4.471075953915715e-09,
+        7.176822691690177e-09,
+        7.057678885757923e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        21.06598338095934,
+        42.18347753614308,
+        24.492251217100097
+      ],
+      "GFZ_IQD_sha256": "8d0671405e87f6c8a3f4159ec3e6d42ad9386b81973aac557274ac74cb5a4551"
+    },
+    {
+      "station": "COI",
+      "year": 2016,
+      "month": 8,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/COI_2016_08.npz",
+      "cache_sha256": "38f23509189acf50b701683ea163e7d4552f40e2495d16d9d69312810aefdd41",
+      "source_matrix_sha256": "53c9d78369b57c6a47285a25e8631f859892b58d414a01732c932bd352ac93e0",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        19.17749197302685,
+        42.58245089675599,
+        23.932504465402175
+      ],
+      "GFZ_IQD_sha256": "8d0671405e87f6c8a3f4159ec3e6d42ad9386b81973aac557274ac74cb5a4551"
+    },
+    {
+      "station": "COI",
+      "year": 2016,
+      "month": 9,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/COI_2016_09.npz",
+      "cache_sha256": "0a0546f78bcd0086d2b41921794f92fb5ef0c83d197179a464f3b21010b9d861",
+      "source_matrix_sha256": "7a6bb6a8d9b1404664ba44fc7042915c2d536329c2bb64c85df44930345cbbea",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        13.442269388390809,
+        40.190002004082714,
+        24.769699973443622
+      ],
+      "GFZ_IQD_sha256": "8d0671405e87f6c8a3f4159ec3e6d42ad9386b81973aac557274ac74cb5a4551"
+    },
+    {
+      "station": "COI",
+      "year": 2016,
+      "month": 10,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/COI_2016_10.npz",
+      "cache_sha256": "b6cfe4c73842bf52f94f8c6489118f7c4c2d034bdd81cdbff62b6899ad5de3c8",
+      "source_matrix_sha256": "3247b2287dd820d486f9ae70592401cfa033ca0e7ce88df90583c5920ac25afb",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        7.789765505448075,
+        35.295267354121016,
+        22.233332954554385
+      ],
+      "GFZ_IQD_sha256": "8d0671405e87f6c8a3f4159ec3e6d42ad9386b81973aac557274ac74cb5a4551"
+    },
+    {
+      "station": "COI",
+      "year": 2016,
+      "month": 11,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/COI_2016_11.npz",
+      "cache_sha256": "4afaf15a4a0664f490620addf0df0fcae96208314b63f35bfeede3c162922c63",
+      "source_matrix_sha256": "c4188d7de2c5179c2d4ca0432bb2c662f1b883a28d662728a4052f1d11e2c9fe",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        11.409795253654568,
+        26.448069684843958,
+        15.172378377200182
+      ],
+      "GFZ_IQD_sha256": "8d0671405e87f6c8a3f4159ec3e6d42ad9386b81973aac557274ac74cb5a4551"
+    },
+    {
+      "station": "COI",
+      "year": 2016,
+      "month": 12,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/COI_2016_12.npz",
+      "cache_sha256": "e1511bc94a907585d4286e3939c00d28c94f8b3eb2bbd0e8b583a7c484dd98ca",
+      "source_matrix_sha256": "bc0609a9ee793be5a48ca9c49cf39a10f3bb1d809e55d462530daa61bd7ca199",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        14.998649766196245,
+        19.614477028410093,
+        9.624695619739704
+      ],
+      "GFZ_IQD_sha256": "8d0671405e87f6c8a3f4159ec3e6d42ad9386b81973aac557274ac74cb5a4551"
+    },
+    {
+      "station": "COI",
+      "year": 2017,
+      "month": 1,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/COI_2017_01.npz",
+      "cache_sha256": "4e41d5ad9fc6c84efce7087efeb2a0e57563194a070ed94fbac8859430fefe8f",
+      "source_matrix_sha256": "d76b801426196106bc81f61a365c645770028744dc85f07431bf2b6a92c0cf32",
+      "M_EM_iterations_XYZ": [
+        12,
+        20,
+        18
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        5.8353180065751076e-09,
+        7.642256605322473e-09,
+        8.505594450980425e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        12.746727138212846,
+        18.393835223903846,
+        8.916194704161244
+      ],
+      "GFZ_IQD_sha256": "55d5d967b2f6e79a4cdfa313eb58f23d0bcb32025ebf119535af09901dd359ca"
+    },
+    {
+      "station": "COI",
+      "year": 2017,
+      "month": 2,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/COI_2017_02.npz",
+      "cache_sha256": "becd1804dc0c0f7da53e94fa8a837657c71328b8d2121171984c7f65c94c9743",
+      "source_matrix_sha256": "0d302ea12caf84d431ba6d539fa2831c295184c7ed3d1faf233ead83765191a4",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        10.299738449024558,
+        24.382981481578533,
+        13.47958905676704
+      ],
+      "GFZ_IQD_sha256": "55d5d967b2f6e79a4cdfa313eb58f23d0bcb32025ebf119535af09901dd359ca"
+    },
+    {
+      "station": "COI",
+      "year": 2017,
+      "month": 3,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/COI_2017_03.npz",
+      "cache_sha256": "63511d16d762cb53afa359b885d2e4e9f1f4b36110a1326cc33a26b2b0f360a8",
+      "source_matrix_sha256": "1c78e4de2621c90513f30c0bfcd95cbed471fd9cf46a310f1fe86204c5dd29f4",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        12.183097966482276,
+        31.832501747184843,
+        20.48892784940518
+      ],
+      "GFZ_IQD_sha256": "55d5d967b2f6e79a4cdfa313eb58f23d0bcb32025ebf119535af09901dd359ca"
+    },
+    {
+      "station": "COI",
+      "year": 2017,
+      "month": 4,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/COI_2017_04.npz",
+      "cache_sha256": "77a19217106cc58b7940bb9dec066357458918ce36e7bc3b487aef5d5d604c74",
+      "source_matrix_sha256": "af915ad7420535152002ed4f5cc92a000e09a8177a72f2f9e90af98b5c6f9b39",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        16.869786258052155,
+        36.5021031147878,
+        25.406449411402463
+      ],
+      "GFZ_IQD_sha256": "55d5d967b2f6e79a4cdfa313eb58f23d0bcb32025ebf119535af09901dd359ca"
+    },
+    {
+      "station": "COI",
+      "year": 2017,
+      "month": 5,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/COI_2017_05.npz",
+      "cache_sha256": "c87229f000cf96d88def7c202b91c447babd0fbe8f1ff4e292c2a9328b1cd781",
+      "source_matrix_sha256": "baddb226be4341e4187e4408291e89a8fc12e92cdebfaf8eefdca5085528703d",
+      "M_EM_iterations_XYZ": [
+        39,
+        16,
+        25
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        8.927599992603064e-09,
+        4.898083716398105e-09,
+        7.2686816565692425e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        18.827970829641114,
+        38.452811988211394,
+        26.317104681034202
+      ],
+      "GFZ_IQD_sha256": "55d5d967b2f6e79a4cdfa313eb58f23d0bcb32025ebf119535af09901dd359ca"
+    },
+    {
+      "station": "COI",
+      "year": 2017,
+      "month": 6,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/COI_2017_06.npz",
+      "cache_sha256": "3f1718dfcc116c5546cd688e2e0c0d2d29169a3dc9d394ccc29411038e44ded9",
+      "source_matrix_sha256": "674a240fbf6a1ab0ee03413742821d10ead8adffaf6d8d294182839654840616",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        19.45605633089884,
+        39.25405147271206,
+        25.22677102771833
+      ],
+      "GFZ_IQD_sha256": "55d5d967b2f6e79a4cdfa313eb58f23d0bcb32025ebf119535af09901dd359ca"
+    },
+    {
+      "station": "COI",
+      "year": 2017,
+      "month": 7,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/COI_2017_07.npz",
+      "cache_sha256": "7ffccfe19d5243f52be4b7dff7498bba07b5eaed3ba31e91473cc8dcee92cae7",
+      "source_matrix_sha256": "80991ecd7f041768b9660a4a16e4b0b3d68fa3c84934e852af5b56d7ede212b4",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        20.031681197641085,
+        40.09119714094228,
+        23.30631012901018
+      ],
+      "GFZ_IQD_sha256": "55d5d967b2f6e79a4cdfa313eb58f23d0bcb32025ebf119535af09901dd359ca"
+    },
+    {
+      "station": "COI",
+      "year": 2017,
+      "month": 8,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/COI_2017_08.npz",
+      "cache_sha256": "82d81a1a5a0bd5ae9fd235085bff9b621ee799ce8fe3c093673b604ca7557996",
+      "source_matrix_sha256": "0bb54a42d38e4bf843b92bcccdcdc05d54633409b0f0dab60c00ffa20aacb730",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        18.78134163963138,
+        41.6107713637033,
+        23.382939787153994
+      ],
+      "GFZ_IQD_sha256": "55d5d967b2f6e79a4cdfa313eb58f23d0bcb32025ebf119535af09901dd359ca"
+    },
+    {
+      "station": "COI",
+      "year": 2017,
+      "month": 9,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/COI_2017_09.npz",
+      "cache_sha256": "0fd341d1725841d708ff411ec73ceca35966918ea7e3da4c3a000999bc7dd2a3",
+      "source_matrix_sha256": "11ac188fd7a479329fb66ab5fa9cc717c1b310f18860badb1a37366d78aaf4fb",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        13.202580489316427,
+        39.34800741070059,
+        24.239289764016863
+      ],
+      "GFZ_IQD_sha256": "55d5d967b2f6e79a4cdfa313eb58f23d0bcb32025ebf119535af09901dd359ca"
+    },
+    {
+      "station": "COI",
+      "year": 2017,
+      "month": 10,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/COI_2017_10.npz",
+      "cache_sha256": "a7acbc05f9566de6bd2c48e0b1b4a396a2af36a838bc8156f869afaa1b72184a",
+      "source_matrix_sha256": "d2de9d4f7825b6f775b00213ab85d2027a5ca287e78d40f9649470d3399caa80",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        7.528315751413778,
+        34.151978247129676,
+        21.516221618002255
+      ],
+      "GFZ_IQD_sha256": "55d5d967b2f6e79a4cdfa313eb58f23d0bcb32025ebf119535af09901dd359ca"
+    },
+    {
+      "station": "COI",
+      "year": 2017,
+      "month": 11,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/COI_2017_11.npz",
+      "cache_sha256": "e76396e7658d441eb29c2543162ffeecf3a92cfd91ef4ddc4cb2acaa993b5923",
+      "source_matrix_sha256": "cfe5b850d31f952435bef232bde540151971bc00201fc8d943bfab7aed5a760b",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        10.922251278429108,
+        25.36270295165775,
+        14.55562183481656
+      ],
+      "GFZ_IQD_sha256": "55d5d967b2f6e79a4cdfa313eb58f23d0bcb32025ebf119535af09901dd359ca"
+    },
+    {
+      "station": "COI",
+      "year": 2017,
+      "month": 12,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/COI_2017_12.npz",
+      "cache_sha256": "9150be6a0758586a1c70bf0b2625bb440b258155c8a6b0a77e0c0c21a33333b2",
+      "source_matrix_sha256": "a2b7f3179f7fd40f4392f7cdaf3000aea18bc614ea838c1cbca489b170f0c98a",
+      "M_EM_iterations_XYZ": [
+        500,
+        500,
+        500
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.07752395729767159,
+        0.05299230986429393,
+        0.038359916587069165
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        14.459992843960846,
+        18.926631706727335,
+        9.289695533355635
+      ],
+      "GFZ_IQD_sha256": "55d5d967b2f6e79a4cdfa313eb58f23d0bcb32025ebf119535af09901dd359ca"
+    },
+    {
+      "station": "GUA",
+      "year": 2014,
+      "month": 1,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2014_01.npz",
+      "cache_sha256": "dc914e228e0410633f0868dd8a1b96a92970923e4d46480b4651939b017ca7f0",
+      "source_matrix_sha256": "235af6ece24fdaf34153a7ba8c711a55228313fc215439b3f2b07a3d82e9978e",
+      "M_EM_iterations_XYZ": [
+        500,
+        245,
+        123
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.09556405499461107,
+        9.623363439459354e-09,
+        9.020368452183902e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        56.80295131811342,
+        26.788166703444865,
+        23.363969115220637
+      ],
+      "GFZ_IQD_sha256": "9be0d2c40a565beaa80b6e7c834c46e0f45cbda7320915ad2b3bb6f2cb2f3f85"
+    },
+    {
+      "station": "GUA",
+      "year": 2014,
+      "month": 2,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2014_02.npz",
+      "cache_sha256": "927f2bf147cc5274cf9f039dcc5d02b76cfbdaea1bb7a45b5174dcd044aed9e3",
+      "source_matrix_sha256": "bbd2dfb08ff473353fae26faac0db2d4a4d06f49aed91b62f01825760f156f51",
+      "M_EM_iterations_XYZ": [
+        21,
+        21,
+        34
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        6.4319465309381485e-09,
+        9.964537639461923e-09,
+        8.265487849712372e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        63.622793075027914,
+        26.615961396221735,
+        22.87404830416815
+      ],
+      "GFZ_IQD_sha256": "9be0d2c40a565beaa80b6e7c834c46e0f45cbda7320915ad2b3bb6f2cb2f3f85"
+    },
+    {
+      "station": "GUA",
+      "year": 2014,
+      "month": 3,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2014_03.npz",
+      "cache_sha256": "939f03a451e4b77ae94d96513f563497d27940d874f33786583d111448df34a7",
+      "source_matrix_sha256": "72e080d9ad4eeccf3345e55080aef3e18c6284b3258bb84cf9f70cfbd3054414",
+      "M_EM_iterations_XYZ": [
+        21,
+        24,
+        23
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        6.1409082263708115e-09,
+        5.832021088281181e-09,
+        9.928953659255058e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        69.85266424820344,
+        31.020025866006613,
+        22.629298632261367
+      ],
+      "GFZ_IQD_sha256": "9be0d2c40a565beaa80b6e7c834c46e0f45cbda7320915ad2b3bb6f2cb2f3f85"
+    },
+    {
+      "station": "GUA",
+      "year": 2014,
+      "month": 4,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2014_04.npz",
+      "cache_sha256": "b9f71e9695b3d4748f84a1ce20f09e0a0e0e3f6ad20042f90275998946fa1b3b",
+      "source_matrix_sha256": "82532014e83aed7939a06620ce174aaeb582eeb2f188e39124441a4015c3be0e",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        68.75703818712891,
+        35.553733821517085,
+        17.062229059868823
+      ],
+      "GFZ_IQD_sha256": "9be0d2c40a565beaa80b6e7c834c46e0f45cbda7320915ad2b3bb6f2cb2f3f85"
+    },
+    {
+      "station": "GUA",
+      "year": 2014,
+      "month": 5,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2014_05.npz",
+      "cache_sha256": "16667e5b370c1b850cebf68e3b72af91d4983bcd5041f5d309dcf7b049b174ba",
+      "source_matrix_sha256": "0433e8060bcd2d399cf3a0dd0dafeb16ac2a706c886d0d2202805ee2e420b30a",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        61.761606242457496,
+        38.9682119970289,
+        9.46061586886921
+      ],
+      "GFZ_IQD_sha256": "9be0d2c40a565beaa80b6e7c834c46e0f45cbda7320915ad2b3bb6f2cb2f3f85"
+    },
+    {
+      "station": "GUA",
+      "year": 2014,
+      "month": 6,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2014_06.npz",
+      "cache_sha256": "97393daa358b48d690818402b5385befd781e6659c4c335c2a632f44e33cc3b8",
+      "source_matrix_sha256": "48d19978a0334d40a49b75708c880dc99b9309f79b7fa3b8ac5cf17aa24d3917",
+      "M_EM_iterations_XYZ": [
+        24,
+        23,
+        21
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        5.333276931196451e-09,
+        9.550717550155241e-09,
+        5.0595190259628e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        55.04122577781536,
+        40.04699785830408,
+        7.320904526772774
+      ],
+      "GFZ_IQD_sha256": "9be0d2c40a565beaa80b6e7c834c46e0f45cbda7320915ad2b3bb6f2cb2f3f85"
+    },
+    {
+      "station": "GUA",
+      "year": 2014,
+      "month": 7,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2014_07.npz",
+      "cache_sha256": "e47e05db94740865b13d29e0665b1db71ba48b25e74420a8627f9dba76f211b3",
+      "source_matrix_sha256": "2c2bca101aa3489d704b8caedc3781a5bde0fe075bf8069f185c2fc9e917029f",
+      "M_EM_iterations_XYZ": [
+        25,
+        20,
+        19
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        7.566995918750763e-09,
+        7.701942195126321e-09,
+        3.919922164641321e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        52.82230380638171,
+        40.455783166214204,
+        5.505966101714016
+      ],
+      "GFZ_IQD_sha256": "9be0d2c40a565beaa80b6e7c834c46e0f45cbda7320915ad2b3bb6f2cb2f3f85"
+    },
+    {
+      "station": "GUA",
+      "year": 2014,
+      "month": 8,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2014_08.npz",
+      "cache_sha256": "dd7babe231d6f4362567e0ee8a7006cd26bb969a549aceeed0ba754522bb9bdb",
+      "source_matrix_sha256": "bc882a73ebaabb1088bca2a9a1e6e8e214d4d15c486b8ccf858183022a21cea1",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        56.840045520393105,
+        45.08704326211911,
+        9.01719982404619
+      ],
+      "GFZ_IQD_sha256": "9be0d2c40a565beaa80b6e7c834c46e0f45cbda7320915ad2b3bb6f2cb2f3f85"
+    },
+    {
+      "station": "GUA",
+      "year": 2014,
+      "month": 9,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2014_09.npz",
+      "cache_sha256": "1d0f170da8b0a54bfd2bc18bbb297281593cc4962169cc6c7cc155ae20e3b0dc",
+      "source_matrix_sha256": "20757a8bd40e2d2f3ec8c24c07b741a1c2c3c22bc53c12103e74afa028021ca4",
+      "M_EM_iterations_XYZ": [
+        26,
+        23,
+        19
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        8.607457857578993e-09,
+        4.8564743337919936e-09,
+        5.757101462222636e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        62.149332075088864,
+        45.772985274810154,
+        19.420833646888312
+      ],
+      "GFZ_IQD_sha256": "9be0d2c40a565beaa80b6e7c834c46e0f45cbda7320915ad2b3bb6f2cb2f3f85"
+    },
+    {
+      "station": "GUA",
+      "year": 2014,
+      "month": 10,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2014_10.npz",
+      "cache_sha256": "ebac1c96114be995944c41433bd9cae284028f466db377ca7712bd563d604dbe",
+      "source_matrix_sha256": "e4d54d7537e688fda70020609945c7aabe2d6b779fa25b6749a6c4c229f2e295",
+      "M_EM_iterations_XYZ": [
+        16,
+        23,
+        23
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        3.0195224098861217e-09,
+        8.354618330486119e-09,
+        4.145476850681007e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        63.666805069426445,
+        40.93048416786835,
+        26.332842207537457
+      ],
+      "GFZ_IQD_sha256": "9be0d2c40a565beaa80b6e7c834c46e0f45cbda7320915ad2b3bb6f2cb2f3f85"
+    },
+    {
+      "station": "GUA",
+      "year": 2014,
+      "month": 11,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2014_11.npz",
+      "cache_sha256": "a0cb0db7c884be948f710c29dedb3ea42f9de255fe6e5d0337ec2d7ed36f8570",
+      "source_matrix_sha256": "edf87cc6db5e4444fcd1524842421e376eee32d9fc0f212a6152a80d5d9a06c7",
+      "M_EM_iterations_XYZ": [
+        17,
+        22,
+        23
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        4.576577339321375e-09,
+        4.26177848567022e-09,
+        9.270479495171458e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        59.82897691853857,
+        32.42098023619071,
+        27.073932232530467
+      ],
+      "GFZ_IQD_sha256": "9be0d2c40a565beaa80b6e7c834c46e0f45cbda7320915ad2b3bb6f2cb2f3f85"
+    },
+    {
+      "station": "GUA",
+      "year": 2014,
+      "month": 12,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2014_12.npz",
+      "cache_sha256": "03bec67093695b67c2315037596e78b6c544a5e0668f527dec5942d35181a4df",
+      "source_matrix_sha256": "71bf73f1d800607a5b88eccc08b82ea34685d5b72ae8c29dbc7aad262d2fbd45",
+      "M_EM_iterations_XYZ": [
+        61,
+        150,
+        118
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        8.556526154279709e-09,
+        9.225914254784584e-09,
+        9.505129128228873e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        54.232536117570376,
+        26.71524742442401,
+        24.068369361339876
+      ],
+      "GFZ_IQD_sha256": "9be0d2c40a565beaa80b6e7c834c46e0f45cbda7320915ad2b3bb6f2cb2f3f85"
+    },
+    {
+      "station": "GUA",
+      "year": 2015,
+      "month": 1,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2015_01.npz",
+      "cache_sha256": "202fe6b88aae1cdf71854c275c02db884cbb199ea4abc5f77f6f15f5c57dadbc",
+      "source_matrix_sha256": "fed78eafff03c52c8281d7713f8dcaa96f609cca7295daef9580da4179b0d0b0",
+      "M_EM_iterations_XYZ": [
+        22,
+        16,
+        21
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        5.857145879417658e-09,
+        6.611230674025137e-09,
+        3.68982000509277e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        53.3228630066311,
+        25.16503798210453,
+        21.942057096957377
+      ],
+      "GFZ_IQD_sha256": "a13688d1408590be02daf5036870a0f837ae66d5a7c37eba7e492201144be899"
+    },
+    {
+      "station": "GUA",
+      "year": 2015,
+      "month": 2,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2015_02.npz",
+      "cache_sha256": "95354e76851b9c5155f7382b3d576116060a11baea6533efd2dde550d0ed0389",
+      "source_matrix_sha256": "99efbf56c3c120d6f3f2d51d1757f1b40b912a48d95ea8fc3afac196061e5802",
+      "M_EM_iterations_XYZ": [
+        23,
+        18,
+        21
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        3.5652192309498787e-09,
+        6.272330210777e-09,
+        4.148205334786326e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        56.118798258150555,
+        23.474369446926033,
+        20.17469036799794
+      ],
+      "GFZ_IQD_sha256": "a13688d1408590be02daf5036870a0f837ae66d5a7c37eba7e492201144be899"
+    },
+    {
+      "station": "GUA",
+      "year": 2015,
+      "month": 3,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2015_03.npz",
+      "cache_sha256": "97ebccdfdb4d271a67f1e2097dc9ddfdfba2a80a5c997bc7542fba835a3e0db3",
+      "source_matrix_sha256": "c50f09eb84e6853f514d6783ae26908a73ad8c5d7ae19c2f63172d8664c17035",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        61.59030714758141,
+        27.35601259339869,
+        19.94671159930433
+      ],
+      "GFZ_IQD_sha256": "a13688d1408590be02daf5036870a0f837ae66d5a7c37eba7e492201144be899"
+    },
+    {
+      "station": "GUA",
+      "year": 2015,
+      "month": 4,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2015_04.npz",
+      "cache_sha256": "1bf50a5df469dba563c3d3541eb6b6d33b8e8864e011a0d528d5b6ee99262636",
+      "source_matrix_sha256": "6d3825131855c6dc5b21eadd77c4f0d4e47bb3e0d49931585a8d392a5b93c4ea",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        63.41023242832543,
+        32.821161227670146,
+        15.719614103747443
+      ],
+      "GFZ_IQD_sha256": "a13688d1408590be02daf5036870a0f837ae66d5a7c37eba7e492201144be899"
+    },
+    {
+      "station": "GUA",
+      "year": 2015,
+      "month": 6,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2015_06.npz",
+      "cache_sha256": "7009a3e4efc3c58f3a859b6cc41feb90392e2f72aba98e79f639f3ac6705d659",
+      "source_matrix_sha256": "34f71c975ccccaca1f8af664bd3f033c7b070bd04c8667959e0924f582e000ea",
+      "M_EM_iterations_XYZ": [
+        17,
+        19,
+        18
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        7.2177499532699585e-09,
+        4.248704499332234e-09,
+        4.9358277465216815e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        51.68582674218631,
+        37.595868316981544,
+        6.8754788704432475
+      ],
+      "GFZ_IQD_sha256": "a13688d1408590be02daf5036870a0f837ae66d5a7c37eba7e492201144be899"
+    },
+    {
+      "station": "GUA",
+      "year": 2015,
+      "month": 7,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2015_07.npz",
+      "cache_sha256": "e9153cc8a47465fc4ff8d756a6f4c0317404d0a5aba98067761b526437c9c1f4",
+      "source_matrix_sha256": "4e9d455b522d50a1d744e96ea04173f5ccb7e80e0e817196a424e86c19695419",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        48.441642118867975,
+        37.09439403995692,
+        5.058854141412259
+      ],
+      "GFZ_IQD_sha256": "a13688d1408590be02daf5036870a0f837ae66d5a7c37eba7e492201144be899"
+    },
+    {
+      "station": "GUA",
+      "year": 2015,
+      "month": 8,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2015_08.npz",
+      "cache_sha256": "325f32bd882b7fa952ad6add800d8f165d1d602150dcf1a96d5b4631ba8c222a",
+      "source_matrix_sha256": "9bee24d8e1ae8b284fa2aaeb84bb5c2a3aca82bcc02d295ee6b4b7df65f832db",
+      "M_EM_iterations_XYZ": [
+        19,
+        53,
+        21
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        6.606569513678551e-09,
+        8.181359589798376e-09,
+        9.454197424929589e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        48.53062281597582,
+        38.494449600211574,
+        7.695635850011466
+      ],
+      "GFZ_IQD_sha256": "a13688d1408590be02daf5036870a0f837ae66d5a7c37eba7e492201144be899"
+    },
+    {
+      "station": "GUA",
+      "year": 2015,
+      "month": 9,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2015_09.npz",
+      "cache_sha256": "7d0037de6de8a3c849321bb7d6972f4462d4c5f1f5c9f324207c963ea2029af3",
+      "source_matrix_sha256": "d07544859f49ce9900b230f7abfa5797369989b3b3b36b9a3df8c689f4fade13",
+      "M_EM_iterations_XYZ": [
+        22,
+        35,
+        23
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        7.210473995655775e-09,
+        8.991264621727169e-09,
+        4.3410182115621865e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        51.09919052683933,
+        37.64214804368886,
+        15.941878785912577
+      ],
+      "GFZ_IQD_sha256": "a13688d1408590be02daf5036870a0f837ae66d5a7c37eba7e492201144be899"
+    },
+    {
+      "station": "GUA",
+      "year": 2015,
+      "month": 10,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2015_10.npz",
+      "cache_sha256": "0c5631f4efae4f008e2a8c54342440333138ca3ba01285236a8488bb0516f0bb",
+      "source_matrix_sha256": "9e8d0f185446ac721ebd2188f129a25646902ef9efc42eec1ed62ee33a517323",
+      "M_EM_iterations_XYZ": [
+        22,
+        18,
+        29
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        9.582436177879572e-09,
+        7.757989806123078e-09,
+        6.485606718342751e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        50.64136116097822,
+        32.56373444326423,
+        20.93766693607636
+      ],
+      "GFZ_IQD_sha256": "a13688d1408590be02daf5036870a0f837ae66d5a7c37eba7e492201144be899"
+    },
+    {
+      "station": "GUA",
+      "year": 2015,
+      "month": 11,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2015_11.npz",
+      "cache_sha256": "7100d5978e14749d1d6fa9ee1d495f3f27794dba4268e9021a3a7db8d53f3a98",
+      "source_matrix_sha256": "d7f5633f867094467e2f03d22a2a53aa1825ac4e79cc2ae63d1f298ebdd6c57d",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        46.88019710155578,
+        25.404778060962176,
+        21.212884574895355
+      ],
+      "GFZ_IQD_sha256": "a13688d1408590be02daf5036870a0f837ae66d5a7c37eba7e492201144be899"
+    },
+    {
+      "station": "GUA",
+      "year": 2015,
+      "month": 12,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2015_12.npz",
+      "cache_sha256": "19ba941f106644b561125256bfd00c15401f2f38cb80df23ee12b8e1f39d6a99",
+      "source_matrix_sha256": "a57f30b52c30517e82c64fa9b3ce951cf27ecf775e460feddfb5838294b5447e",
+      "M_EM_iterations_XYZ": [
+        18,
+        15,
+        23
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        4.554749466478825e-09,
+        2.907881935243495e-09,
+        7.534254109486938e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        43.10717186671843,
+        21.235685487040246,
+        19.132163010018928
+      ],
+      "GFZ_IQD_sha256": "a13688d1408590be02daf5036870a0f837ae66d5a7c37eba7e492201144be899"
+    },
+    {
+      "station": "GUA",
+      "year": 2016,
+      "month": 1,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2016_01.npz",
+      "cache_sha256": "30954d1719313822d44824017839113c8ac539ef17e51a0cd8315e4a4cbc1963",
+      "source_matrix_sha256": "34dd28bbdd0b307c20b74840b8b63cc04486b134ee2144f218807afdb8589d42",
+      "M_EM_iterations_XYZ": [
+        18,
+        19,
+        24
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        3.3251126296818256e-09,
+        3.227910383429844e-09,
+        7.950802682898939e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        43.9700609416775,
+        20.742341956504532,
+        18.094816953228833
+      ],
+      "GFZ_IQD_sha256": "8d0671405e87f6c8a3f4159ec3e6d42ad9386b81973aac557274ac74cb5a4551"
+    },
+    {
+      "station": "GUA",
+      "year": 2016,
+      "month": 2,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2016_02.npz",
+      "cache_sha256": "9d4e1483f7ff8de6bfee74ec68afebbd0df17655e2e50e0b50e28c6831b747a0",
+      "source_matrix_sha256": "d99b7690ed7c9a14b11dfb4ee3819d2f6be08a604bed16a26d456bb76666c5b3",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        47.39827416827525,
+        19.838396616048165,
+        17.009389070738834
+      ],
+      "GFZ_IQD_sha256": "8d0671405e87f6c8a3f4159ec3e6d42ad9386b81973aac557274ac74cb5a4551"
+    },
+    {
+      "station": "GUA",
+      "year": 2016,
+      "month": 3,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2016_03.npz",
+      "cache_sha256": "a37f87f138c18bf9f9799db5f8c59d3e25bb6fbac01fdfa725583c866938f49b",
+      "source_matrix_sha256": "fb07cf20177540ac9462ab4cacc31be3ae9d5fe8b63fc369e4d00e72cf4ae0d2",
+      "M_EM_iterations_XYZ": [
+        16,
+        35,
+        24
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        2.7575879357755184e-09,
+        7.576431926281657e-09,
+        5.086803867015988e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        51.56278751003089,
+        22.920626669698066,
+        16.63532815788771
+      ],
+      "GFZ_IQD_sha256": "8d0671405e87f6c8a3f4159ec3e6d42ad9386b81973aac557274ac74cb5a4551"
+    },
+    {
+      "station": "GUA",
+      "year": 2016,
+      "month": 4,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2016_04.npz",
+      "cache_sha256": "5fd0da79714cca22ef46433ef8a21c12a883b2cfab9502b2a99d6019ec181941",
+      "source_matrix_sha256": "1afa0f3f205313a054bc3fba5cc9541be3cfb52b47b958531d69df13dddbe9c5",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        52.087754055546036,
+        27.101739155501747,
+        12.801005736407463
+      ],
+      "GFZ_IQD_sha256": "8d0671405e87f6c8a3f4159ec3e6d42ad9386b81973aac557274ac74cb5a4551"
+    },
+    {
+      "station": "GUA",
+      "year": 2016,
+      "month": 5,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2016_05.npz",
+      "cache_sha256": "b5a4b60a5361f7facb31436f5f7fc75530e28a110330757d22a0915e21dac76a",
+      "source_matrix_sha256": "68b64a95d48a6bc14623c7d9cf8013999d4b5b812a4aa5f6deee9756c391e384",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        48.1157933477056,
+        30.47575254813049,
+        7.330549547442438
+      ],
+      "GFZ_IQD_sha256": "8d0671405e87f6c8a3f4159ec3e6d42ad9386b81973aac557274ac74cb5a4551"
+    },
+    {
+      "station": "GUA",
+      "year": 2016,
+      "month": 6,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2016_06.npz",
+      "cache_sha256": "34f057c8b01a1e3c54054baed9a77e3e100647772ceec6317012cb1528af88f9",
+      "source_matrix_sha256": "0a0bb5ccbfebe6db03c2a1f9bb3aeff95c7c49bca36ae6f3250c91ef323bd23f",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        42.903535048513845,
+        31.274207029875612,
+        5.707452163748576
+      ],
+      "GFZ_IQD_sha256": "8d0671405e87f6c8a3f4159ec3e6d42ad9386b81973aac557274ac74cb5a4551"
+    },
+    {
+      "station": "GUA",
+      "year": 2016,
+      "month": 7,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2016_07.npz",
+      "cache_sha256": "2ad61f2d57741672bc0fbef9d9cd617d73e27aa907d2b702cf0a178f1dd6cc39",
+      "source_matrix_sha256": "2e28c595c83f6b819748baa363b6d3fbf749e4fde8531e16694d9a9590751461",
+      "M_EM_iterations_XYZ": [
+        26,
+        14,
+        30
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        7.508788257837296e-09,
+        7.602352525282186e-09,
+        5.567017069552094e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        40.97706345679439,
+        31.426765065341996,
+        4.228659324951394
+      ],
+      "GFZ_IQD_sha256": "8d0671405e87f6c8a3f4159ec3e6d42ad9386b81973aac557274ac74cb5a4551"
+    },
+    {
+      "station": "GUA",
+      "year": 2016,
+      "month": 8,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2016_08.npz",
+      "cache_sha256": "a0d8abf1c98d88c8ed1dcb875ac3a0314f7ce417c3f4e0a8fb15df25bb02439c",
+      "source_matrix_sha256": "424fb63f9640d6255ab5fdd024394c6783d37711151ed2cde220377c5598afe7",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        43.85977399287043,
+        34.778708172384185,
+        7.0461535460535885
+      ],
+      "GFZ_IQD_sha256": "8d0671405e87f6c8a3f4159ec3e6d42ad9386b81973aac557274ac74cb5a4551"
+    },
+    {
+      "station": "GUA",
+      "year": 2016,
+      "month": 9,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2016_09.npz",
+      "cache_sha256": "7f2ae21dceb74389d95eacfbe6791070a13f5bb15d03fb36857502d9c164855b",
+      "source_matrix_sha256": "1a2390cd89e247682339894230f9fb6f3a04fafe0a7f82e7d61fa86ac066f448",
+      "M_EM_iterations_XYZ": [
+        18,
+        23,
+        21
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        3.1213858164846897e-09,
+        4.465846359380521e-09,
+        7.302332960534841e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        46.187184865007985,
+        33.99995917945503,
+        14.455119454409909
+      ],
+      "GFZ_IQD_sha256": "8d0671405e87f6c8a3f4159ec3e6d42ad9386b81973aac557274ac74cb5a4551"
+    },
+    {
+      "station": "GUA",
+      "year": 2016,
+      "month": 10,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2016_10.npz",
+      "cache_sha256": "46fb94dfba3fb792325a42f847f92163d1337981f614fae0b4475c71cfa588df",
+      "source_matrix_sha256": "386de4cc10692ad6acf4101816a76af0db57e361925b3a42bdd22bce8f23672b",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        44.11437209014407,
+        28.343155211143383,
+        18.252608596654497
+      ],
+      "GFZ_IQD_sha256": "8d0671405e87f6c8a3f4159ec3e6d42ad9386b81973aac557274ac74cb5a4551"
+    },
+    {
+      "station": "GUA",
+      "year": 2016,
+      "month": 11,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2016_11.npz",
+      "cache_sha256": "d4fdb9f7a5280716ed5daafffb0b0937970bdf9cc12fb8f028c455c7760139de",
+      "source_matrix_sha256": "751228a0f6fa83b663deaec1a3da0eadea4ff98feaebe659b687a4e7414a18fa",
+      "M_EM_iterations_XYZ": [
+        18,
+        27,
+        27
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        7.355993147939444e-09,
+        5.273136594041716e-09,
+        9.06948116607964e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        38.91197472222072,
+        21.087205078072937,
+        17.61258305207122
+      ],
+      "GFZ_IQD_sha256": "8d0671405e87f6c8a3f4159ec3e6d42ad9386b81973aac557274ac74cb5a4551"
+    },
+    {
+      "station": "GUA",
+      "year": 2016,
+      "month": 12,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2016_12.npz",
+      "cache_sha256": "0ca444a5470eaaf44579fcc950a56ccefaf60744be5340fafda556884671a647",
+      "source_matrix_sha256": "750caf6a94a52ea78a273caefc1aee61d7c5e1a7cef782032aaad02bdf929239",
+      "M_EM_iterations_XYZ": [
+        28,
+        18,
+        21
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        5.195033736526966e-09,
+        4.829416866414249e-09,
+        4.659341357182711e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        35.26200520759707,
+        17.368347902106468,
+        15.65213850311903
+      ],
+      "GFZ_IQD_sha256": "8d0671405e87f6c8a3f4159ec3e6d42ad9386b81973aac557274ac74cb5a4551"
+    },
+    {
+      "station": "GUA",
+      "year": 2017,
+      "month": 1,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2017_01.npz",
+      "cache_sha256": "a92b60db8ef928b101cb361f027baea968d5ae022f41a2faf0c4bee023cf774d",
+      "source_matrix_sha256": "eb85daf951416316646190d0fb6b3e0d074f029dc13bccfb24adcbcdd20c221f",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        36.107668337006956,
+        17.023172238363465,
+        14.853803623227837
+      ],
+      "GFZ_IQD_sha256": "55d5d967b2f6e79a4cdfa313eb58f23d0bcb32025ebf119535af09901dd359ca"
+    },
+    {
+      "station": "GUA",
+      "year": 2017,
+      "month": 2,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2017_02.npz",
+      "cache_sha256": "e09beea58e261cb361fcf26b199d0584a7440926a79a8d854de5f5815935018f",
+      "source_matrix_sha256": "d0e054d172cd6c80ce30dbfdfc75ede5a990114ab071304852b402acd63af161",
+      "M_EM_iterations_XYZ": [
+        19,
+        22,
+        24
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        6.28642737865448e-09,
+        8.216602509492077e-09,
+        5.169567884877324e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        40.656917997660095,
+        17.01097443683282,
+        14.61120746515634
+      ],
+      "GFZ_IQD_sha256": "55d5d967b2f6e79a4cdfa313eb58f23d0bcb32025ebf119535af09901dd359ca"
+    },
+    {
+      "station": "GUA",
+      "year": 2017,
+      "month": 3,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2017_03.npz",
+      "cache_sha256": "507dd0274c2f1ba88cea9b4d395c1d45295499a07b89700ea98bd519f795826e",
+      "source_matrix_sha256": "4c637a2b179f1e804102ca175547c8bb067a70cbf268681210f733ba008368f5",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        45.81140711484448,
+        20.34159160498101,
+        14.83522045450005
+      ],
+      "GFZ_IQD_sha256": "55d5d967b2f6e79a4cdfa313eb58f23d0bcb32025ebf119535af09901dd359ca"
+    },
+    {
+      "station": "GUA",
+      "year": 2017,
+      "month": 4,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2017_04.npz",
+      "cache_sha256": "7271adad79b0e81791b41c2fab42e50e65480846811722226d075b091f5f834c",
+      "source_matrix_sha256": "cad8777106f94f0470c0868e5a5a644b7cc980ea5765e38e39251305033ae53a",
+      "M_EM_iterations_XYZ": [
+        23,
+        24,
+        30
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        9.611540008336306e-09,
+        4.61068339063786e-09,
+        8.816641638986766e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        47.078574034116414,
+        24.371824020926308,
+        11.661373626665728
+      ],
+      "GFZ_IQD_sha256": "55d5d967b2f6e79a4cdfa313eb58f23d0bcb32025ebf119535af09901dd359ca"
+    },
+    {
+      "station": "GUA",
+      "year": 2017,
+      "month": 5,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2017_05.npz",
+      "cache_sha256": "2cbc9b1801ee499bb6bf7a268891c6b05196ce7264a427ba7f6e433225dd2a9c",
+      "source_matrix_sha256": "4e6088132a3174feede888bffee8502443a3b668d67a088014779929575b1cf8",
+      "M_EM_iterations_XYZ": [
+        16,
+        19,
+        24
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        2.6775524020195007e-09,
+        6.524487616843544e-09,
+        6.5956555772572756e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        43.974831743427444,
+        27.751630461906153,
+        6.732543650672438
+      ],
+      "GFZ_IQD_sha256": "55d5d967b2f6e79a4cdfa313eb58f23d0bcb32025ebf119535af09901dd359ca"
+    },
+    {
+      "station": "GUA",
+      "year": 2017,
+      "month": 6,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2017_06.npz",
+      "cache_sha256": "cbf843b7ffed7f5182bfc26c4ae178836507f7366dd0408653f5550105940ddb",
+      "source_matrix_sha256": "d9e5970e34d6424598deab3f481bbfd127eaa596ba5b9fba384260616812780a",
+      "M_EM_iterations_XYZ": [
+        26,
+        19,
+        26
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        5.020410753786564e-09,
+        4.189246283203829e-09,
+        6.365553417708725e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        39.86017019884164,
+        29.013446233211493,
+        5.298432647762907
+      ],
+      "GFZ_IQD_sha256": "55d5d967b2f6e79a4cdfa313eb58f23d0bcb32025ebf119535af09901dd359ca"
+    },
+    {
+      "station": "GUA",
+      "year": 2017,
+      "month": 8,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2017_08.npz",
+      "cache_sha256": "8316d5287b0445afede6e26de3e530bb3de5edde64e84552d31b61b2c124fee5",
+      "source_matrix_sha256": "314f4318b51403e95b50bbf162e028443e2fcf8270a2955df31e0cc8275ce19c",
+      "M_EM_iterations_XYZ": [
+        24,
+        19,
+        26
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        8.43283487483859e-09,
+        5.199126462684944e-09,
+        5.47879608348012e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        42.80965624105535,
+        33.95487908395695,
+        6.796008063492783
+      ],
+      "GFZ_IQD_sha256": "55d5d967b2f6e79a4cdfa313eb58f23d0bcb32025ebf119535af09901dd359ca"
+    },
+    {
+      "station": "GUA",
+      "year": 2017,
+      "month": 9,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2017_09.npz",
+      "cache_sha256": "3ea2a060888c162c8c1c0f8eea408c1c5a45dfb515cd64d97036cdf065999f61",
+      "source_matrix_sha256": "8f3b9ce596a6770c1f9e95ffe8560f417bd0b6b06c420a817ea2f8a217373b73",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        45.200828199465825,
+        33.29926165512384,
+        14.09553329490664
+      ],
+      "GFZ_IQD_sha256": "55d5d967b2f6e79a4cdfa313eb58f23d0bcb32025ebf119535af09901dd359ca"
+    },
+    {
+      "station": "GUA",
+      "year": 2017,
+      "month": 10,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2017_10.npz",
+      "cache_sha256": "c39cb8171f0e034df8a80baeeacbdce81e250a077e74819e96643fe5ca1fd539",
+      "source_matrix_sha256": "c5461c65a82e9cc5c72db2cf3a8a6da96c9bbcfc1dd6e68f5b5740b06189cb42",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        42.65004119980283,
+        27.455684411335497,
+        17.615116469694783
+      ],
+      "GFZ_IQD_sha256": "55d5d967b2f6e79a4cdfa313eb58f23d0bcb32025ebf119535af09901dd359ca"
+    },
+    {
+      "station": "GUA",
+      "year": 2017,
+      "month": 11,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2017_11.npz",
+      "cache_sha256": "9747ee41522e784bc3eb9b844e1de71d871f3ffd6717f4d3aa63f9348b74cb4b",
+      "source_matrix_sha256": "8f95e034a52c94d70c0488f1ac2fecf8e2c127bbb86f2d4290eee67c18264f07",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        37.29118153923383,
+        20.21644732940434,
+        16.877896256006153
+      ],
+      "GFZ_IQD_sha256": "55d5d967b2f6e79a4cdfa313eb58f23d0bcb32025ebf119535af09901dd359ca"
+    },
+    {
+      "station": "GUA",
+      "year": 2017,
+      "month": 12,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2017_12.npz",
+      "cache_sha256": "f2570d82999847c277ac4d567712b28dcf88673187ad1e1190cb5b64966970de",
+      "source_matrix_sha256": "ddf11a5d63a23525c493229d4d2058d2900acc9b6bdea6aaf9ad32f729cdbb1d",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        34.01334198775483,
+        16.750475624919634,
+        15.097841986635144
+      ],
+      "GFZ_IQD_sha256": "55d5d967b2f6e79a4cdfa313eb58f23d0bcb32025ebf119535af09901dd359ca"
+    },
+    {
+      "station": "GUA",
+      "year": 2018,
+      "month": 2,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2018_02.npz",
+      "cache_sha256": "3c9bf9d43d8d7a99cf6472b47769f78f9d7b253399ddb634a67ac368a231857b",
+      "source_matrix_sha256": "a81750861857fb70a1cc97b284e6c1b18119dd194a23882cbc6602f69c57a9f4",
+      "M_EM_iterations_XYZ": [
+        19,
+        22,
+        22
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        6.737536750733852e-09,
+        5.656261237163562e-09,
+        8.15634848549962e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        38.82118975029486,
+        16.238767421728888,
+        13.954375911506677
+      ],
+      "GFZ_IQD_sha256": "bc9e68409a1fdbc9765bc351db47a51a993f18fa52e3698673cfce1c64b84738"
+    },
+    {
+      "station": "GUA",
+      "year": 2018,
+      "month": 3,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2018_03.npz",
+      "cache_sha256": "009e658cfb650445abe6c3aa7f052c69d8d68182691e17e44e140ff4df36f7c6",
+      "source_matrix_sha256": "7555f2c29910ee122be152dfed5a5ec4321da86812bce6e4d31a6440e4a74a54",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        43.26766476842468,
+        19.21260117578226,
+        14.013626865090497
+      ],
+      "GFZ_IQD_sha256": "bc9e68409a1fdbc9765bc351db47a51a993f18fa52e3698673cfce1c64b84738"
+    },
+    {
+      "station": "GUA",
+      "year": 2018,
+      "month": 4,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2018_04.npz",
+      "cache_sha256": "3b5f10bfaf19ca9e96d15ab6f2b5989f64afc9a393c0d54d0e2c925b04f77944",
+      "source_matrix_sha256": "a79394d563d27d7d122cb28eb7ccfb168184077f2ec604d0850b385b1160044a",
+      "M_EM_iterations_XYZ": [
+        16,
+        26,
+        27
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        3.863533493131399e-09,
+        5.082938514533453e-09,
+        7.235030352603644e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        44.715769040206474,
+        23.156112935082824,
+        11.073904810461656
+      ],
+      "GFZ_IQD_sha256": "bc9e68409a1fdbc9765bc351db47a51a993f18fa52e3698673cfce1c64b84738"
+    },
+    {
+      "station": "GUA",
+      "year": 2018,
+      "month": 5,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2018_05.npz",
+      "cache_sha256": "74663cfb6e5a32e4cf09708c326059ba7172ec19163caedce0915c238431e8d9",
+      "source_matrix_sha256": "38b66055fd08ea6560e3a3c0c970a96f548452bb4c2bbad45cfae19694aa9382",
+      "M_EM_iterations_XYZ": [
+        79,
+        27,
+        71
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        8.141796570271254e-09,
+        6.46514308755286e-09,
+        9.874383977148682e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        42.4419635104213,
+        26.80056071563106,
+        6.4935216224878864
+      ],
+      "GFZ_IQD_sha256": "bc9e68409a1fdbc9765bc351db47a51a993f18fa52e3698673cfce1c64b84738"
+    },
+    {
+      "station": "GUA",
+      "year": 2018,
+      "month": 6,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2018_06.npz",
+      "cache_sha256": "7b960271870f98438f5eadb469ba77e82152a99273e0fc367c1950ed3c83ad04",
+      "source_matrix_sha256": "064a8b4d11ee37670943715e50baf43833ab3d71728e914ee1db44d68db34929",
+      "M_EM_iterations_XYZ": [
+        52,
+        38,
+        40
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        6.897607818245888e-09,
+        7.954895409056917e-09,
+        6.50379661237821e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        38.616112032553005,
+        28.106695234480423,
+        5.133175398111496
+      ],
+      "GFZ_IQD_sha256": "bc9e68409a1fdbc9765bc351db47a51a993f18fa52e3698673cfce1c64b84738"
+    },
+    {
+      "station": "GUA",
+      "year": 2018,
+      "month": 7,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2018_07.npz",
+      "cache_sha256": "3de63e25b03624f44b8e6375344dcd2f5ff2dc459bdf1a4a7c98acd5f566a0e7",
+      "source_matrix_sha256": "2826e75d0e2051874b2b09762a3d2fb3b58dd0b657fb191fd0eb4060be5daf21",
+      "M_EM_iterations_XYZ": [
+        21,
+        24,
+        110
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        3.3614924177527428e-09,
+        4.720845936390106e-09,
+        9.906216291710734e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        37.18533844767454,
+        28.47655461983542,
+        3.872301746613296
+      ],
+      "GFZ_IQD_sha256": "bc9e68409a1fdbc9765bc351db47a51a993f18fa52e3698673cfce1c64b84738"
+    },
+    {
+      "station": "GUA",
+      "year": 2018,
+      "month": 8,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2018_08.npz",
+      "cache_sha256": "a85cf1feece3fb82173577d28db9b6dc075151645db71501ebecf8c74f1d8751",
+      "source_matrix_sha256": "82ecf7f5fac6d6ce93ae8d33f825c5b62feaae811fb8b3855449963440a8a4b4",
+      "M_EM_iterations_XYZ": [
+        17,
+        23,
+        32
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        4.18367562815547e-09,
+        4.274056664144155e-09,
+        9.084033081308007e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        38.83529328364353,
+        30.801545386232014,
+        6.159225373197247
+      ],
+      "GFZ_IQD_sha256": "bc9e68409a1fdbc9765bc351db47a51a993f18fa52e3698673cfce1c64b84738"
+    },
+    {
+      "station": "GUA",
+      "year": 2018,
+      "month": 9,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2018_09.npz",
+      "cache_sha256": "c672d6794722041badf158a315aeab399d70fc67c0f80ca17ff05ac2017be2bc",
+      "source_matrix_sha256": "00ed26f4c234bf8b74b554089f7fc76adfe0ccf5530de1e071813d63d58aaa82",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        40.805447994990445,
+        30.058276116621492,
+        12.723853540580269
+      ],
+      "GFZ_IQD_sha256": "bc9e68409a1fdbc9765bc351db47a51a993f18fa52e3698673cfce1c64b84738"
+    },
+    {
+      "station": "GUA",
+      "year": 2018,
+      "month": 11,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2018_11.npz",
+      "cache_sha256": "db618c20a3d31f1670c51f2171bf2dc8e80bbdc7b7ecf7d2338eb9d1e965529e",
+      "source_matrix_sha256": "884ff43f491d289fce8cd87c3cb2f45d6dfbd3920e84ed314eb887dbd0d3c144",
+      "M_EM_iterations_XYZ": [
+        22,
+        33,
+        33
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        3.848981577903032e-09,
+        7.358437414950458e-09,
+        8.150891517288983e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        36.30340435161684,
+        19.673454234880477,
+        16.431220687725848
+      ],
+      "GFZ_IQD_sha256": "bc9e68409a1fdbc9765bc351db47a51a993f18fa52e3698673cfce1c64b84738"
+    },
+    {
+      "station": "GUA",
+      "year": 2018,
+      "month": 12,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/GUA_2018_12.npz",
+      "cache_sha256": "a6e1e04b48df5deab79bce7f498b74599c025596484f426c4299e1713a3631a7",
+      "source_matrix_sha256": "4d98e61cef3757bc984b63b9df071d3187e599ac5b16a0c7fc9840fa8e4f1acb",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        40
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        5.959918780717999e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        33.65431698523098,
+        16.57445769310422,
+        14.938501693027948
+      ],
+      "GFZ_IQD_sha256": "bc9e68409a1fdbc9765bc351db47a51a993f18fa52e3698673cfce1c64b84738"
+    },
+    {
+      "station": "KDU",
+      "year": 2014,
+      "month": 1,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/KDU_2014_01.npz",
+      "cache_sha256": "7b960c9fcae3d0f5980714978110a95fd86404c710c3c5f03568866a7740cc23",
+      "source_matrix_sha256": "fbf7e415e50855663c031557ad8f6d5088eb3029fe4d121e410596cf0319c789",
+      "M_EM_iterations_XYZ": [
+        500,
+        100,
+        90
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.1680018134866259,
+        8.865072231856175e-09,
+        9.073119144886732e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        43.95489586683288,
+        44.19700640843499,
+        19.670923459430742
+      ],
+      "GFZ_IQD_sha256": "9be0d2c40a565beaa80b6e7c834c46e0f45cbda7320915ad2b3bb6f2cb2f3f85"
+    },
+    {
+      "station": "KDU",
+      "year": 2014,
+      "month": 2,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/KDU_2014_02.npz",
+      "cache_sha256": "03737d654eb85935bbb1221e9ba3dbb3a204939c88046262aa7b3834071f6bac",
+      "source_matrix_sha256": "6b77c9229c580f8b2af2487a0b7bc6c32cb19a59f75b18852da76510c355d52b",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        43.57789824771432,
+        47.557145053595335,
+        22.51095397031647
+      ],
+      "GFZ_IQD_sha256": "9be0d2c40a565beaa80b6e7c834c46e0f45cbda7320915ad2b3bb6f2cb2f3f85"
+    },
+    {
+      "station": "KDU",
+      "year": 2014,
+      "month": 3,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/KDU_2014_03.npz",
+      "cache_sha256": "fe43643407c07a603595e68cc697b08c258ec1326220818a3fb0c3b4f626c011",
+      "source_matrix_sha256": "d2617ded118c187eeb7039b9caebd4fb7b85491b32151c01f6f8f4e99c0b553b",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        42.87325188005299,
+        48.66760755668355,
+        24.74212784572748
+      ],
+      "GFZ_IQD_sha256": "9be0d2c40a565beaa80b6e7c834c46e0f45cbda7320915ad2b3bb6f2cb2f3f85"
+    },
+    {
+      "station": "KDU",
+      "year": 2014,
+      "month": 4,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/KDU_2014_04.npz",
+      "cache_sha256": "0d714d7e66cfd36ae31e3ac9e36c3415961427431dbb0051323454e245fcd39f",
+      "source_matrix_sha256": "2eebf00af96d7828e53485f4daa79d00d8cfe98cb4905d1de06574374d31947e",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        37.92843268511881,
+        41.53998578940585,
+        24.015228293422112
+      ],
+      "GFZ_IQD_sha256": "9be0d2c40a565beaa80b6e7c834c46e0f45cbda7320915ad2b3bb6f2cb2f3f85"
+    },
+    {
+      "station": "KDU",
+      "year": 2014,
+      "month": 5,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/KDU_2014_05.npz",
+      "cache_sha256": "df19845d2fe95ec3bcbd2dab0936211b4ee01d3f51638dc15a481727619f2875",
+      "source_matrix_sha256": "7ca2d0a1ef51a36dfefe95385bf7bd88b73b75a172eb5ebd1d4ce5a3028e79f3",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        29.45555305363034,
+        33.74306245583642,
+        20.725280464856475
+      ],
+      "GFZ_IQD_sha256": "9be0d2c40a565beaa80b6e7c834c46e0f45cbda7320915ad2b3bb6f2cb2f3f85"
+    },
+    {
+      "station": "KDU",
+      "year": 2014,
+      "month": 6,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/KDU_2014_06.npz",
+      "cache_sha256": "514768210ccf9c702c86ad418b38c2c653842730a3317bcc786d714cc8e383ab",
+      "source_matrix_sha256": "d229305eeb1babd5910fe6f5a6313f700ffba897479f752f55264e2bd68158a4",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        23.987997700927604,
+        33.90609648637987,
+        19.745180190212402
+      ],
+      "GFZ_IQD_sha256": "9be0d2c40a565beaa80b6e7c834c46e0f45cbda7320915ad2b3bb6f2cb2f3f85"
+    },
+    {
+      "station": "KDU",
+      "year": 2014,
+      "month": 7,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/KDU_2014_07.npz",
+      "cache_sha256": "d2a83450a057bd2bab5f67e7aa830d614f13a42a58f57b1b8f15f50d745b05bc",
+      "source_matrix_sha256": "826bfaef2f7bf448e067e84b06ff714d6e4cdbf0b7a92acf60f8ea671db817f9",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        24.806998706620554,
+        35.383275985295825,
+        20.46019487101117
+      ],
+      "GFZ_IQD_sha256": "9be0d2c40a565beaa80b6e7c834c46e0f45cbda7320915ad2b3bb6f2cb2f3f85"
+    },
+    {
+      "station": "KDU",
+      "year": 2014,
+      "month": 8,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/KDU_2014_08.npz",
+      "cache_sha256": "f226fa3c629e7706a598fc2bfcc9e545feedcb96c02985f251941aa0847fd9fe",
+      "source_matrix_sha256": "c89ac49e63e1a36d444af7e29c83b58e634113b56dcde28ef89467406aac23b7",
+      "M_EM_iterations_XYZ": [
+        14,
+        13,
+        9
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        1.8699211068451405e-09,
+        2.484966898919083e-09,
+        2.091837814077735e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        33.44574974003976,
+        38.02476383317649,
+        23.932868009997577
+      ],
+      "GFZ_IQD_sha256": "9be0d2c40a565beaa80b6e7c834c46e0f45cbda7320915ad2b3bb6f2cb2f3f85"
+    },
+    {
+      "station": "KDU",
+      "year": 2014,
+      "month": 9,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/KDU_2014_09.npz",
+      "cache_sha256": "4525212718a03609a3b99eb39f4a339c063a282f3cf33a39fe7bc1932349eca4",
+      "source_matrix_sha256": "62b235999b4b9714fc615851caf9b30c43f574d8fab3de4ed91051c0d4413770",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        43.577028713947854,
+        47.85887667761993,
+        29.022286657005054
+      ],
+      "GFZ_IQD_sha256": "9be0d2c40a565beaa80b6e7c834c46e0f45cbda7320915ad2b3bb6f2cb2f3f85"
+    },
+    {
+      "station": "KDU",
+      "year": 2014,
+      "month": 10,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/KDU_2014_10.npz",
+      "cache_sha256": "df132f0fbd948dfe113986d209aa4c41ef1ec00c516197f1b681eb71d7eeb873",
+      "source_matrix_sha256": "0f9dd52dbad59ab7700fc5fd0c6d6f0a2f3df35bb341431df2b3fb45438caa68",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        50.77743681707427,
+        52.61536365517512,
+        30.34516685703367
+      ],
+      "GFZ_IQD_sha256": "9be0d2c40a565beaa80b6e7c834c46e0f45cbda7320915ad2b3bb6f2cb2f3f85"
+    },
+    {
+      "station": "KDU",
+      "year": 2014,
+      "month": 11,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/KDU_2014_11.npz",
+      "cache_sha256": "306983031a38d87a735a2f5e936878b72a9dad076b290c73572e60d6a3608f92",
+      "source_matrix_sha256": "d49346f04e6b7ce83e1ac5aac9401a73a09c2c5f94e267933c0e82c1ac48b5b3",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        50.92886020756684,
+        51.149611619029585,
+        26.309704876641714
+      ],
+      "GFZ_IQD_sha256": "9be0d2c40a565beaa80b6e7c834c46e0f45cbda7320915ad2b3bb6f2cb2f3f85"
+    },
+    {
+      "station": "KDU",
+      "year": 2014,
+      "month": 12,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/KDU_2014_12.npz",
+      "cache_sha256": "57378e8b6a871b9d7dc60d347059c68206467b365ec5585ea2f68e481d55c6cd",
+      "source_matrix_sha256": "ac4842b63fc822711114170e7f7e3dce3a70c6c179977acfe6cfa562bc813afd",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        45.834690824950535,
+        43.98171307813199,
+        20.474818455934965
+      ],
+      "GFZ_IQD_sha256": "9be0d2c40a565beaa80b6e7c834c46e0f45cbda7320915ad2b3bb6f2cb2f3f85"
+    },
+    {
+      "station": "KDU",
+      "year": 2015,
+      "month": 1,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/KDU_2015_01.npz",
+      "cache_sha256": "03b873f6b4e07fd11fed1b6a72e2636a19facae66cb9ce5614f242dd08eff4a2",
+      "source_matrix_sha256": "4628a15d1ac3d1ba099ddff445ec25e33b5cdd1bfd49b6900603c06dc56391d9",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        41.2808355338603,
+        41.48755874515662,
+        18.464924926445796
+      ],
+      "GFZ_IQD_sha256": "a13688d1408590be02daf5036870a0f837ae66d5a7c37eba7e492201144be899"
+    },
+    {
+      "station": "KDU",
+      "year": 2015,
+      "month": 2,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/KDU_2015_02.npz",
+      "cache_sha256": "3cdf232b257aca353a881e47b8796270385538f4288388a1028ad2051ed2e230",
+      "source_matrix_sha256": "924ece3bd07986124e50b87dca90f32f320ffa2abfa8995e0fa66ca67f6e48d9",
+      "M_EM_iterations_XYZ": [
+        20,
+        14,
+        13
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        5.77711034566164e-09,
+        9.897348718368448e-09,
+        3.754394128918648e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        38.43574014862402,
+        41.94383510103147,
+        19.856532659783163
+      ],
+      "GFZ_IQD_sha256": "a13688d1408590be02daf5036870a0f837ae66d5a7c37eba7e492201144be899"
+    },
+    {
+      "station": "KDU",
+      "year": 2015,
+      "month": 3,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/KDU_2015_03.npz",
+      "cache_sha256": "7fa71d449705efc737a6142ad83cb304f031c6393a923ec0fa342d63507481f2",
+      "source_matrix_sha256": "b3c62c14e9bcdcd6dd966999f6c460ed982538bd8a3a04d88957a455d15bef26",
+      "M_EM_iterations_XYZ": [
+        10,
+        18,
+        20
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        3.914465196430683e-09,
+        4.763705874211155e-09,
+        4.7330104280263186e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        37.8003320782443,
+        42.90717682250086,
+        21.8192604334821
+      ],
+      "GFZ_IQD_sha256": "a13688d1408590be02daf5036870a0f837ae66d5a7c37eba7e492201144be899"
+    },
+    {
+      "station": "KDU",
+      "year": 2015,
+      "month": 4,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/KDU_2015_04.npz",
+      "cache_sha256": "5a30e6b526cc88cf23097158b6d7192652e553b5fb1459e470df931e00ecac65",
+      "source_matrix_sha256": "3ae2caec652bf7927509d8c63cd5ed8381900a6951dc81080dd3c460209c103f",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        34.97192729710055,
+        38.2936311844417,
+        22.149823331742695
+      ],
+      "GFZ_IQD_sha256": "a13688d1408590be02daf5036870a0f837ae66d5a7c37eba7e492201144be899"
+    },
+    {
+      "station": "KDU",
+      "year": 2015,
+      "month": 5,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/KDU_2015_05.npz",
+      "cache_sha256": "c2fb66c3b760186f586dece4d0466a98412500ca382c07ee9fdb56f03bc21d94",
+      "source_matrix_sha256": "ccd5b82cfde309243185ef12e0254218f674ee79a07f30162e8a6a5cadf35a75",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        28.22620793890524,
+        32.34542413433961,
+        19.86862920539401
+      ],
+      "GFZ_IQD_sha256": "a13688d1408590be02daf5036870a0f837ae66d5a7c37eba7e492201144be899"
+    },
+    {
+      "station": "KDU",
+      "year": 2015,
+      "month": 6,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/KDU_2015_06.npz",
+      "cache_sha256": "1641ec624def07a73a7b2586799dac56458a5be2139274a8d8406324c397409e",
+      "source_matrix_sha256": "8fb2cefd6ab5bc685653e3b56e1bdeb553c4df5d49a9693a843e991daa3ade79",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        22.5249844190092,
+        31.827891212296276,
+        18.535950097719176
+      ],
+      "GFZ_IQD_sha256": "a13688d1408590be02daf5036870a0f837ae66d5a7c37eba7e492201144be899"
+    },
+    {
+      "station": "KDU",
+      "year": 2015,
+      "month": 7,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/KDU_2015_07.npz",
+      "cache_sha256": "45ee108d434d4773c530c26749602e42e8305a68bc1a3178c78aad07690215ac",
+      "source_matrix_sha256": "c3a2f414988ddc68524907302b5a46ba0ba56fb92218feb5bd38d5ed6d777966",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        22.730440839187835,
+        32.43938050615467,
+        18.75441679563734
+      ],
+      "GFZ_IQD_sha256": "a13688d1408590be02daf5036870a0f837ae66d5a7c37eba7e492201144be899"
+    },
+    {
+      "station": "KDU",
+      "year": 2015,
+      "month": 8,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/KDU_2015_08.npz",
+      "cache_sha256": "2ff5497d94978a744f07aadd6f9828523d10935cfdf8345828de74c0db4799b8",
+      "source_matrix_sha256": "7c20b54c0a1ccee1058416bc0899e17626f942e82a7c692170802c55083d1dea",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        28.545861013817692,
+        32.458818713021515,
+        20.42857526450109
+      ],
+      "GFZ_IQD_sha256": "a13688d1408590be02daf5036870a0f837ae66d5a7c37eba7e492201144be899"
+    },
+    {
+      "station": "KDU",
+      "year": 2015,
+      "month": 9,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/KDU_2015_09.npz",
+      "cache_sha256": "c36acd1c96902ea1b7b478552efcb9f831a4fb8de11b73d69f463bbc093e6175",
+      "source_matrix_sha256": "14272eab2165ff6287f2965f252a3ec96737be468c6d4a78a2218019d58733f0",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        35.80271972341182,
+        39.3236930458797,
+        23.851461930952976
+      ],
+      "GFZ_IQD_sha256": "a13688d1408590be02daf5036870a0f837ae66d5a7c37eba7e492201144be899"
+    },
+    {
+      "station": "KDU",
+      "year": 2015,
+      "month": 10,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/KDU_2015_10.npz",
+      "cache_sha256": "51c4fc4ddd0848c28d2929716bbeb103cd669827a88c7bc7dad740eec02a2a1a",
+      "source_matrix_sha256": "7b69ab614553b5c7a0f828b22d1f800367518df031b2257ccc92ebee573a96f5",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        40.376444083597,
+        41.83700229219123,
+        24.13486920954496
+      ],
+      "GFZ_IQD_sha256": "a13688d1408590be02daf5036870a0f837ae66d5a7c37eba7e492201144be899"
+    },
+    {
+      "station": "KDU",
+      "year": 2015,
+      "month": 11,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/KDU_2015_11.npz",
+      "cache_sha256": "822fe65399b65d63a526fef18509d6816b8db54bb39cc5182d3f976e41a80045",
+      "source_matrix_sha256": "0c33e3afbc7b445525179a82749cae09aeb2a681e80b17bbcd74867bddb5d693",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        39.90308977357074,
+        40.078207020618535,
+        20.61594831248106
+      ],
+      "GFZ_IQD_sha256": "a13688d1408590be02daf5036870a0f837ae66d5a7c37eba7e492201144be899"
+    },
+    {
+      "station": "KDU",
+      "year": 2015,
+      "month": 12,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/KDU_2015_12.npz",
+      "cache_sha256": "e1add5a354787c8efdcffbec605b094bb83f378710424c7ea8169df4777e16a8",
+      "source_matrix_sha256": "5e9e1222cb677c3c943eba97020e762bc4eb6bd0341771598f6185755e4036b3",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        36.43419567586377,
+        34.95987837666926,
+        16.274505480935645
+      ],
+      "GFZ_IQD_sha256": "a13688d1408590be02daf5036870a0f837ae66d5a7c37eba7e492201144be899"
+    },
+    {
+      "station": "KDU",
+      "year": 2016,
+      "month": 1,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/KDU_2016_01.npz",
+      "cache_sha256": "02c821a1d29bb4d5fc06299e280055a86bab935c90f6b8c30a8877b7271810ca",
+      "source_matrix_sha256": "94a78e60d2561adf9c8aa6a0aa0ba5d6882e691d16133858d0f15bb376dd4df3",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        34.027055228790346,
+        34.19978973460697,
+        15.221417763740549
+      ],
+      "GFZ_IQD_sha256": "8d0671405e87f6c8a3f4159ec3e6d42ad9386b81973aac557274ac74cb5a4551"
+    },
+    {
+      "station": "KDU",
+      "year": 2016,
+      "month": 2,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/KDU_2016_02.npz",
+      "cache_sha256": "544cf6f14756fc0746f1656e06ca02aa0c43c09cb962239138011d6f5cb815d9",
+      "source_matrix_sha256": "d8b988179a93ea00ec45207529d8bb52f2d98e1035563b689284c2e187fb2ed0",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        32.39962684245171,
+        35.379673649720246,
+        16.771294165424816
+      ],
+      "GFZ_IQD_sha256": "8d0671405e87f6c8a3f4159ec3e6d42ad9386b81973aac557274ac74cb5a4551"
+    },
+    {
+      "station": "KDU",
+      "year": 2016,
+      "month": 3,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/KDU_2016_03.npz",
+      "cache_sha256": "2daef7e4b90017cf92ab3be037fd3bb095b46bdc88f5cc4bcdcc69763b3e9974",
+      "source_matrix_sha256": "bd57106afe705610ead4523bfde18a7f3cea56d713f87f37ebe624d9cb6f6145",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        31.570051354523542,
+        35.82136360842272,
+        18.266499811262754
+      ],
+      "GFZ_IQD_sha256": "8d0671405e87f6c8a3f4159ec3e6d42ad9386b81973aac557274ac74cb5a4551"
+    },
+    {
+      "station": "KDU",
+      "year": 2016,
+      "month": 4,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/KDU_2016_04.npz",
+      "cache_sha256": "339e00d91563584a52830b75faa2488203385dc4dd89bd7f2902072cd66b4680",
+      "source_matrix_sha256": "030fbf07721f4535fcf5dd909610be9e7d130c8539eff6225ed373daf09dad0a",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        28.627013479718304,
+        31.31849425459015,
+        18.17334791576873
+      ],
+      "GFZ_IQD_sha256": "8d0671405e87f6c8a3f4159ec3e6d42ad9386b81973aac557274ac74cb5a4551"
+    },
+    {
+      "station": "KDU",
+      "year": 2016,
+      "month": 5,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/KDU_2016_05.npz",
+      "cache_sha256": "b7a09a653750ca7b0aa05d7794f29dfd78fc80bd272196537ec7775e57e365b4",
+      "source_matrix_sha256": "b8dde4247083a5fc6248f9e06b603259ec8fd7690a2a8b8f8b8367a629c99d14",
+      "M_EM_iterations_XYZ": [
+        16,
+        19,
+        23
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        9.567884262651205e-09,
+        7.965354598127306e-09,
+        5.420588422566652e-09
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        22.872242467235004,
+        26.276080665390865,
+        16.147927192385147
+      ],
+      "GFZ_IQD_sha256": "8d0671405e87f6c8a3f4159ec3e6d42ad9386b81973aac557274ac74cb5a4551"
+    },
+    {
+      "station": "KDU",
+      "year": 2016,
+      "month": 6,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/KDU_2016_06.npz",
+      "cache_sha256": "34dee8e727387a84de5e470c6abaeee183a0a366f312d96633f370b0f95cdd78",
+      "source_matrix_sha256": "4b81fe48354c762d048d933af9f9355e3b20943a23d073cca4d2acf47c218131",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        18.67864712126084,
+        26.499263793986344,
+        15.41718840470157
+      ],
+      "GFZ_IQD_sha256": "8d0671405e87f6c8a3f4159ec3e6d42ad9386b81973aac557274ac74cb5a4551"
+    },
+    {
+      "station": "KDU",
+      "year": 2016,
+      "month": 7,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/KDU_2016_07.npz",
+      "cache_sha256": "56e7e987ac83e4d2700356076f9bb62e86a782caa08977290511b48e25bf6db4",
+      "source_matrix_sha256": "feece558a667df86fcf992b52aff3b051d0877821b236fcb01889a31814b97c8",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        19.299449288529903,
+        27.464510723259778,
+        15.889134730607541
+      ],
+      "GFZ_IQD_sha256": "8d0671405e87f6c8a3f4159ec3e6d42ad9386b81973aac557274ac74cb5a4551"
+    },
+    {
+      "station": "KDU",
+      "year": 2016,
+      "month": 9,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/KDU_2016_09.npz",
+      "cache_sha256": "1b6275c5fea11aac96ff28f721ed97ceeae23add99aab749ffd0ac7afa854f33",
+      "source_matrix_sha256": "23e5b7ceecaa848d84c251580c5e543b6d76d203e16f76590f93c286e6f4c744",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        32.38289104754525,
+        35.56884097241842,
+        21.56574352143232
+      ],
+      "GFZ_IQD_sha256": "8d0671405e87f6c8a3f4159ec3e6d42ad9386b81973aac557274ac74cb5a4551"
+    },
+    {
+      "station": "KDU",
+      "year": 2016,
+      "month": 10,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/KDU_2016_10.npz",
+      "cache_sha256": "85e965088fc40390a8ad80dad8e046f78450259819ac065e299c60a318eaf6ee",
+      "source_matrix_sha256": "790f1e6ae28dd4181c0716e09938546686b05971c199ada7ad1b191b526e3841",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        35.17217211023105,
+        36.45091733128141,
+        21.016496122307064
+      ],
+      "GFZ_IQD_sha256": "8d0671405e87f6c8a3f4159ec3e6d42ad9386b81973aac557274ac74cb5a4551"
+    },
+    {
+      "station": "KDU",
+      "year": 2016,
+      "month": 11,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/KDU_2016_11.npz",
+      "cache_sha256": "1030199bb991b9a73ee9409782023f187ce0f6a29c1b757bb5ff25fd03c78d41",
+      "source_matrix_sha256": "85ab962249b14c1e4999e8de0a2df359c04fd310fa8afa51375f4c4206970b43",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        33.103816378928364,
+        33.25314826107003,
+        17.108402719010112
+      ],
+      "GFZ_IQD_sha256": "8d0671405e87f6c8a3f4159ec3e6d42ad9386b81973aac557274ac74cb5a4551"
+    },
+    {
+      "station": "KDU",
+      "year": 2016,
+      "month": 12,
+      "split": "development",
+      "cache_path": "phase3/work/ssb_months/KDU_2016_12.npz",
+      "cache_sha256": "4bb1f8073927b0344916efeea82f280f7228fb5b8055476409dd1221e060cd2f",
+      "source_matrix_sha256": "fc765f93f354dbb707355b44c9b67dafb9c7396540fefaeeda4dfe5a31ad1a5e",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        29.79064849072584,
+        28.581869803395463,
+        13.301719282407449
+      ],
+      "GFZ_IQD_sha256": "8d0671405e87f6c8a3f4159ec3e6d42ad9386b81973aac557274ac74cb5a4551"
+    },
+    {
+      "station": "KDU",
+      "year": 2017,
+      "month": 1,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/KDU_2017_01.npz",
+      "cache_sha256": "3488e25585a5b7afd8716120a1273508566ef61c7ed6eb8faa4b75d7ea4140f6",
+      "source_matrix_sha256": "65dce27535ec49403be4019928ba49696a0bc24c82af3e80da813a94fb479427",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        27.93231656896379,
+        28.08594583402545,
+        12.499992717745446
+      ],
+      "GFZ_IQD_sha256": "55d5d967b2f6e79a4cdfa313eb58f23d0bcb32025ebf119535af09901dd359ca"
+    },
+    {
+      "station": "KDU",
+      "year": 2017,
+      "month": 2,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/KDU_2017_02.npz",
+      "cache_sha256": "47e676fad77aed0ab63bf16f97842426ceda0cab352da2c7b811c382f43c5beb",
+      "source_matrix_sha256": "70c27af0c9d54c91511291db9867bd9cf32c441221f186f60aac0a90ce754fe1",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        27.827230977748105,
+        30.377191349566623,
+        14.382657707268953
+      ],
+      "GFZ_IQD_sha256": "55d5d967b2f6e79a4cdfa313eb58f23d0bcb32025ebf119535af09901dd359ca"
+    },
+    {
+      "station": "KDU",
+      "year": 2017,
+      "month": 3,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/KDU_2017_03.npz",
+      "cache_sha256": "b93aed29d997ac2da27f416948b522a4bd184ac701673189672f125159a27fc5",
+      "source_matrix_sha256": "64097d7c749ef5902dfda0b2bd68276b77a64fc01dbf68751ccdb7fd09ae4f95",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        28.104805049476447,
+        31.89694659340163,
+        16.224704399995094
+      ],
+      "GFZ_IQD_sha256": "55d5d967b2f6e79a4cdfa313eb58f23d0bcb32025ebf119535af09901dd359ca"
+    },
+    {
+      "station": "KDU",
+      "year": 2017,
+      "month": 4,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/KDU_2017_04.npz",
+      "cache_sha256": "d3dfb2ddbcd4946c17174f197725e2f13b86bb409f244199f74db30a1504ea52",
+      "source_matrix_sha256": "ace76f882461f2f40ef83afb08d8e959cacf8d0ac82e57bdebceb898bc306752",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        25.950074775190775,
+        28.413857448513816,
+        16.438664977521206
+      ],
+      "GFZ_IQD_sha256": "55d5d967b2f6e79a4cdfa313eb58f23d0bcb32025ebf119535af09901dd359ca"
+    },
+    {
+      "station": "KDU",
+      "year": 2017,
+      "month": 5,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/KDU_2017_05.npz",
+      "cache_sha256": "eb00c7cbf8f66a06831376fec71285e0ea7dc06f384a48db5238da98cbe85e6d",
+      "source_matrix_sha256": "5dbc79077f70730069c15a5cbddee44d659e15ba1b61df38bc776b2a2077c0d7",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        20.966268960468522,
+        24.02322100286384,
+        14.755457402888123
+      ],
+      "GFZ_IQD_sha256": "55d5d967b2f6e79a4cdfa313eb58f23d0bcb32025ebf119535af09901dd359ca"
+    },
+    {
+      "station": "KDU",
+      "year": 2017,
+      "month": 6,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/KDU_2017_06.npz",
+      "cache_sha256": "69c96634897160f5f45ddbd511c6a82baaeb0caf730d26a13103c7b453323eca",
+      "source_matrix_sha256": "37754f98b35aa90a8ec2fd2a9cce72b6763a8697f2e40896ddca466cca6e2689",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        17.37058927711003,
+        24.56829445000421,
+        14.305370919368526
+      ],
+      "GFZ_IQD_sha256": "55d5d967b2f6e79a4cdfa313eb58f23d0bcb32025ebf119535af09901dd359ca"
+    },
+    {
+      "station": "KDU",
+      "year": 2017,
+      "month": 7,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/KDU_2017_07.npz",
+      "cache_sha256": "9a8f803656923f0154cb531a193208fef0463dadc7dbdd6312364cd716b2dc72",
+      "source_matrix_sha256": "934badd544a88c325f17abf8b64fbb90b7c1a250fb08906a08081faa32ebf0f9",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        18.293733625546313,
+        26.078815849320367,
+        15.082558269645027
+      ],
+      "GFZ_IQD_sha256": "55d5d967b2f6e79a4cdfa313eb58f23d0bcb32025ebf119535af09901dd359ca"
+    },
+    {
+      "station": "KDU",
+      "year": 2017,
+      "month": 8,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/KDU_2017_08.npz",
+      "cache_sha256": "060aae27377f40c64ef7c3eba3a5f9ee768633ee58a530893f8cd523744e46d6",
+      "source_matrix_sha256": "4b7c6bf0d2c66e002f9484647e5d28497d60a9ccaf42877a75813146eda55c47",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        25.192477881875895,
+        28.636797247066724,
+        18.025102267418205
+      ],
+      "GFZ_IQD_sha256": "55d5d967b2f6e79a4cdfa313eb58f23d0bcb32025ebf119535af09901dd359ca"
+    },
+    {
+      "station": "KDU",
+      "year": 2017,
+      "month": 9,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/KDU_2017_09.npz",
+      "cache_sha256": "474f18c293a3471c6a30eec278c6563ce144f3099aaf44564b14a55e22006779",
+      "source_matrix_sha256": "b5e5e725ca35f8554c0c2ee0909fb4b01f5c8c4d41f29bc4a1aac413f2f3f956",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        31.658723524435466,
+        34.77421373981971,
+        21.092766158991324
+      ],
+      "GFZ_IQD_sha256": "55d5d967b2f6e79a4cdfa313eb58f23d0bcb32025ebf119535af09901dd359ca"
+    },
+    {
+      "station": "KDU",
+      "year": 2017,
+      "month": 10,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/KDU_2017_10.npz",
+      "cache_sha256": "6bf92b5a644963910127f3d20621d33b233fddb79bcb0e3c4668d1b85d25a72e",
+      "source_matrix_sha256": "2a153ab7298514dbf083d688c7371b981c9f0e0e8bd0a76a3e935f84934f1649",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        33.96188034904266,
+        35.21398161853416,
+        20.322491432263547
+      ],
+      "GFZ_IQD_sha256": "55d5d967b2f6e79a4cdfa313eb58f23d0bcb32025ebf119535af09901dd359ca"
+    },
+    {
+      "station": "KDU",
+      "year": 2017,
+      "month": 11,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/KDU_2017_11.npz",
+      "cache_sha256": "b10f6eefecd978fc1c446525226099fb6dbf8422d6bc0e6be6a507c0994c9809",
+      "source_matrix_sha256": "61fc9c09eebdef144bea5d72725038727009d28821edb1b6a8a3cd64db135a57",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        31.722790887808856,
+        31.868653885179697,
+        16.400548810829648
+      ],
+      "GFZ_IQD_sha256": "55d5d967b2f6e79a4cdfa313eb58f23d0bcb32025ebf119535af09901dd359ca"
+    },
+    {
+      "station": "KDU",
+      "year": 2017,
+      "month": 12,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/KDU_2017_12.npz",
+      "cache_sha256": "8f3b9428e271b91d189eff0c15b713ddd63f750df7e894a17c797ec8cbad72d4",
+      "source_matrix_sha256": "4bb478b665233e698ea41bc60052777cd807597ab53f4ff87f52cfa8895f64f1",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        28.737702393964057,
+        27.574158377016474,
+        12.83543914151975
+      ],
+      "GFZ_IQD_sha256": "55d5d967b2f6e79a4cdfa313eb58f23d0bcb32025ebf119535af09901dd359ca"
+    },
+    {
+      "station": "KDU",
+      "year": 2018,
+      "month": 1,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/KDU_2018_01.npz",
+      "cache_sha256": "23c823d0c5d9d551de1b84d6cb6f6dc87d7de68d4502bf91071982db3584559b",
+      "source_matrix_sha256": "c474728169d40a1149f8eb420254d3a684f23d2d0e0f0977824cfccb10c7ee10",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        26.994424868925968,
+        27.140385989847545,
+        12.079486622163508
+      ],
+      "GFZ_IQD_sha256": "bc9e68409a1fdbc9765bc351db47a51a993f18fa52e3698673cfce1c64b84738"
+    },
+    {
+      "station": "KDU",
+      "year": 2018,
+      "month": 2,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/KDU_2018_02.npz",
+      "cache_sha256": "9d6aec035caa6934eb6743f44e95d05ccfed844831d28550810c6ebf26b467ad",
+      "source_matrix_sha256": "dbd5036657c59147238264924b64ef0a5a412acb3668b114a9a8922f7cf68eef",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        26.576187840142982,
+        29.006711301469505,
+        13.732847136289283
+      ],
+      "GFZ_IQD_sha256": "bc9e68409a1fdbc9765bc351db47a51a993f18fa52e3698673cfce1c64b84738"
+    },
+    {
+      "station": "KDU",
+      "year": 2018,
+      "month": 3,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/KDU_2018_03.npz",
+      "cache_sha256": "cbe051842b6518ba85b3755bbbee505688ef258a60af784a55cc1ab53e2c2ffe",
+      "source_matrix_sha256": "978444587e5538c798f57a36703ee27e75a1d2eeebec7be678c890a8eba6ba5e",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        26.54668619455685,
+        30.13069387700785,
+        15.324720828792694
+      ],
+      "GFZ_IQD_sha256": "bc9e68409a1fdbc9765bc351db47a51a993f18fa52e3698673cfce1c64b84738"
+    },
+    {
+      "station": "KDU",
+      "year": 2018,
+      "month": 4,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/KDU_2018_04.npz",
+      "cache_sha256": "e24346f75be35ae1d9f883f9f3dc6ec4a5b7e84691441a409ef04e1500e236ab",
+      "source_matrix_sha256": "25dfad770f47d767fc66772d8662db2babc1059ff1a9a4e6089fa9c3d39e703c",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        24.646631698833694,
+        26.98458152915921,
+        15.614499887603706
+      ],
+      "GFZ_IQD_sha256": "bc9e68409a1fdbc9765bc351db47a51a993f18fa52e3698673cfce1c64b84738"
+    },
+    {
+      "station": "KDU",
+      "year": 2018,
+      "month": 5,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/KDU_2018_05.npz",
+      "cache_sha256": "a5d8b1f311708ddd1a95ebfc855806d1cbd8005609d560d63767b10d625ddaae",
+      "source_matrix_sha256": "d8ef927f3b9c8fcb38759f2305561d4c3cbf33dc3a31dc717fee48892e7aad4e",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        20.22859508913264,
+        23.186170741456607,
+        14.243205156661514
+      ],
+      "GFZ_IQD_sha256": "bc9e68409a1fdbc9765bc351db47a51a993f18fa52e3698673cfce1c64b84738"
+    },
+    {
+      "station": "KDU",
+      "year": 2018,
+      "month": 6,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/KDU_2018_06.npz",
+      "cache_sha256": "90711d05b492e717d82ffc28005449e8c66ef97b5f70447a2fd7f6568ae87928",
+      "source_matrix_sha256": "9325321268bb2fc7a9315a6b4589842c4cf7cc011efa298353746a21bd42b4c0",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        16.828106302881928,
+        23.800341449046805,
+        13.858240197910584
+      ],
+      "GFZ_IQD_sha256": "bc9e68409a1fdbc9765bc351db47a51a993f18fa52e3698673cfce1c64b84738"
+    },
+    {
+      "station": "KDU",
+      "year": 2018,
+      "month": 7,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/KDU_2018_07.npz",
+      "cache_sha256": "19a5e6b63f9f808c74791693a76ea8a2e3b0b8b7b99b4435f19cdef079384a30",
+      "source_matrix_sha256": "5133a771047c4d5b255dedc3c6f1be99fec9d6ae72e98801423e6cb615abbb14",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        17.45971482507061,
+        24.906707181448255,
+        14.401563279596802
+      ],
+      "GFZ_IQD_sha256": "bc9e68409a1fdbc9765bc351db47a51a993f18fa52e3698673cfce1c64b84738"
+    },
+    {
+      "station": "KDU",
+      "year": 2018,
+      "month": 8,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/KDU_2018_08.npz",
+      "cache_sha256": "d79a4ed91c042724324920b3c195faff099a5dc74fb8ce9857f8564c0abac228",
+      "source_matrix_sha256": "ac04027f68c778c4b16041c88a0fa1c70b0780a3e48ee73ac7f086c8254382dd",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        22.84664784698863,
+        25.976332631480076,
+        16.34905433608182
+      ],
+      "GFZ_IQD_sha256": "bc9e68409a1fdbc9765bc351db47a51a993f18fa52e3698673cfce1c64b84738"
+    },
+    {
+      "station": "KDU",
+      "year": 2018,
+      "month": 9,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/KDU_2018_09.npz",
+      "cache_sha256": "12de57afe25f4312c4f4d27cd1ec3158e023d4dd8ebcb42f87f81f1d2102894d",
+      "source_matrix_sha256": "6f50f38e22f50c77543941b5c24bc1abfd4de61a91611a7a27be5c5510b99ddd",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        28.578253262914203,
+        31.39029106415683,
+        19.040815118336294
+      ],
+      "GFZ_IQD_sha256": "bc9e68409a1fdbc9765bc351db47a51a993f18fa52e3698673cfce1c64b84738"
+    },
+    {
+      "station": "KDU",
+      "year": 2018,
+      "month": 10,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/KDU_2018_10.npz",
+      "cache_sha256": "b6ac507e703b4d48acf3cd7ba0c95ab63d2c35d1b3125a814fb61564e170ee62",
+      "source_matrix_sha256": "29371d3714c6c8313ce892b1ba92eb3f63fb1ac4a9623251bd646ac5f177f41e",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        31.697318664802083,
+        32.85097928619114,
+        18.951362256186563
+      ],
+      "GFZ_IQD_sha256": "bc9e68409a1fdbc9765bc351db47a51a993f18fa52e3698673cfce1c64b84738"
+    },
+    {
+      "station": "KDU",
+      "year": 2018,
+      "month": 11,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/KDU_2018_11.npz",
+      "cache_sha256": "0bdf4c57e240924c96e37b6304d0310295e7b6c56b902a50b20ddb34473b526a",
+      "source_matrix_sha256": "6b25735f857e6e58c42787266c98daafd646d6ca7508f19e0fd462f3979b4dbf",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        30.886507040287647,
+        31.025186635960186,
+        15.962934248080526
+      ],
+      "GFZ_IQD_sha256": "bc9e68409a1fdbc9765bc351db47a51a993f18fa52e3698673cfce1c64b84738"
+    },
+    {
+      "station": "KDU",
+      "year": 2018,
+      "month": 12,
+      "split": "holdout",
+      "cache_path": "phase3/work/ssb_months/KDU_2018_12.npz",
+      "cache_sha256": "8d1002d5ea91278853581d4610fe4110fe8cd10edb5bfdf066f1dcf67b9e1572",
+      "source_matrix_sha256": "498b53b4ffc381603ceb5d61b9e4731138a283e03deac15b74afe213e5f922ff",
+      "M_EM_iterations_XYZ": [
+        0,
+        0,
+        0
+      ],
+      "M_EM_final_change_nT_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DIFI_amplitude_XYZ_nT": [
+        28.433583470965175,
+        27.28106051566086,
+        12.69781738657167
+      ],
+      "GFZ_IQD_sha256": "bc9e68409a1fdbc9765bc351db47a51a993f18fa52e3698673cfce1c64b84738"
+    }
+  ],
+  "manifest_sha256": "e3b64a35f725dd4a43a02cf0884621cb7e35b46966e418bd4d8ddafda10737d7"
+}

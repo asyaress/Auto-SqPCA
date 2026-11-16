@@ -1,0 +1,4 @@
+component,months,cases,median_paired_ASAL_minus_AUTO_NA,CI95_lower,CI95_upper,C2_success_if_X
+X,104,936,0.0,0.0,0.0,False
+Y,104,936,0.0,0.0,0.0,DESCRIPTIVE
+Z,104,936,0.0,0.0,0.0,DESCRIPTIVE

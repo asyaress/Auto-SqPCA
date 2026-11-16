@@ -1,0 +1,31 @@
+{
+  "E2_frozen_sha256": "7a4597814baad09c6fe1ca781f991181c7286ba1c6fca2f376c7e6cf8592a34e",
+  "E3_cases_sha256": "1777d73c47ea52b629e985b93db3906b7d4467cdf4a00248d88fe1853c81f84e",
+  "station_months": 356,
+  "component_cases": 1068,
+  "DIFI_model": "DIFI8",
+  "pydifi_version": "8.1.5",
+  "ppigrf_version": "1.1.0",
+  "IGRF_coeff_model": "IGRF13",
+  "IGRF13_coeff_sha256": "357536152bb6f72ced3eb886def84f91a592512465c367ca5ab7bda4c36c3522",
+  "dipole_epoch": 2015,
+  "dipole_coefficients_nT": {
+    "g10": -29441.46,
+    "g11": -1501.77,
+    "h11": 4795.99
+  },
+  "dipole_north_axis_unit_xyz": [
+    0.050281389154730204,
+    -0.1605765460571156,
+    0.9857418296699383
+  ],
+  "dipole_latitude_definition": "WGS84 geodetic latitude converted to geocentric radial latitude at h=0 km, then centered IGRF-13 dipole",
+  "IQD_evaluation_note": "r(AUTO,Sq_IQD) is secondary and not independent of selection",
+  "scope_note": "E3b is exploratory; Phase 1 minute Rule A used for eligible station-years/months",
+  "original_E3_cases_sha256_before_geocentric_lat_fix": "c86d30167ea9fae9fd52ffdddf40362164ac3d5e7ac410000eb35bb25f6b2b51",
+  "latitude_correction_max_abs_deg": 0.18543295732133203,
+  "latitude_correction_utc": "2026-11-15T01:14:27.669560+00:00",
+  "latitude_correction_script_sha256": "7a0ffb725f17bc5de1bb276bd4ecd80db4f4028256c71f88957539d659990a5f",
+  "original_case_rows_preserved": 1068,
+  "all_nonlatitude_fields_preserved": true
+}

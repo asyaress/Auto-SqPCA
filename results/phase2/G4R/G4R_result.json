@@ -1,0 +1,144 @@
+{
+  "label": "D-AGREE",
+  "denominator": {
+    "target_total": 432,
+    "excluded": 12,
+    "suspect": 6,
+    "development_seen": 303,
+    "unresolved": 33,
+    "eligible": 381,
+    "agree": 2661,
+    "disagree_in_zone": 6,
+    "disagree_outside_zone": 0
+  },
+  "unit_of_agree_disagree": "candidate decisions, 7 per eligible matrix",
+  "eligible_matrix_all7_agree": 376,
+  "eligible_matrix_any_disagree": 5,
+  "suspect_diagnostic": {
+    "matrices": 6,
+    "candidate_disagreement": 0
+  },
+  "development_seen_stratum": {
+    "matrices": 266,
+    "candidate_disagreement": 0
+  },
+  "unseen_stratum_diagnostic": {
+    "matrices": 115,
+    "candidate_agree": 799,
+    "disagree_in_zone": 6,
+    "disagree_outside_zone": 0
+  },
+  "february_stratum": {
+    "matrices": 22,
+    "candidate_disagreement": 0
+  },
+  "combined_stratum": {
+    "matrices": 18,
+    "candidate_disagreement": 0
+  },
+  "diagnostic_comparisons": {
+    "own_vs_mixA_disagreements": 6,
+    "pub_vs_mixA_disagreements": 2,
+    "pub_vs_mixB_disagreements": 6
+  },
+  "kappa": {
+    "X": {
+      "PC1": {
+        "n": 129,
+        "kappa": 1.0,
+        "observed_agreement": 1.0,
+        "expected_agreement": 0.5457003785830179,
+        "reason": "OK"
+      },
+      "PC2": {
+        "n": 129,
+        "kappa": 0.9543847241867043,
+        "observed_agreement": 0.9844961240310077,
+        "expected_agreement": 0.6601165795324802,
+        "reason": "OK"
+      },
+      "PC3": {
+        "n": 129,
+        "kappa": 1.0,
+        "observed_agreement": 1.0,
+        "expected_agreement": 0.8702001081665764,
+        "reason": "OK"
+      }
+    },
+    "Y": {
+      "PC1": {
+        "n": 121,
+        "kappa": null,
+        "observed_agreement": 1.0,
+        "expected_agreement": 1.0,
+        "reason": "CONSTANT_MARGINALS_UNDEFINED"
+      },
+      "PC2": {
+        "n": 121,
+        "kappa": null,
+        "observed_agreement": 1.0,
+        "expected_agreement": 1.0,
+        "reason": "CONSTANT_MARGINALS_UNDEFINED"
+      },
+      "PC3": {
+        "n": 121,
+        "kappa": null,
+        "observed_agreement": 1.0,
+        "expected_agreement": 1.0,
+        "reason": "CONSTANT_MARGINALS_UNDEFINED"
+      }
+    },
+    "Z": {
+      "PC1": {
+        "n": 131,
+        "kappa": null,
+        "observed_agreement": 1.0,
+        "expected_agreement": 1.0,
+        "reason": "CONSTANT_MARGINALS_UNDEFINED"
+      },
+      "PC2": {
+        "n": 131,
+        "kappa": null,
+        "observed_agreement": 1.0,
+        "expected_agreement": 1.0,
+        "reason": "CONSTANT_MARGINALS_UNDEFINED"
+      },
+      "PC3": {
+        "n": 131,
+        "kappa": null,
+        "observed_agreement": 1.0,
+        "expected_agreement": 1.0,
+        "reason": "CONSTANT_MARGINALS_UNDEFINED"
+      }
+    }
+  },
+  "sanity_CR4": {
+    "Y": {
+      "P-own": {
+        "n": 121,
+        "ge_0p88": 120,
+        "percent": 99.17355371900827
+      },
+      "P-pub": {
+        "n": 121,
+        "ge_0p88": 120,
+        "percent": 99.17355371900827
+      }
+    },
+    "Z": {
+      "P-own": {
+        "n": 131,
+        "ge_0p88": 128,
+        "percent": 97.70992366412214
+      },
+      "P-pub": {
+        "n": 131,
+        "ge_0p88": 128,
+        "percent": 97.70992366412214
+      }
+    }
+  },
+  "G2R_label_unchanged": "S-DEVIATE",
+  "G1_registration2": "HOLD",
+  "G1_registration3": "HOLD"
+}

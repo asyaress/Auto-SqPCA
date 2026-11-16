@@ -1,0 +1,9 @@
+{
+  "synthetic_cases": 200,
+  "noise_sd_nT": 0.05,
+  "outside_sensitive_zone": 200,
+  "same_decision": 200,
+  "same_fraction": 1.0,
+  "threshold": 0.95,
+  "status": "PASS"
+}

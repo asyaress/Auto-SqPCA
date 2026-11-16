@@ -1,0 +1,287 @@
+{
+  "schema": "Auto-SqPCA-S7-A-v1",
+  "protocol_version": "G0-registration-1; unchanged",
+  "scope": "S7-A source audit only",
+  "parameters": {
+    "mode_reconstruction": "day-major outer(EOF_day, PC_hour); fitted signed scale for shape and direct scale=1 residual",
+    "mode_exact_max_abs_threshold": 1e-09,
+    "night_hour_indices_zero_based": [
+      0,
+      1,
+      2,
+      3,
+      23
+    ],
+    "reference_columns": "Sq.y.YYYY, SD.y.YYYY, S.y.YYYY",
+    "sq_candidates": [
+      "night",
+      "daily_mean",
+      "night_then_center"
+    ],
+    "sq_absolute_tolerance_nT_frozen": 0.1,
+    "representative_months": [
+      [
+        2008,
+        1
+      ],
+      [
+        2008,
+        3
+      ],
+      [
+        2012,
+        6
+      ],
+      [
+        2016,
+        10
+      ],
+      [
+        2017,
+        6
+      ],
+      [
+        2017,
+        10
+      ]
+    ],
+    "missing_handling": "No interpolation; all 5x24 XYZ selected WDC values must be finite"
+  },
+  "frozen_sha256": {
+    "phase2a/G0/G0_report.md": "45c56d6a918e368a59e6dc3b961c9c5a680c071f57ed23eafa2b93420242766d",
+    "phase2a/G0/G0_validation.json": "eeac2cd3c465f368e451eec21870c9de6a777379e28f89d4815dbdfbfd913a6a",
+    "phase2a/G0/input_manifest.csv": "69ade47970855fbaa37102479d632142997dabe932415c633e0bc05b1ff7f947",
+    "phase2a/G0/mendeley_dat_inventory.csv": "adb85945fbd2cbde5c7e69a48009ef8699ed45f8f403c45ce449a2f82e9c5ff1",
+    "phase2a/G0/wdc_hourly_inventory.csv": "82f591f75aee48038964a12cddab5e9d5c9cbaa8bda8fe454de9e281f0c476ae",
+    "phase2a/G0/gfz_day_inventory.csv": "3414c979382e9e610e2da2a23eed4c6b2f548ee79e122831843601683fd9acc0",
+    "phase2a/G0/Protokol Final Fase 2A Replikasi Morozova & Rebbah (2023) untuk Auto-SqPCA.docx": "6ea948b94aaa58e5f8d06d0c0a732fd48420fe45f22211bc503ae466681b49dd",
+    "phase2a/D1/D1_feb29_report.md": "3aa85d2a47ea6f2ee56eeb5b262b231dc3f35c56959437a92e15650578de3104",
+    "phase2a/D1/D1_validation.json": "f42e1b7e182a709ad98acb852f34601f67794345b93af80bf03c6ae901aaa296",
+    "phase2a/D1/D1_evidence.csv": "c9451a1fd800bee1df63730fd204288f540105f1db80ce58297775daa661d121",
+    "phase2a/D1/d1_feb29.py": "06feb063cc9802abb7a230adf8ee819825af4cda4b175d6e044c17964336dcb4",
+    "phase2a/D2/D2_report.md": "faf01053b0dbe875b0229cfc054bf016c550e601ce3b0fa5e9905c2552ef55f7",
+    "phase2a/D2/D2_validation.json": "6467b486787b5ff12c0c503a57e41d34939c13635063815fec65b0053501dac4",
+    "phase2a/D2/D2_benchmark_offset.csv": "87a86c9dd0d29d75b4b91c22c1c73c9d002662d34ddef990dae596f2ead8cd51",
+    "phase2a/D2/d2_compute.py": "f67b163090bd26c22c93568281913d01459f7b97823a5d48a03a1bac68601a55",
+    "phase2a/D2/d2_report.py": "c0dbfdf7d184436e3d2d43ae3ed5f40a753e8a9659873e4a5f3afea88a281323"
+  },
+  "integrity_before": {
+    "raw_files": 3659,
+    "minute_zip_files": 11,
+    "frozen_documents": 16,
+    "all_sha256_match": true
+  },
+  "integrity_after": {
+    "raw_files": 3659,
+    "minute_zip_files": 11,
+    "frozen_documents": 16,
+    "all_sha256_match": true
+  },
+  "duplicate_pairs": [
+    {
+      "role": "meanField",
+      "scope": "per_year",
+      "y_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Y/m02 -  February/data files/COI_Y_meanField_m02.dat",
+      "z_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Z/m02 -  February/data files/COI_Z_meanField_m02.dat",
+      "sha256_y": "0711725279a00903e357cc37740470cf1cc6f43de1daade0730a23cd065bb873",
+      "sha256_z": "0711725279a00903e357cc37740470cf1cc6f43de1daade0730a23cd065bb873",
+      "rows": 28,
+      "columns": 12,
+      "headers_identical": true,
+      "values_identical": true,
+      "byte_identical": true
+    },
+    {
+      "role": "meanField",
+      "scope": "all_years",
+      "y_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Y/m02 -  February/data files/COI_Y_meanField_m02_y_all.dat",
+      "z_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Z/m02 -  February/data files/COI_Z_meanField_m02_y_all.dat",
+      "sha256_y": "ff2a177dc221cc9155b79c22df1c984b390f166dc484a01c354eae6941bdd220",
+      "sha256_z": "ff2a177dc221cc9155b79c22df1c984b390f166dc484a01c354eae6941bdd220",
+      "rows": 308,
+      "columns": 2,
+      "headers_identical": true,
+      "values_identical": true,
+      "byte_identical": true
+    },
+    {
+      "role": "mode1",
+      "scope": "per_year",
+      "y_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Y/m02 -  February/data files/mode 1/COI_Y_mode1_m02.dat",
+      "z_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Z/m02 -  February/data files/mode 1/COI_Z_mode1_m02.dat",
+      "sha256_y": "4597a176d1b6cbdd4908e44c866a5dde101de8a35b2270a31cce5c56bb2bb059",
+      "sha256_z": "4597a176d1b6cbdd4908e44c866a5dde101de8a35b2270a31cce5c56bb2bb059",
+      "rows": 672,
+      "columns": 12,
+      "headers_identical": true,
+      "values_identical": true,
+      "byte_identical": true
+    },
+    {
+      "role": "mode1",
+      "scope": "all_years",
+      "y_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Y/m02 -  February/data files/mode 1/COI_Y_mode1_m02_y_all.dat",
+      "z_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Z/m02 -  February/data files/mode 1/COI_Z_mode1_m02_y_all.dat",
+      "sha256_y": "de3975981e87c45aa871cc5600a078c9864d0933db270453fd747ee456754fc5",
+      "sha256_z": "de3975981e87c45aa871cc5600a078c9864d0933db270453fd747ee456754fc5",
+      "rows": 7392,
+      "columns": 2,
+      "headers_identical": true,
+      "values_identical": true,
+      "byte_identical": true
+    },
+    {
+      "role": "mode2",
+      "scope": "per_year",
+      "y_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Y/m02 -  February/data files/mode 2/COI_Y_mode2_m02.dat",
+      "z_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Z/m02 -  February/data files/mode 2/COI_Z_mode2_m02.dat",
+      "sha256_y": "92114eee1c91650ee352ee7582e2b31cd62a3d7a85a615a2279f3d944983d6ca",
+      "sha256_z": "92114eee1c91650ee352ee7582e2b31cd62a3d7a85a615a2279f3d944983d6ca",
+      "rows": 672,
+      "columns": 12,
+      "headers_identical": true,
+      "values_identical": true,
+      "byte_identical": true
+    },
+    {
+      "role": "mode2",
+      "scope": "all_years",
+      "y_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Y/m02 -  February/data files/mode 2/COI_Y_mode2_m02_y_all.dat",
+      "z_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Z/m02 -  February/data files/mode 2/COI_Z_mode2_m02_y_all.dat",
+      "sha256_y": "3da2fb56e6a89a894ab0f61818859077d09f22cdc9fdb85bfa2c07bd4f6b933d",
+      "sha256_z": "3da2fb56e6a89a894ab0f61818859077d09f22cdc9fdb85bfa2c07bd4f6b933d",
+      "rows": 7392,
+      "columns": 2,
+      "headers_identical": true,
+      "values_identical": true,
+      "byte_identical": true
+    }
+  ],
+  "mode_rows": 288,
+  "mode_exact_counts_by_month_observed_predicted": {
+    "1:Y:Y": 22,
+    "1:Y:Z": 0,
+    "1:Z:Y": 0,
+    "1:Z:Z": 24,
+    "2:Y:Y": 0,
+    "2:Y:Z": 21,
+    "2:Z:Y": 0,
+    "2:Z:Z": 21,
+    "3:Y:Y": 24,
+    "3:Y:Z": 0,
+    "3:Z:Y": 0,
+    "3:Z:Z": 23
+  },
+  "sq_profile": {
+    "Sq": {
+      "columns": 432,
+      "max_abs_mean24_nT": 1.9420761295426323e-12,
+      "night_abs_gt_0p1_count": 426,
+      "median_abs_night_mean_nT": 3.02666666666715
+    },
+    "SD": {
+      "columns": 432,
+      "max_abs_mean24_nT": 2.0187925405442306e-12,
+      "night_abs_gt_0p1_count": 415,
+      "median_abs_night_mean_nT": 1.4720277777770021
+    },
+    "S": {
+      "columns": 432,
+      "max_abs_mean24_nT": 1.0532315760277318e-12,
+      "night_abs_gt_0p1_count": 427,
+      "median_abs_night_mean_nT": 3.530349143369172
+    }
+  },
+  "S_minus_Sq_minus_SD_max_abs_nT": 1.021405182655144e-13,
+  "sq_diagnostic_rows": 1350,
+  "benchmark_manifest_rows": 684,
+  "status_counts": {
+    "VERIFIED": 624,
+    "SUSPECT": 54,
+    "UNUSABLE_FOR_NUMERIC_BENCHMARK": 6
+  },
+  "input_sha256": {
+    "mendeley_archive": "9374a947f7fb3cae7093650f2781b7c440d7ee19dbd9d4d09c0dadd4e1e34576",
+    "wdc_2008": "3a1c487468dcdfe721e38852ec1ef879925139c8563e7291df9383b82a089f74",
+    "wdc_2012": "fccb7e8665af0826fc4563d6dd8bc753615ee941d22e8e1469d89120e3e58856",
+    "wdc_2016": "043da64621a43fb1d605b0cdd1c0e44247eb48172379763bc45ff69ab61b9358",
+    "wdc_2017": "afd54073350b8ed15f0655f8b319a3ab4dbe2a070f2ee1d813885023bf52a500",
+    "gfz_2008": "80b25d916b38a4bcadd622cc06f353f0843c7c70f48750b111eee54ea630d8e9",
+    "gfz_2012": "3ff6cecf991c06d6ad77c044f450c3de962f17686c05ca5e08f18d0435363cc3",
+    "gfz_2016": "8d0671405e87f6c8a3f4159ec3e6d42ad9386b81973aac557274ac74cb5a4551",
+    "gfz_2017": "55d5d967b2f6e79a4cdfa313eb58f23d0bcb32025ebf119535af09901dd359ca"
+  },
+  "environment": {
+    "python": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]",
+    "numpy": "2.5.3",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "decisions": {
+    "S7": {
+      "status": "PARTIALLY RESOLVED",
+      "basis": "February Y meanField/mode duplication proven; Y modes follow Z for 10/11 annual years and combined mode1, with Z 2014 and combined mode2 caveats; 24h centering systematic in Sq/SD/S; exact source processing/provenance unresolved"
+    },
+    "G1_recommendation": {
+      "status": "HOLD",
+      "basis": "Frozen Level-1 absolute Sq tolerance and source discrepancy unresolved; six Y numeric benchmarks unusable; D1-IQD provisional; proposed exceptions require protocol review/versioning"
+    },
+    "D1-IQD": {
+      "status": "PROVISIONAL",
+      "basis": "Official Q5=29 Feb 2016 has best shape in X/Y/Z, but absolute benchmark and source version remain unresolved"
+    },
+    "D2-DATA-F": {
+      "status": "UNRESOLVED; deferral proposed for XYZ-only PCA",
+      "basis": "F not used in source PCA input X/Y/Z; original D2 status not retroactively altered"
+    },
+    "Y_February_PC_EOF": {
+      "status": "SUSPECT",
+      "basis": "Distinct from Z; own modes invalid as validation targets, independent scientific validity not established"
+    }
+  },
+  "errors": [],
+  "summary_metrics": {
+    "february_Y_mode_comparisons_against_Z": 24,
+    "february_Y_mode_exact_direct_Z": 21,
+    "february_Y_mode_best_relative_residual_against_Y": 0.6392174696043592,
+    "february_Z_2014_annual_mode_signed_scale_rmse_nT": {
+      "1": 0.7439035992444043,
+      "2": 0.34092375853060336
+    },
+    "Sq_24h_zero_columns": {
+      "Sq": 432,
+      "SD": 432,
+      "S": 432
+    },
+    "nonfebruary_Sq_control_series": 18,
+    "night_rmse_absolute_range_nT": [
+      0.2720363537787507,
+      5.627517866105137
+    ],
+    "daily_mean_rmse_absolute_range_nT": [
+      0.08563082907995015,
+      0.16024070435891818
+    ],
+    "daily_mean_max_abs_range_nT": [
+      0.17249999999985643,
+      0.3424999999988356
+    ],
+    "daily_mean_controls_with_max_abs_le_0p1nT": 0,
+    "daily_mean_equals_night_then_center_max_metric_difference": 3.885780586188048e-16,
+    "correlation_range": [
+      0.9985923336758574,
+      0.9999763724261457
+    ]
+  },
+  "scripts_sha256": {
+    "s7_investigate.py": "65118e844a12071f91328b9e79017c656b6fcbc47eb3cb35a3d73ef44d39eff5",
+    "s7_finalize.py": "5258573918be6d9637b752eac31a635d2abfa111008510a746d14332338a682e"
+  },
+  "source_article": "https://arxiv.org/pdf/2103.13899",
+  "limitations": [
+    "No author-era WDC snapshot or author calculation/export script, so cause of 24h centering cannot be uniquely identified.",
+    "Daily-mean baseline and night-baseline followed by 24h centering are algebraically equivalent, not independent confirmations.",
+    "Signed scale in mode comparison is diagnostic; D4 normalization and sign convention remain undecided.",
+    "Z February 2014 annual modes do not exactly equal the associated Z PC x EOF; responsible source file not isolated.",
+    "No WDC PCA/SVD, D3/D4, physical Sq validation, classifier, DTW or DIFI performed."
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema": "Auto-SqPCA-S7B-validation-v1",
+  "completed_utc": "2026-11-13T12:47:12.547189+00:00",
+  "completed_local_Asia_Makassar": "2026-11-13T20:47:12.547189+08:00",
+  "approved_decision_source_sha256": "c722cbcc25b7328c02425d40bd98d54c13fcc1e8aa20fdd9af965858cb67e5f1",
+  "amendment_status": "APPROVED",
+  "policy_rows": 684,
+  "policy_allowed_use_counts": {
+    "ORIGINAL_ABSOLUTE": 624,
+    "ABSOLUTE_REPORTED_ONLY": 36,
+    "SUSPECT_DIAGNOSTIC": 18,
+    "EXCLUDED": 6
+  },
+  "policy_original_status_counts": {
+    "VERIFIED": 624,
+    "SUSPECT": 54,
+    "UNUSABLE_FOR_NUMERIC_BENCHMARK": 6
+  },
+  "denominator_DAT_partition": {
+    "target_total": 684,
+    "eligible_prospective": 279,
+    "development_seen": 381,
+    "suspect_diagnostic": 18,
+    "excluded": 6,
+    "development_seen_raw_labels": 403,
+    "pass_absolute": "NOT_EVALUATED",
+    "fail_absolute": "NOT_EVALUATED",
+    "pass_structural": "NOT_EVALUATED",
+    "fail_structural": "NOT_EVALUATED",
+    "decision_agreement": "NOT_EVALUATED"
+  },
+  "comparison_rows": 11121,
+  "combined_check_rows": 33,
+  "revision_month_rows": 121,
+  "G1_status": "HOLD",
+  "final_frozen_integrity": {
+    "stage": "AFTER_S7B_REPORTS",
+    "G0_manifest_files": 3702,
+    "frozen_output_files": 54,
+    "mismatches": 0,
+    "pass": true
+  },
+  "python": {
+    "python": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]",
+    "numpy": "2.5.3",
+    "platform": "Windows-11-10.0.26200-SP0"
+  }
+}

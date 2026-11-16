@@ -1,0 +1,34 @@
+{
+  "schema": "Auto-SqPCA-G2R-v1",
+  "completed_utc": "2026-11-13T14:20:32.541138+00:00",
+  "protocol_sha256": "f38f407fbcad3d14309378b6f2e133b0be38b077fed930970fb064614d6571fd",
+  "frozen_config_sha256": "25676d831262eef44857d6bd9b14f4aba72909ec4968760d53406f906976a320",
+  "G0_manifest": {
+    "rows": 3702,
+    "sha256": "69ade47970855fbaa37102479d632142997dabe932415c633e0bc05b1ff7f947",
+    "mismatches": 0
+  },
+  "frozen_files_unchanged": 119,
+  "pca_unit_tests_passed": 6,
+  "k11_unit_tests_passed": 2,
+  "development_denominator": {
+    "target_total": 9,
+    "ELIGIBLE": 6,
+    "NOT_ELIGIBLE": 1,
+    "UNRESOLVED_MISSING": 2
+  },
+  "holdout_denominator": {
+    "target_total": 9,
+    "not_eligible": 0,
+    "suspect": 0,
+    "eligible": 9,
+    "pass": 3,
+    "fail": 6
+  },
+  "variant": "V1",
+  "selection_label": "DEVIATION_STRUCTURAL",
+  "holdout_label": "S-DEVIATE",
+  "G1_registration2": "HOLD",
+  "G1_registration3": "HOLD",
+  "K11": "INFRASTRUCTURE_ONLY_SYNTHETIC_TESTS"
+}

@@ -1,0 +1,12 @@
+{
+  "cases": 312,
+  "accepted": 107,
+  "abstained": 205,
+  "abstain_fraction": 0.657051282051282,
+  "reason_counts_overlapping": {
+    "ERROR": 31,
+    "A2": 174
+  },
+  "case_csv_sha256": "fdcf4ec8b3a022f8dbc3b220c81420f91d7e9909075bcbb08b0d9d852cb4cca2",
+  "note": "Alpha=0 uses original monthly residual R only; this residual still contains real Sq variability by SSB construction."
+}

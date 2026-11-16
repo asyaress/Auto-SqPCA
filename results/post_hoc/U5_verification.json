@@ -1,0 +1,9 @@
+{
+  "audit_label": "EXPLORATORY_POST_HOC",
+  "pilot_cases": 20,
+  "pilot_matched": true,
+  "accepted_cases": 2083,
+  "source_cases_sha256": "30cb6b1c401e1cfc30131a8abaac626d1b20e3e8019fa36beca5cfc5fdd4642d",
+  "source_manifest_sha256": "e3b64a35f725dd4a43a02cf0884621cb7e35b46966e418bd4d8ddafda10737d7",
+  "note": "Pointwise bands conditional on filled matrix and IQD reference; not nominal confidence intervals."
+}

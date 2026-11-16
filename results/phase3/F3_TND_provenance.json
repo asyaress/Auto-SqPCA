@@ -1,0 +1,36 @@
+{
+  "source": "audit_sq_wdc/cache/TND_2017_minute_iaga_XYZF.zip",
+  "source_sha256": "09f32a2d3443e16b542658de453c574abc8dda72c194c37ea8a1c35956cb0d90",
+  "mask_cache_sha256": "172805788f8ef83a1441a735d877055738a9ea336bd59776a1b268c042312bec",
+  "definition": "hour observed iff all 60 minute timestamps and X/Y/Z values valid; integer LT shift from TND longitude; align target by flattened local day-hour index; cycle from start",
+  "longitude_east_deg": 124.927,
+  "delta_LT_hours": 8,
+  "mask_valid_hours": {
+    "m01": 250,
+    "m02": 206,
+    "m03": 283,
+    "m04": 327,
+    "m05": 294,
+    "m06": 253,
+    "m07": 314,
+    "m08": 413,
+    "m09": 393,
+    "m10": 382,
+    "m11": 385,
+    "m12": 399
+  },
+  "mask_total_hours": {
+    "m01": 744,
+    "m02": 672,
+    "m03": 744,
+    "m04": 720,
+    "m05": 744,
+    "m06": 720,
+    "m07": 744,
+    "m08": 744,
+    "m09": 720,
+    "m10": 744,
+    "m11": 720,
+    "m12": 744
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "frozen_utc": "2026-11-13T14:16:58.004537+00:00",
+  "variant": "V1",
+  "selection_sha256": "01739952e9a64e427ab112f7579d47fcea5ffe0ca5238a512854d68b83fb3592",
+  "matrix": "24 hours x N days; hourly COI IAGA-2002 XYZF absolute nT; HH:00 means HH:00-HH:59 centered HH:30 UTC; year-major combined",
+  "interpolation": "linear between observed values within each month; no extrapolation; count per day; flag >12; unresolved boundary prevents SVD",
+  "feb29": "excluded from PCA",
+  "mode_orientation": "outer(PC_hour,EOF_day), compared with day-major hour-fastest Mendeley",
+  "sign": "flip both PC and EOF for negative correlation with Mendeley PC",
+  "versions": {
+    "python": "3.12.6",
+    "numpy": "2.5.4",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "code_sha256": {
+    "pca_core.py": "e4274eb714beb255ee670208f7bc42fd90068e45273fcccccf9e1b4892d2be01",
+    "g2r.py": "031e19e34fc8610f7c4eda87830085dfc54270294049c82b84315ea89ee4f5eb",
+    "k11_loader.py": "666cb72e1dea7bf837b6e50ec8ddc6d9a25e57f233c6da946c255c582941d8d6",
+    "tests/test_pca_core.py": "9c4eba6c10e13d4e09d97718cc77b587d3e00e22853ceb9429208c2e92a06964",
+    "tests/test_k11_loader.py": "61ec9ed83ad7eb1721682539c90a8b2a85945b991c8219772f36df24c94c2718"
+  }
+}

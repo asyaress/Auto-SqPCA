@@ -1,0 +1,46 @@
+{
+  "schema": "Auto-SqPCA-F3B-v1.1",
+  "completed_utc": "2026-11-15T01:15:18.895521+00:00",
+  "protocol_amendment_sha256": {
+    "protocol_v1": "617c96d0cbda26fa3f6333ea1638030a35db1836fd99ba35f2a3bb18ea091327",
+    "amendment_v1p1": "8dae6289ef71f1829d37ba6d5726253fd206c679221da7106b1a820421900a8f",
+    "E1_frozen": "a2a2cd09ccf4c16c87a9033d792de80762d253c2db16455f81cc4329ad26981d",
+    "E1_cases": "1acbda1a8825b6b878704395973fea0c37b4fd1324ee470df106f2344d1aceb3",
+    "F3A_zip": "ece7681a70c886966f3ad6818288f5277f3cfe7f8203bbb8e29af2cf9be5c1d8"
+  },
+  "phase1_phase2_frozen_outputs_verified": 161,
+  "E2_frozen_sha256": "7a4597814baad09c6fe1ca781f991181c7286ba1c6fca2f376c7e6cf8592a34e",
+  "E2_development_cases": 3132,
+  "E2_holdout_cases": 5616,
+  "E2_holdout_sha256": "30cb6b1c401e1cfc30131a8abaac626d1b20e3e8019fa36beca5cfc5fdd4642d",
+  "theta": {
+    "theta_s": 0.5,
+    "theta_w": "INF",
+    "theta_d": 0.9
+  },
+  "C2_X_success": false,
+  "C3_success": false,
+  "unmasked_holdout_coverage": 0.7418091168091168,
+  "masked_abstain_fraction": 1.0,
+  "E3_station_months": 356,
+  "E3_component_cases": 1068,
+  "E3_status_counts": {
+    "NO_MATRIX_OR_DROPPED_DAY": 69,
+    "OK": 999
+  },
+  "claims": {
+    "C1": "BERHASIL",
+    "C2": "GAGAL",
+    "C3": "GAGAL",
+    "C4": "DESCRIPTIVE",
+    "C5": "PARTIAL"
+  },
+  "allowed_title": "Auto-SqPCA: A Quality-Aware Workflow for Extracting Solar Quiet Geomagnetic Variations at Low and Equatorial Latitudes",
+  "DIFI8_UTC_2013_boundary_hours": {
+    "GUA 2014-01": 10,
+    "KDU 2014-01": 9
+  },
+  "E3_dipole_latitude_correction_max_abs_deg": 0.18543295732133203,
+  "E3_original_cases_sha256_before_latitude_fix": "c86d30167ea9fae9fd52ffdddf40362164ac3d5e7ac410000eb35bb25f6b2b51",
+  "C5_limit": "F3A cached hash verification passed; one-command full Phase 3 rerun from raw data is not demonstrated"
+}

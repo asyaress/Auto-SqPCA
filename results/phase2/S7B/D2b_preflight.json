@@ -1,0 +1,2250 @@
+{
+  "started_utc": "2026-11-13T12:42:13.999153+00:00",
+  "approved_source_sha256": "c722cbcc25b7328c02425d40bd98d54c13fcc1e8aa20fdd9af965858cb67e5f1",
+  "G0_manifest_sha256": "69ade47970855fbaa37102479d632142997dabe932415c633e0bc05b1ff7f947",
+  "frozen_outputs_sha256": {
+    "phase2a/D1/D1_checksums.sha256": "3e1f6e3b8952f2ef3ad861478809a8445232ec351f09b4dfdac29f82a5d5dc4c",
+    "phase2a/D1/D1_evidence.csv": "c9451a1fd800bee1df63730fd204288f540105f1db80ce58297775daa661d121",
+    "phase2a/D1/D1_execution.log": "6d8ee944983e19e0aab72068e80895a2bd9b2cccc32212fd82aeb76492c55243",
+    "phase2a/D1/D1_feb29_report.md": "3aa85d2a47ea6f2ee56eeb5b262b231dc3f35c56959437a92e15650578de3104",
+    "phase2a/D1/D1_rerun_validation.json": "1291d2b21234fec8c7b0f6136bf77f78187f7ec9be3511fa35061573f29ccd9d",
+    "phase2a/D1/D1_review.sha256": "2d3c1b5f2bce202a76f50202211cca16850f62c472cf86b0034e8fdf3095ee36",
+    "phase2a/D1/D1_review.zip": "2595fe15aa39d679ebd68e00a3008530ba8f38bdccf89fda7f67bc5aba7b937b",
+    "phase2a/D1/D1_validation.json": "f42e1b7e182a709ad98acb852f34601f67794345b93af80bf03c6ae901aaa296",
+    "phase2a/D1/d1_feb29.py": "06feb063cc9802abb7a230adf8ee819825af4cda4b175d6e044c17964336dcb4",
+    "phase2a/D2/D2_benchmark_offset.csv": "87a86c9dd0d29d75b4b91c22c1c73c9d002662d34ddef990dae596f2ead8cd51",
+    "phase2a/D2/D2_checksums.sha256": "0159e05b54248162e184533bf876261c84a0818e4d6d8bfaa2bc7f523789a0f7",
+    "phase2a/D2/D2_execution.log": "70032d5a6a8688c05f6204a27b7ead5a962593203522496e20d42fa5483a67f7",
+    "phase2a/D2/D2_hourly_vs_minute.csv": "b84f7dabb9cc624cc15c1e1899a63dcd2c3d368e25455ba4653a05fcab90359e",
+    "phase2a/D2/D2_meanfield_anomaly.csv": "b38b43ecff6164b1cf8033cd87a5830b8d729a127c1e448fa33ed88d2e24059a",
+    "phase2a/D2/D2_report.md": "faf01053b0dbe875b0229cfc054bf016c550e601ce3b0fa5e9905c2552ef55f7",
+    "phase2a/D2/D2_rerun_validation.json": "3c4e15e5547393ce0ef4b0c2494b6b8a29aa4a8280ef3b20df5d8dc13ce3061b",
+    "phase2a/D2/D2_review.sha256": "504f8abc6b9bc74a51bd23087d7c939a350dbf8b99daff445181900533e9a7e7",
+    "phase2a/D2/D2_review.zip": "8f4920b51e3f829cc83ee09296332f0c18ee968a37b28ee89cdb175b0e5143fe",
+    "phase2a/D2/D2_timestamp_diagnostics.csv": "90860b7299c2ea8f913a994888c84b09fbbfc08bb6847f3e67a52a67d32ad8d3",
+    "phase2a/D2/D2_validation.json": "6467b486787b5ff12c0c503a57e41d34939c13635063815fec65b0053501dac4",
+    "phase2a/D2/d2_compute.py": "f67b163090bd26c22c93568281913d01459f7b97823a5d48a03a1bac68601a55",
+    "phase2a/D2/d2_report.py": "c0dbfdf7d184436e3d2d43ae3ed5f40a753e8a9659873e4a5f3afea88a281323",
+    "phase2a/G0/G0_report.md": "45c56d6a918e368a59e6dc3b961c9c5a680c071f57ed23eafa2b93420242766d",
+    "phase2a/G0/G0_validation.json": "eeac2cd3c465f368e451eec21870c9de6a777379e28f89d4815dbdfbfd913a6a",
+    "phase2a/G0/Protokol Final Fase 2A Replikasi Morozova & Rebbah (2023) untuk Auto-SqPCA.docx": "6ea948b94aaa58e5f8d06d0c0a732fd48420fe45f22211bc503ae466681b49dd",
+    "phase2a/G0/acquisition_aux.log": "7c793f32ad91f64dcffe2da211a516c9911c9b28193dadf97b5750ce84852455",
+    "phase2a/G0/acquisition_terminal.log": "8942fce0a3c237299aa810c80f62a54bef3e0f0d04b31823ece681a0f2971887",
+    "phase2a/G0/download_events.jsonl": "3c17f0504b7c874e97aa5a0d501dc3dd937ef3481db9c186ec54297b86d26258",
+    "phase2a/G0/g0_acquire.py": "12c6dd3e154a2cbd24e75f8c5155aa54afab8c5b6ba0be249a0ca43e815fbac1",
+    "phase2a/G0/g0_inventory.py": "cd8f2fd22c77db91213bf91c13b492bd8ed99440e5cece519eb9e94b2e26ca29",
+    "phase2a/G0/g0_report.py": "7b05d875c6ee79b503ad2835a76ed48a8fb99bae477fa65e6c15543b6ed460a3",
+    "phase2a/G0/gfz_day_inventory.csv": "3414c979382e9e610e2da2a23eed4c6b2f548ee79e122831843601683fd9acc0",
+    "phase2a/G0/gfz_retry.log": "9ff0cc352dc022352508eab9d5a3807e007d6b8a17061f48a349f667eaa5cea4",
+    "phase2a/G0/input_manifest.csv": "69ade47970855fbaa37102479d632142997dabe932415c633e0bc05b1ff7f947",
+    "phase2a/G0/inventory_execution.log": "bcb30ac15b3c0cd89936400f3fc7953b1b6c4149dd7e47517573383fd4dd11e2",
+    "phase2a/G0/mendeley_bundle.js": "d03ed6d08268c0c04db358f5fbbfdced5689ed27cbbd59a29f3ee79519483edf",
+    "phase2a/G0/mendeley_dat_inventory.csv": "adb85945fbd2cbde5c7e69a48009ef8699ed45f8f403c45ce449a2f82e9c5ff1",
+    "phase2a/G0/mendeley_folders.json": "2fd01b7648b50109a8227aee923466d7d6734a41f45d332cdde5a0e730974894",
+    "phase2a/G0/mendeley_landing.html": "61b1d2dfa6c4a831555f430508de6aa81c9233796d314057c93118dff49be966",
+    "phase2a/G0/mendeley_snapshot.json": "619cd75201298d5ea9331320c5262173cb8048e4b6125e8506071b0a6205166b",
+    "phase2a/G0/protocol_registration.json": "b5dbfb670faaedc5cb9f2e2fbd370638eb7c69e1c4a59405b95c3dcf73d342cf",
+    "phase2a/G0/python_environment.json": "0c070985335b3788c84cf07b1639425f86fc67a184d1b60e8c92ddc71581c9ea",
+    "phase2a/G0/wdc_hourly_inventory.csv": "82f591f75aee48038964a12cddab5e9d5c9cbaa8bda8fe454de9e281f0c476ae",
+    "phase2a/S7/S7_benchmark_manifest.csv": "e36e1f58688b3e1314aad52171d9eb1e19513e16d0e3f0e7c4f26c607c2675f9",
+    "phase2a/S7/S7_checksums.sha256": "d2af08075abd4d0e24371ff6b7e8f03b0b83959b086b00c57aaadc7548d84cb2",
+    "phase2a/S7/S7_decision.json": "7e9a2b7f427c4fe9215a5e1c4031da86c76844193c5278311abc04961adec085",
+    "phase2a/S7/S7_execution.log": "bc87a57771926c00414318f67476272db2e8d2f951e6198fb76e932b120af475",
+    "phase2a/S7/S7_mode_consistency.csv": "2193da03ef079c0b3cff40d05f5a1f99612435995d9a96fe815046c94df8ebe1",
+    "phase2a/S7/S7_protocol_amendment_proposal.md": "f384830cddf188a41d127418ae39a652baa41868b52ff072d11ed066df9018f1",
+    "phase2a/S7/S7_report.md": "dc41c5747e73749a93e80be10226d78c510dc0da15c6348a1c63a8c443613cc0",
+    "phase2a/S7/S7_review.zip": "6b11ed27fea93f86f7977f01adb8a7121af4f43df80b26e9441100676e397c58",
+    "phase2a/S7/S7_sq_baseline_diagnostics.csv": "5eb1b8fc951e3e081ca1b219b7842dcd19fea3e124a1b59a0e79b282acac08df",
+    "phase2a/S7/s7_finalize.py": "5258573918be6d9637b752eac31a635d2abfa111008510a746d14332338a682e",
+    "phase2a/S7/s7_investigate.py": "65118e844a12071f91328b9e79017c656b6fcbc47eb3cb35a3d73ef44d39eff5"
+  },
+  "integrity_before": {
+    "stage": "BEFORE_D2B",
+    "G0_manifest_files": 3702,
+    "frozen_output_files": 54,
+    "mismatches": 0,
+    "pass": true
+  },
+  "policy": {
+    "rows": 684,
+    "allowed_use": {
+      "ORIGINAL_ABSOLUTE": 624,
+      "ABSOLUTE_REPORTED_ONLY": 36,
+      "SUSPECT_DIAGNOSTIC": 18,
+      "EXCLUDED": 6
+    },
+    "development_seen_files": 403
+  },
+  "meanfield": {
+    "files": {
+      "01:X": {
+        "annual_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/X/m01 - January/data files/COI_X_meanField_m01.dat",
+        "annual_sha256": "093c8431ab77b024331fc29234fd0191250bc5dcee0de848b8ef9f6bce9f825c",
+        "annual_shape": [
+          31,
+          12
+        ],
+        "calendar_days": 31,
+        "annual_alignment_pass": true,
+        "printed_resolution": {
+          "min_printed_decimals": 0,
+          "max_printed_decimals": 2,
+          "decimal_count_distribution": {
+            "0": 14,
+            "1": 10,
+            "2": 317
+          },
+          "file_printed_resolution_nT": 0.01
+        },
+        "combined_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/X/m01 - January/data files/COI_X_meanField_m01_y_all.dat",
+        "combined_sha256": "1c8041b70b09e834a34962b61c8e4af4c2de045c8647573a627a429e6d94f4d1",
+        "combined_shape": [
+          341,
+          2
+        ],
+        "combined_exact_year_major_consistency": true
+      },
+      "01:Y": {
+        "annual_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Y/m01 - January/data files/COI_Y_meanField_m01.dat",
+        "annual_sha256": "78344eac3cf0f02802fdd3b043324180604fe83eca3fd62252227375e897540e",
+        "annual_shape": [
+          31,
+          12
+        ],
+        "calendar_days": 31,
+        "annual_alignment_pass": true,
+        "printed_resolution": {
+          "min_printed_decimals": 0,
+          "max_printed_decimals": 2,
+          "decimal_count_distribution": {
+            "0": 10,
+            "1": 9,
+            "2": 322
+          },
+          "file_printed_resolution_nT": 0.01
+        },
+        "combined_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Y/m01 - January/data files/COI_Y_meanField_m01_y_all.dat",
+        "combined_sha256": "b488a3e95e4a792d71b4fb0afe2bd64056f8f655d93e9ca5d447688d80bb6549",
+        "combined_shape": [
+          341,
+          2
+        ],
+        "combined_exact_year_major_consistency": true
+      },
+      "01:Z": {
+        "annual_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Z/m01 - January/data files/COI_Z_meanField_m01.dat",
+        "annual_sha256": "76865f0ac4c30c946e0ad0fd86ff953cc84f4a0528be1ebfd3183591474a6c14",
+        "annual_shape": [
+          31,
+          12
+        ],
+        "calendar_days": 31,
+        "annual_alignment_pass": true,
+        "printed_resolution": {
+          "min_printed_decimals": 0,
+          "max_printed_decimals": 2,
+          "decimal_count_distribution": {
+            "0": 13,
+            "1": 8,
+            "2": 320
+          },
+          "file_printed_resolution_nT": 0.01
+        },
+        "combined_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Z/m01 - January/data files/COI_Z_meanField_m01_y_all.dat",
+        "combined_sha256": "2a37b5839a7fd25e47a3f9a4bd98924d8b725b23dfc9addac9415ea4d2539e25",
+        "combined_shape": [
+          341,
+          2
+        ],
+        "combined_exact_year_major_consistency": true
+      },
+      "03:X": {
+        "annual_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/X/m03 - March/data files/COI_X_meanField_m03.dat",
+        "annual_sha256": "3319de2ac1784122bc157e307aa0fd5e0d464b08f16d7ed603ac3aba28de2f4a",
+        "annual_shape": [
+          31,
+          12
+        ],
+        "calendar_days": 31,
+        "annual_alignment_pass": true,
+        "printed_resolution": {
+          "min_printed_decimals": 0,
+          "max_printed_decimals": 2,
+          "decimal_count_distribution": {
+            "0": 17,
+            "1": 15,
+            "2": 309
+          },
+          "file_printed_resolution_nT": 0.01
+        },
+        "combined_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/X/m03 - March/data files/COI_X_meanField_m03_y_all.dat",
+        "combined_sha256": "d99df29fbcc44f75ca4c5e0ccf03b4c2c563b965f2beb36cf68a5a9e7cb0d616",
+        "combined_shape": [
+          341,
+          2
+        ],
+        "combined_exact_year_major_consistency": true
+      },
+      "03:Y": {
+        "annual_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Y/m03 - March/data files/COI_Y_meanField_m03.dat",
+        "annual_sha256": "c8d95bccd8fae31748ec8efcbc88eb942a8239e542facd9ed3b3c43443712f41",
+        "annual_shape": [
+          31,
+          12
+        ],
+        "calendar_days": 31,
+        "annual_alignment_pass": true,
+        "printed_resolution": {
+          "min_printed_decimals": 0,
+          "max_printed_decimals": 2,
+          "decimal_count_distribution": {
+            "0": 19,
+            "1": 15,
+            "2": 307
+          },
+          "file_printed_resolution_nT": 0.01
+        },
+        "combined_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Y/m03 - March/data files/COI_Y_meanField_m03_y_all.dat",
+        "combined_sha256": "858719a15f8e280fddfc119d0d62226116de544515e0aa61d7f7a0ea6691a12b",
+        "combined_shape": [
+          341,
+          2
+        ],
+        "combined_exact_year_major_consistency": true
+      },
+      "03:Z": {
+        "annual_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Z/m03 - March/data files/COI_Z_meanField_m03.dat",
+        "annual_sha256": "559726f2e1f9e90a8c62256e48077b14dfa7bcb103659f131405fec32a5c0efd",
+        "annual_shape": [
+          31,
+          12
+        ],
+        "calendar_days": 31,
+        "annual_alignment_pass": true,
+        "printed_resolution": {
+          "min_printed_decimals": 0,
+          "max_printed_decimals": 2,
+          "decimal_count_distribution": {
+            "0": 11,
+            "1": 22,
+            "2": 308
+          },
+          "file_printed_resolution_nT": 0.01
+        },
+        "combined_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Z/m03 - March/data files/COI_Z_meanField_m03_y_all.dat",
+        "combined_sha256": "42b510a5d304a13ebe1e084caa11ce3e170e81cf31a390d61540db59083812fd",
+        "combined_shape": [
+          341,
+          2
+        ],
+        "combined_exact_year_major_consistency": true
+      },
+      "04:X": {
+        "annual_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/X/m04 - April/data files/COI_X_meanField_m04.dat",
+        "annual_sha256": "3fbaa4bff8402ca397d6eee4c56d95c9fac38b2352c42278b479aef28dd1d77b",
+        "annual_shape": [
+          30,
+          12
+        ],
+        "calendar_days": 30,
+        "annual_alignment_pass": true,
+        "printed_resolution": {
+          "min_printed_decimals": 0,
+          "max_printed_decimals": 2,
+          "decimal_count_distribution": {
+            "0": 13,
+            "1": 16,
+            "2": 301
+          },
+          "file_printed_resolution_nT": 0.01
+        },
+        "combined_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/X/m04 - April/data files/COI_X_meanField_m04_y_all.dat",
+        "combined_sha256": "5bc16a325655a032846f9b38e455b72f2750c4c8e956c65dd7357452585b2301",
+        "combined_shape": [
+          330,
+          2
+        ],
+        "combined_exact_year_major_consistency": false
+      },
+      "04:Y": {
+        "annual_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Y/m04 - April/data files/COI_Y_meanField_m04.dat",
+        "annual_sha256": "0c39fb8d5069a5cd45b0bb2dc334dfc72cd326e2609f5696ff5b616cf965325a",
+        "annual_shape": [
+          30,
+          12
+        ],
+        "calendar_days": 30,
+        "annual_alignment_pass": true,
+        "printed_resolution": {
+          "min_printed_decimals": 0,
+          "max_printed_decimals": 2,
+          "decimal_count_distribution": {
+            "0": 19,
+            "1": 12,
+            "2": 299
+          },
+          "file_printed_resolution_nT": 0.01
+        },
+        "combined_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Y/m04 - April/data files/COI_Y_meanField_m04_y_all.dat",
+        "combined_sha256": "40cdeada6307f722fecbbbbc26ffbee765b37be245c82c13818fa717823ca3bb",
+        "combined_shape": [
+          330,
+          2
+        ],
+        "combined_exact_year_major_consistency": true
+      },
+      "04:Z": {
+        "annual_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Z/m04 - April/data files/COI_Z_meanField_m04.dat",
+        "annual_sha256": "b5ed40502e960b4828eb217a91adc1f2c8f985b438baf1b19d591b6753a1de06",
+        "annual_shape": [
+          30,
+          12
+        ],
+        "calendar_days": 30,
+        "annual_alignment_pass": true,
+        "printed_resolution": {
+          "min_printed_decimals": 0,
+          "max_printed_decimals": 2,
+          "decimal_count_distribution": {
+            "0": 15,
+            "1": 15,
+            "2": 300
+          },
+          "file_printed_resolution_nT": 0.01
+        },
+        "combined_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Z/m04 - April/data files/COI_Z_meanField_m04_y_all.dat",
+        "combined_sha256": "6546b363e125fd5f4ac8d1386d142c603d8b5ec5ecf7bd73c5b9a58c6c8e34f7",
+        "combined_shape": [
+          330,
+          2
+        ],
+        "combined_exact_year_major_consistency": true
+      },
+      "05:X": {
+        "annual_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/X/m05 - May/data files/COI_X_meanField_m05.dat",
+        "annual_sha256": "b9effcfebc5153ffdc91a23f32a3416463ca75db98480575c08ff7b468a00410",
+        "annual_shape": [
+          31,
+          12
+        ],
+        "calendar_days": 31,
+        "annual_alignment_pass": true,
+        "printed_resolution": {
+          "min_printed_decimals": 0,
+          "max_printed_decimals": 2,
+          "decimal_count_distribution": {
+            "0": 7,
+            "1": 10,
+            "2": 324
+          },
+          "file_printed_resolution_nT": 0.01
+        },
+        "combined_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/X/m05 - May/data files/COI_X_meanField_m05_y_all.dat",
+        "combined_sha256": "6d8f774ff6e0c7dd8169600d6c2677dc1aa9a55f114d56297987fdef22348caa",
+        "combined_shape": [
+          341,
+          2
+        ],
+        "combined_exact_year_major_consistency": true
+      },
+      "05:Y": {
+        "annual_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Y/m05 - May/data files/COI_Y_meanField_m05.dat",
+        "annual_sha256": "57576a29a493daf03756b5a3354cda985157330d287f37c12803e5f572b6d403",
+        "annual_shape": [
+          31,
+          12
+        ],
+        "calendar_days": 31,
+        "annual_alignment_pass": true,
+        "printed_resolution": {
+          "min_printed_decimals": 0,
+          "max_printed_decimals": 2,
+          "decimal_count_distribution": {
+            "0": 14,
+            "1": 15,
+            "2": 312
+          },
+          "file_printed_resolution_nT": 0.01
+        },
+        "combined_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Y/m05 - May/data files/COI_Y_meanField_m05_y_all.dat",
+        "combined_sha256": "c4a6f542bf2e04fb44e34347ff7bbffbb00999de6edf862c82e2e32e5d465f66",
+        "combined_shape": [
+          341,
+          2
+        ],
+        "combined_exact_year_major_consistency": true
+      },
+      "05:Z": {
+        "annual_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Z/m05 - May/data files/COI_Z_meanField_m05.dat",
+        "annual_sha256": "4a110c8411670a0e6e38fdd74a4e5e132ecd70dbec386e240ff9d3472bb0aea6",
+        "annual_shape": [
+          31,
+          12
+        ],
+        "calendar_days": 31,
+        "annual_alignment_pass": true,
+        "printed_resolution": {
+          "min_printed_decimals": 0,
+          "max_printed_decimals": 2,
+          "decimal_count_distribution": {
+            "0": 15,
+            "1": 14,
+            "2": 312
+          },
+          "file_printed_resolution_nT": 0.01
+        },
+        "combined_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Z/m05 - May/data files/COI_Z_meanField_m05_y_all.dat",
+        "combined_sha256": "bcc8c48abc0043117a4c0fb7f75bdc31a1701f83b676e3b6ed94bba4ff51a2f5",
+        "combined_shape": [
+          341,
+          2
+        ],
+        "combined_exact_year_major_consistency": true
+      },
+      "06:X": {
+        "annual_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/X/m06 - June/data files/COI_X_meanField_m06.dat",
+        "annual_sha256": "01c66274c08e14471b64cb0e6468c034cd67874b01eb7c98c54205f3bf720c2a",
+        "annual_shape": [
+          30,
+          12
+        ],
+        "calendar_days": 30,
+        "annual_alignment_pass": true,
+        "printed_resolution": {
+          "min_printed_decimals": 0,
+          "max_printed_decimals": 2,
+          "decimal_count_distribution": {
+            "0": 17,
+            "1": 11,
+            "2": 302
+          },
+          "file_printed_resolution_nT": 0.01
+        },
+        "combined_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/X/m06 - June/data files/COI_X_meanField_m06_y_all.dat",
+        "combined_sha256": "cbb8d3dc79c2485944750b835131222a3453cfd1067d696f9d23913776bda625",
+        "combined_shape": [
+          330,
+          2
+        ],
+        "combined_exact_year_major_consistency": false
+      },
+      "06:Y": {
+        "annual_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Y/m06 - June/data files/COI_Y_meanField_m06.dat",
+        "annual_sha256": "61289c1f7bf5bde8de64b45b69a06ddab3ff99aa83280292804fda4f4b32724c",
+        "annual_shape": [
+          30,
+          12
+        ],
+        "calendar_days": 30,
+        "annual_alignment_pass": true,
+        "printed_resolution": {
+          "min_printed_decimals": 0,
+          "max_printed_decimals": 2,
+          "decimal_count_distribution": {
+            "0": 16,
+            "1": 23,
+            "2": 291
+          },
+          "file_printed_resolution_nT": 0.01
+        },
+        "combined_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Y/m06 - June/data files/COI_Y_meanField_m06_y_all.dat",
+        "combined_sha256": "d96dd0e2585197e2a8eb1713d2ca14e9f96fe9e616b646e73bc724b9bab2f5b1",
+        "combined_shape": [
+          330,
+          2
+        ],
+        "combined_exact_year_major_consistency": true
+      },
+      "06:Z": {
+        "annual_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Z/m06 - June/data files/COI_Z_meanField_m06.dat",
+        "annual_sha256": "5c3225f8f27e9b71d013cf60c5c7046d2b16e9ceac002fee34774893e882eaa8",
+        "annual_shape": [
+          30,
+          12
+        ],
+        "calendar_days": 30,
+        "annual_alignment_pass": true,
+        "printed_resolution": {
+          "min_printed_decimals": 0,
+          "max_printed_decimals": 2,
+          "decimal_count_distribution": {
+            "0": 9,
+            "1": 12,
+            "2": 309
+          },
+          "file_printed_resolution_nT": 0.01
+        },
+        "combined_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Z/m06 - June/data files/COI_Z_meanField_m06_y_all.dat",
+        "combined_sha256": "eaa1a9efb416df8ecfc904220ecdec96e8cc31d7c2d1ce87d9bb15c12cc88a09",
+        "combined_shape": [
+          330,
+          2
+        ],
+        "combined_exact_year_major_consistency": true
+      },
+      "07:X": {
+        "annual_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/X/m07 - July/data files/COI_X_meanField_m07.dat",
+        "annual_sha256": "1d40ae9ac2a50d62d279ffee6573207cd12e667687da9fe729d628935469ce38",
+        "annual_shape": [
+          31,
+          12
+        ],
+        "calendar_days": 31,
+        "annual_alignment_pass": true,
+        "printed_resolution": {
+          "min_printed_decimals": 0,
+          "max_printed_decimals": 2,
+          "decimal_count_distribution": {
+            "0": 17,
+            "1": 10,
+            "2": 314
+          },
+          "file_printed_resolution_nT": 0.01
+        },
+        "combined_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/X/m07 - July/data files/COI_X_meanField_m07_y_all.dat",
+        "combined_sha256": "05238fd7b3bc0741fbc70cd8111c8b609e81caf53660e186e84a135b7e97e7b8",
+        "combined_shape": [
+          341,
+          2
+        ],
+        "combined_exact_year_major_consistency": true
+      },
+      "07:Y": {
+        "annual_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Y/m07 - July/data files/COI_Y_meanField_m07.dat",
+        "annual_sha256": "d7ab068943490126a914d8041f2640aa9fe8f9322ae4eb8d45acd3571c9b6a7a",
+        "annual_shape": [
+          31,
+          12
+        ],
+        "calendar_days": 31,
+        "annual_alignment_pass": true,
+        "printed_resolution": {
+          "min_printed_decimals": 0,
+          "max_printed_decimals": 2,
+          "decimal_count_distribution": {
+            "0": 9,
+            "1": 17,
+            "2": 315
+          },
+          "file_printed_resolution_nT": 0.01
+        },
+        "combined_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Y/m07 - July/data files/COI_Y_meanField_m07_y_all.dat",
+        "combined_sha256": "1c5a923dead8b1115d5b4a037f6843da64e3e262251218e9a25ae3c40ed60672",
+        "combined_shape": [
+          341,
+          2
+        ],
+        "combined_exact_year_major_consistency": true
+      },
+      "07:Z": {
+        "annual_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Z/m07 - July/data files/COI_Z_meanField_m07.dat",
+        "annual_sha256": "2bdfdf62a9d2a374915840085264d21b23b94e5164f4fad6cbaaddcb8008b185",
+        "annual_shape": [
+          31,
+          12
+        ],
+        "calendar_days": 31,
+        "annual_alignment_pass": true,
+        "printed_resolution": {
+          "min_printed_decimals": 0,
+          "max_printed_decimals": 2,
+          "decimal_count_distribution": {
+            "0": 14,
+            "1": 14,
+            "2": 313
+          },
+          "file_printed_resolution_nT": 0.01
+        },
+        "combined_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Z/m07 - July/data files/COI_Z_meanField_m07_y_all.dat",
+        "combined_sha256": "3516f032532d088b12a3fecb0d474fd25c232475de553b49a75b219f62faeabc",
+        "combined_shape": [
+          341,
+          2
+        ],
+        "combined_exact_year_major_consistency": true
+      },
+      "08:X": {
+        "annual_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/X/m08 - August/data files/COI_X_meanField_m08.dat",
+        "annual_sha256": "55536ae3b4a994aa43ba3749781e0555a376d9b00ce9bda56c0c0685009be244",
+        "annual_shape": [
+          31,
+          12
+        ],
+        "calendar_days": 31,
+        "annual_alignment_pass": true,
+        "printed_resolution": {
+          "min_printed_decimals": 0,
+          "max_printed_decimals": 2,
+          "decimal_count_distribution": {
+            "0": 12,
+            "1": 15,
+            "2": 314
+          },
+          "file_printed_resolution_nT": 0.01
+        },
+        "combined_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/X/m08 - August/data files/COI_X_meanField_m08_y_all.dat",
+        "combined_sha256": "d10e6a130674e2df6f8e13656ce62359ebf236fb9d1e1b2b0d84f2b78c43768a",
+        "combined_shape": [
+          341,
+          2
+        ],
+        "combined_exact_year_major_consistency": true
+      },
+      "08:Y": {
+        "annual_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Y/m08 - August/data files/COI_Y_meanField_m08.dat",
+        "annual_sha256": "0016b27113a936ab09e609e3b504e59ca527d2aa6a953ec1e0048f7af400bd06",
+        "annual_shape": [
+          31,
+          12
+        ],
+        "calendar_days": 31,
+        "annual_alignment_pass": true,
+        "printed_resolution": {
+          "min_printed_decimals": 0,
+          "max_printed_decimals": 2,
+          "decimal_count_distribution": {
+            "0": 17,
+            "1": 18,
+            "2": 306
+          },
+          "file_printed_resolution_nT": 0.01
+        },
+        "combined_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Y/m08 - August/data files/COI_Y_meanField_m08_y_all.dat",
+        "combined_sha256": "1923591877ee0226709fc8ad9ab68f6d818784006d4b9cf2c43cee31ebac5613",
+        "combined_shape": [
+          341,
+          2
+        ],
+        "combined_exact_year_major_consistency": true
+      },
+      "08:Z": {
+        "annual_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Z/m08 - August/data files/COI_Z_meanField_m08.dat",
+        "annual_sha256": "ee3078ea5a0d83e66f01f2673a1bd504c455237ed41f39fed046a253a640ca0f",
+        "annual_shape": [
+          31,
+          12
+        ],
+        "calendar_days": 31,
+        "annual_alignment_pass": true,
+        "printed_resolution": {
+          "min_printed_decimals": 0,
+          "max_printed_decimals": 2,
+          "decimal_count_distribution": {
+            "0": 18,
+            "1": 11,
+            "2": 312
+          },
+          "file_printed_resolution_nT": 0.01
+        },
+        "combined_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Z/m08 - August/data files/COI_Z_meanField_m08_y_all.dat",
+        "combined_sha256": "3db10a5e6f3fe4639df592abeb95680124b4281c6578a4b2d08a7975f92a993a",
+        "combined_shape": [
+          341,
+          2
+        ],
+        "combined_exact_year_major_consistency": true
+      },
+      "09:X": {
+        "annual_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/X/m09 - September/data files/COI_X_meanField_m09.dat",
+        "annual_sha256": "dd3d0d61e2823f993a80dcae6ffee25ca214d62f550c3b5091111641817c894f",
+        "annual_shape": [
+          30,
+          12
+        ],
+        "calendar_days": 30,
+        "annual_alignment_pass": true,
+        "printed_resolution": {
+          "min_printed_decimals": 0,
+          "max_printed_decimals": 2,
+          "decimal_count_distribution": {
+            "0": 11,
+            "1": 14,
+            "2": 305
+          },
+          "file_printed_resolution_nT": 0.01
+        },
+        "combined_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/X/m09 - September/data files/COI_X_meanField_m09_y_all.dat",
+        "combined_sha256": "b1c745ec97603a106cbb74ea28edf86865ff3485bafd2d5b9f915da85451c6fd",
+        "combined_shape": [
+          330,
+          2
+        ],
+        "combined_exact_year_major_consistency": false
+      },
+      "09:Y": {
+        "annual_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Y/m09 - September/data files/COI_Y_meanField_m09.dat",
+        "annual_sha256": "dd689f3a8a077302c84afabd9e121d73261946a13b89ddf1e5de83531d29615c",
+        "annual_shape": [
+          30,
+          12
+        ],
+        "calendar_days": 30,
+        "annual_alignment_pass": true,
+        "printed_resolution": {
+          "min_printed_decimals": 0,
+          "max_printed_decimals": 2,
+          "decimal_count_distribution": {
+            "0": 13,
+            "1": 15,
+            "2": 302
+          },
+          "file_printed_resolution_nT": 0.01
+        },
+        "combined_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Y/m09 - September/data files/COI_Y_meanField_m09_y_all.dat",
+        "combined_sha256": "965bd025a686b82e963d726d4339dc6eea29188a8a06bf6a4cc931fa6be9a451",
+        "combined_shape": [
+          330,
+          2
+        ],
+        "combined_exact_year_major_consistency": true
+      },
+      "09:Z": {
+        "annual_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Z/m09 - September/data files/COI_Z_meanField_m09.dat",
+        "annual_sha256": "c061bb0083cc7131f74b06a776abdcd0c95c7f3106d2adec1b472f9d244e0fa2",
+        "annual_shape": [
+          30,
+          12
+        ],
+        "calendar_days": 30,
+        "annual_alignment_pass": true,
+        "printed_resolution": {
+          "min_printed_decimals": 0,
+          "max_printed_decimals": 2,
+          "decimal_count_distribution": {
+            "0": 15,
+            "1": 11,
+            "2": 304
+          },
+          "file_printed_resolution_nT": 0.01
+        },
+        "combined_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Z/m09 - September/data files/COI_Z_meanField_m09_y_all.dat",
+        "combined_sha256": "c150fcb0f025e9294e915b06927341c9e3892305c9e905d2b9dd0b1c524439fd",
+        "combined_shape": [
+          330,
+          2
+        ],
+        "combined_exact_year_major_consistency": true
+      },
+      "10:X": {
+        "annual_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/X/m10 - October/data files/COI_X_meanField_m10.dat",
+        "annual_sha256": "deb55f3b82ed41e6c11f050709c53c7b7269f0a05bd369b301cc79e4cc29ab77",
+        "annual_shape": [
+          31,
+          12
+        ],
+        "calendar_days": 31,
+        "annual_alignment_pass": true,
+        "printed_resolution": {
+          "min_printed_decimals": 0,
+          "max_printed_decimals": 2,
+          "decimal_count_distribution": {
+            "0": 9,
+            "1": 20,
+            "2": 312
+          },
+          "file_printed_resolution_nT": 0.01
+        },
+        "combined_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/X/m10 - October/data files/COI_X_meanField_m10_y_all.dat",
+        "combined_sha256": "1ce246f3ee0c9f990cdc185da3e2b9b0408dd08ba4d54e6334e2b647a7c3b84d",
+        "combined_shape": [
+          341,
+          2
+        ],
+        "combined_exact_year_major_consistency": true
+      },
+      "10:Y": {
+        "annual_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Y/m10 - October/data files/COI_Y_meanField_m10.dat",
+        "annual_sha256": "5433950e0b38dac907abdc15a29a8bca28f3a536f6b9fdd87e6675c1bf8cebec",
+        "annual_shape": [
+          31,
+          12
+        ],
+        "calendar_days": 31,
+        "annual_alignment_pass": true,
+        "printed_resolution": {
+          "min_printed_decimals": 0,
+          "max_printed_decimals": 2,
+          "decimal_count_distribution": {
+            "0": 19,
+            "1": 10,
+            "2": 312
+          },
+          "file_printed_resolution_nT": 0.01
+        },
+        "combined_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Y/m10 - October/data files/COI_Y_meanField_m10_y_all.dat",
+        "combined_sha256": "56a1bdce3328ce7beb4c2d606636823267d09b19655243bd23497baabb85ef0f",
+        "combined_shape": [
+          341,
+          2
+        ],
+        "combined_exact_year_major_consistency": true
+      },
+      "10:Z": {
+        "annual_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Z/m10 - October/data files/COI_Z_meanField_m10.dat",
+        "annual_sha256": "ef481d2811c21f09883e8f7dc4aa9b855b467c02c8d5a859c239e6ba3acfe325",
+        "annual_shape": [
+          31,
+          12
+        ],
+        "calendar_days": 31,
+        "annual_alignment_pass": true,
+        "printed_resolution": {
+          "min_printed_decimals": 0,
+          "max_printed_decimals": 2,
+          "decimal_count_distribution": {
+            "0": 11,
+            "1": 23,
+            "2": 307
+          },
+          "file_printed_resolution_nT": 0.01
+        },
+        "combined_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Z/m10 - October/data files/COI_Z_meanField_m10_y_all.dat",
+        "combined_sha256": "98c096db650913939d7efb05355ff733aff88e7261841d8d419c2edeedb84acb",
+        "combined_shape": [
+          341,
+          2
+        ],
+        "combined_exact_year_major_consistency": true
+      },
+      "11:X": {
+        "annual_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/X/m11 - November/data files/COI_X_meanField_m11.dat",
+        "annual_sha256": "0e9b0f05e5f2eed4cee416cedd210d20cec0c9d90672ec4e960e7ed7cd58505d",
+        "annual_shape": [
+          30,
+          12
+        ],
+        "calendar_days": 30,
+        "annual_alignment_pass": true,
+        "printed_resolution": {
+          "min_printed_decimals": 0,
+          "max_printed_decimals": 2,
+          "decimal_count_distribution": {
+            "0": 12,
+            "1": 12,
+            "2": 306
+          },
+          "file_printed_resolution_nT": 0.01
+        },
+        "combined_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/X/m11 - November/data files/COI_X_meanField_m11_y_all.dat",
+        "combined_sha256": "de1d534829f62810fc89b45c0870b0c1b0e026dfd4bb8a08422c1ffbf4dcb8dc",
+        "combined_shape": [
+          330,
+          2
+        ],
+        "combined_exact_year_major_consistency": false
+      },
+      "11:Y": {
+        "annual_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Y/m11 - November/data files/COI_Y_meanField_m11.dat",
+        "annual_sha256": "e8bd52f4691f0e0c34a29a8b1d48626e0ce096d5ce8d74b372efdfcd1887e7b3",
+        "annual_shape": [
+          30,
+          12
+        ],
+        "calendar_days": 30,
+        "annual_alignment_pass": true,
+        "printed_resolution": {
+          "min_printed_decimals": 0,
+          "max_printed_decimals": 2,
+          "decimal_count_distribution": {
+            "0": 8,
+            "1": 18,
+            "2": 304
+          },
+          "file_printed_resolution_nT": 0.01
+        },
+        "combined_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Y/m11 - November/data files/COI_Y_meanField_m11_y_all.dat",
+        "combined_sha256": "999479c49fd6e66d4ded8711d03f412460bca85fbd2f73737e0fc0528a2317e5",
+        "combined_shape": [
+          330,
+          2
+        ],
+        "combined_exact_year_major_consistency": true
+      },
+      "11:Z": {
+        "annual_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Z/m11 - November/data files/COI_Z_meanField_m11.dat",
+        "annual_sha256": "8f0d16d46012a4e5a2e740547cd8b3b634eb2c03fb91ce8c168bc245098cf415",
+        "annual_shape": [
+          30,
+          12
+        ],
+        "calendar_days": 30,
+        "annual_alignment_pass": true,
+        "printed_resolution": {
+          "min_printed_decimals": 0,
+          "max_printed_decimals": 2,
+          "decimal_count_distribution": {
+            "0": 18,
+            "1": 8,
+            "2": 304
+          },
+          "file_printed_resolution_nT": 0.01
+        },
+        "combined_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Z/m11 - November/data files/COI_Z_meanField_m11_y_all.dat",
+        "combined_sha256": "a32909434b9cc4772a3d70632a8aa24209f759d79ed18c76fcf9600a79344490",
+        "combined_shape": [
+          330,
+          2
+        ],
+        "combined_exact_year_major_consistency": true
+      },
+      "12:X": {
+        "annual_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/X/m12 - December/data files/COI_X_meanField_m12.dat",
+        "annual_sha256": "092e3cd243b27d55850cf6fb036eac8ebe2330f4639298dc7408c8ea592e22ca",
+        "annual_shape": [
+          31,
+          12
+        ],
+        "calendar_days": 31,
+        "annual_alignment_pass": true,
+        "printed_resolution": {
+          "min_printed_decimals": 0,
+          "max_printed_decimals": 2,
+          "decimal_count_distribution": {
+            "0": 12,
+            "1": 17,
+            "2": 312
+          },
+          "file_printed_resolution_nT": 0.01
+        },
+        "combined_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/X/m12 - December/data files/COI_X_meanField_m12_y_all.dat",
+        "combined_sha256": "c4055d81e4e09a64267b50ba4d13ef11955f3307b902bfc16bd7893bd88ceb96",
+        "combined_shape": [
+          341,
+          2
+        ],
+        "combined_exact_year_major_consistency": true
+      },
+      "12:Y": {
+        "annual_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Y/m12 - December/data files/COI_Y_meanField_m12.dat",
+        "annual_sha256": "9fc663adb2abd603ce9b074581d378a87db6b45504c018a8512988c6bd53b275",
+        "annual_shape": [
+          31,
+          12
+        ],
+        "calendar_days": 31,
+        "annual_alignment_pass": true,
+        "printed_resolution": {
+          "min_printed_decimals": 0,
+          "max_printed_decimals": 2,
+          "decimal_count_distribution": {
+            "0": 7,
+            "1": 12,
+            "2": 322
+          },
+          "file_printed_resolution_nT": 0.01
+        },
+        "combined_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Y/m12 - December/data files/COI_Y_meanField_m12_y_all.dat",
+        "combined_sha256": "4cc36bfcd3b1a6155984c93101adede2a288887f45a5dcd3095c42b554f8f858",
+        "combined_shape": [
+          341,
+          2
+        ],
+        "combined_exact_year_major_consistency": true
+      },
+      "12:Z": {
+        "annual_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Z/m12 - December/data files/COI_Z_meanField_m12.dat",
+        "annual_sha256": "f3b451a09403eb11ecbb28959d5071ab75f10df472cae7ea9c03d85c618d95b4",
+        "annual_shape": [
+          31,
+          12
+        ],
+        "calendar_days": 31,
+        "annual_alignment_pass": true,
+        "printed_resolution": {
+          "min_printed_decimals": 0,
+          "max_printed_decimals": 2,
+          "decimal_count_distribution": {
+            "0": 23,
+            "1": 14,
+            "2": 304
+          },
+          "file_printed_resolution_nT": 0.01
+        },
+        "combined_path": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Z/m12 - December/data files/COI_Z_meanField_m12_y_all.dat",
+        "combined_sha256": "20075a33cb8bf774c159b0f2f4f5dc66d81b07d18d9e2dd89d735be1ca0538ac",
+        "combined_shape": [
+          341,
+          2
+        ],
+        "combined_exact_year_major_consistency": true
+      }
+    },
+    "combined_consistency_all_pass": false,
+    "annual_alignment_all_pass": true
+  },
+  "wdc_hourly": {
+    "2007": {
+      "path": "phase2a/raw/wdc_hourly/COI_2007_hour_iaga_XYZF.zip",
+      "sha256": "5ca85b83133371627cbdcad292ef78f9c62cc9601eb770634ba25b43bf9886c6",
+      "months": {
+        "2007-01": {
+          "member": "coi200701dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2007-02": {
+          "member": "coi200702dhor.hor",
+          "hours": 672,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2007-03": {
+          "member": "coi200703dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            1,
+            1,
+            1
+          ]
+        },
+        "2007-04": {
+          "member": "coi200704dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2007-05": {
+          "member": "coi200705dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            3,
+            3,
+            3
+          ]
+        },
+        "2007-06": {
+          "member": "coi200706dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            5,
+            5,
+            5
+          ]
+        },
+        "2007-07": {
+          "member": "coi200707dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2007-08": {
+          "member": "coi200708dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            1,
+            1,
+            1
+          ]
+        },
+        "2007-09": {
+          "member": "coi200709dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            106,
+            106,
+            106
+          ]
+        },
+        "2007-10": {
+          "member": "coi200710dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2007-11": {
+          "member": "coi200711dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            156,
+            156,
+            156
+          ]
+        },
+        "2007-12": {
+          "member": "coi200712dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            4,
+            4,
+            4
+          ]
+        }
+      }
+    },
+    "2008": {
+      "path": "phase2a/raw/wdc_hourly/COI_2008_hour_iaga_XYZF.zip",
+      "sha256": "3a1c487468dcdfe721e38852ec1ef879925139c8563e7291df9383b82a089f74",
+      "months": {
+        "2008-01": {
+          "member": "coi200801dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            2,
+            2,
+            2
+          ]
+        },
+        "2008-02": {
+          "member": "coi200802dhor.hor",
+          "hours": 696,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2008-03": {
+          "member": "coi200803dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2008-04": {
+          "member": "coi200804dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            15,
+            15,
+            15
+          ]
+        },
+        "2008-05": {
+          "member": "coi200805dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            168,
+            168,
+            168
+          ]
+        },
+        "2008-06": {
+          "member": "coi200806dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2008-07": {
+          "member": "coi200807dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2008-08": {
+          "member": "coi200808dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2008-09": {
+          "member": "coi200809dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2008-10": {
+          "member": "coi200810dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2008-11": {
+          "member": "coi200811dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2008-12": {
+          "member": "coi200812dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            1,
+            1,
+            1
+          ]
+        }
+      }
+    },
+    "2009": {
+      "path": "phase2a/raw/wdc_hourly/COI_2009_hour_iaga_XYZF.zip",
+      "sha256": "f56d9d28462a585e61839e2c720fe9f0f1b53953f6b50ea8381ad90ffa16b171",
+      "months": {
+        "2009-01": {
+          "member": "coi200901dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            1,
+            1,
+            1
+          ]
+        },
+        "2009-02": {
+          "member": "coi200902dhor.hor",
+          "hours": 672,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2009-03": {
+          "member": "coi200903dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2009-04": {
+          "member": "coi200904dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2009-05": {
+          "member": "coi200905dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2009-06": {
+          "member": "coi200906dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            14,
+            14,
+            14
+          ]
+        },
+        "2009-07": {
+          "member": "coi200907dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2009-08": {
+          "member": "coi200908dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            7,
+            7,
+            7
+          ]
+        },
+        "2009-09": {
+          "member": "coi200909dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2009-10": {
+          "member": "coi200910dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2009-11": {
+          "member": "coi200911dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2009-12": {
+          "member": "coi200912dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            1,
+            1,
+            1
+          ]
+        }
+      }
+    },
+    "2010": {
+      "path": "phase2a/raw/wdc_hourly/COI_2010_hour_iaga_XYZF.zip",
+      "sha256": "3a9409fcc4a477dd16e0fee648c3a9e569ff72b7975c2da2c9596c79b1eafe79",
+      "months": {
+        "2010-01": {
+          "member": "coi201001dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2010-02": {
+          "member": "coi201002dhor.hor",
+          "hours": 672,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2010-03": {
+          "member": "coi201003dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2010-04": {
+          "member": "coi201004dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2010-05": {
+          "member": "coi201005dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2010-06": {
+          "member": "coi201006dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2010-07": {
+          "member": "coi201007dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2010-08": {
+          "member": "coi201008dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2010-09": {
+          "member": "coi201009dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2010-10": {
+          "member": "coi201010dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            102,
+            102,
+            102
+          ]
+        },
+        "2010-11": {
+          "member": "coi201011dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            2,
+            2,
+            2
+          ]
+        },
+        "2010-12": {
+          "member": "coi201012dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "2011": {
+      "path": "phase2a/raw/wdc_hourly/COI_2011_hour_iaga_XYZF.zip",
+      "sha256": "78afc6ef71346181567e1ed963511d9156f6cc16ef9dfbfbc0f28f0d54864adc",
+      "months": {
+        "2011-01": {
+          "member": "coi201101dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2011-02": {
+          "member": "coi201102dhor.hor",
+          "hours": 672,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2011-03": {
+          "member": "coi201103dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            121,
+            121,
+            121
+          ]
+        },
+        "2011-04": {
+          "member": "coi201104dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2011-05": {
+          "member": "coi201105dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2011-06": {
+          "member": "coi201106dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2011-07": {
+          "member": "coi201107dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2011-08": {
+          "member": "coi201108dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2011-09": {
+          "member": "coi201109dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2011-10": {
+          "member": "coi201110dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2011-11": {
+          "member": "coi201111dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2011-12": {
+          "member": "coi201112dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "2012": {
+      "path": "phase2a/raw/wdc_hourly/COI_2012_hour_iaga_XYZF.zip",
+      "sha256": "fccb7e8665af0826fc4563d6dd8bc753615ee941d22e8e1469d89120e3e58856",
+      "months": {
+        "2012-01": {
+          "member": "coi201201dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            222,
+            222,
+            222
+          ]
+        },
+        "2012-02": {
+          "member": "coi201202dhor.hor",
+          "hours": 696,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2012-03": {
+          "member": "coi201203dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2012-04": {
+          "member": "coi201204dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2012-05": {
+          "member": "coi201205dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2012-06": {
+          "member": "coi201206dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2012-07": {
+          "member": "coi201207dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2012-08": {
+          "member": "coi201208dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2012-09": {
+          "member": "coi201209dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2012-10": {
+          "member": "coi201210dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2012-11": {
+          "member": "coi201211dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2012-12": {
+          "member": "coi201212dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "2013": {
+      "path": "phase2a/raw/wdc_hourly/COI_2013_hour_iaga_XYZF.zip",
+      "sha256": "d15fd1dc7a85a2e00232e4098496777c8ad8a2b3b7dbf460e62a173492c5b46e",
+      "months": {
+        "2013-01": {
+          "member": "coi201301dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            219,
+            219,
+            219
+          ]
+        },
+        "2013-02": {
+          "member": "coi201302dhor.hor",
+          "hours": 672,
+          "sentinel_XYZ": [
+            4,
+            4,
+            4
+          ]
+        },
+        "2013-03": {
+          "member": "coi201303dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            1,
+            1,
+            1
+          ]
+        },
+        "2013-04": {
+          "member": "coi201304dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            21,
+            21,
+            21
+          ]
+        },
+        "2013-05": {
+          "member": "coi201305dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            18,
+            18,
+            18
+          ]
+        },
+        "2013-06": {
+          "member": "coi201306dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            10,
+            10,
+            10
+          ]
+        },
+        "2013-07": {
+          "member": "coi201307dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2013-08": {
+          "member": "coi201308dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            1,
+            1,
+            1
+          ]
+        },
+        "2013-09": {
+          "member": "coi201309dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            18,
+            18,
+            18
+          ]
+        },
+        "2013-10": {
+          "member": "coi201310dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2013-11": {
+          "member": "coi201311dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            13,
+            13,
+            13
+          ]
+        },
+        "2013-12": {
+          "member": "coi201312dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "2014": {
+      "path": "phase2a/raw/wdc_hourly/COI_2014_hour_iaga_XYZF.zip",
+      "sha256": "33608d8007897b7ed0db7684ab8acc7eb209dd588a396e98aaa1ff047ad911e1",
+      "months": {
+        "2014-01": {
+          "member": "coi201401dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2014-02": {
+          "member": "coi201402dhor.hor",
+          "hours": 672,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2014-03": {
+          "member": "coi201403dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            124,
+            124,
+            124
+          ]
+        },
+        "2014-04": {
+          "member": "coi201404dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            21,
+            21,
+            21
+          ]
+        },
+        "2014-05": {
+          "member": "coi201405dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2014-06": {
+          "member": "coi201406dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2014-07": {
+          "member": "coi201407dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2014-08": {
+          "member": "coi201408dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2014-09": {
+          "member": "coi201409dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            2,
+            2,
+            2
+          ]
+        },
+        "2014-10": {
+          "member": "coi201410dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2014-11": {
+          "member": "coi201411dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2014-12": {
+          "member": "coi201412dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "2015": {
+      "path": "phase2a/raw/wdc_hourly/COI_2015_hour_iaga_XYZF.zip",
+      "sha256": "04bf1fd1575078d1bfd0f085042b0a19867d8d1e42fd69f1d91ae0d451968afe",
+      "months": {
+        "2015-01": {
+          "member": "coi201501dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2015-02": {
+          "member": "coi201502dhor.hor",
+          "hours": 672,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2015-03": {
+          "member": "coi201503dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2015-04": {
+          "member": "coi201504dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2015-05": {
+          "member": "coi201505dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2015-06": {
+          "member": "coi201506dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2015-07": {
+          "member": "coi201507dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2015-08": {
+          "member": "coi201508dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2015-09": {
+          "member": "coi201509dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2015-10": {
+          "member": "coi201510dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            1,
+            1,
+            1
+          ]
+        },
+        "2015-11": {
+          "member": "coi201511dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2015-12": {
+          "member": "coi201512dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "2016": {
+      "path": "phase2a/raw/wdc_hourly/COI_2016_hour_iaga_XYZF.zip",
+      "sha256": "043da64621a43fb1d605b0cdd1c0e44247eb48172379763bc45ff69ab61b9358",
+      "months": {
+        "2016-01": {
+          "member": "coi201601dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2016-02": {
+          "member": "coi201602dhor.hor",
+          "hours": 696,
+          "sentinel_XYZ": [
+            1,
+            1,
+            1
+          ]
+        },
+        "2016-03": {
+          "member": "coi201603dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2016-04": {
+          "member": "coi201604dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2016-05": {
+          "member": "coi201605dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2016-06": {
+          "member": "coi201606dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2016-07": {
+          "member": "coi201607dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            1,
+            1,
+            1
+          ]
+        },
+        "2016-08": {
+          "member": "coi201608dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2016-09": {
+          "member": "coi201609dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2016-10": {
+          "member": "coi201610dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2016-11": {
+          "member": "coi201611dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2016-12": {
+          "member": "coi201612dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "2017": {
+      "path": "phase2a/raw/wdc_hourly/COI_2017_hour_iaga_XYZF.zip",
+      "sha256": "afd54073350b8ed15f0655f8b319a3ab4dbe2a070f2ee1d813885023bf52a500",
+      "months": {
+        "2017-01": {
+          "member": "coi201701dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            1,
+            1,
+            1
+          ]
+        },
+        "2017-02": {
+          "member": "coi201702dhor.hor",
+          "hours": 672,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2017-03": {
+          "member": "coi201703dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2017-04": {
+          "member": "coi201704dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2017-05": {
+          "member": "coi201705dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            3,
+            3,
+            3
+          ]
+        },
+        "2017-06": {
+          "member": "coi201706dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2017-07": {
+          "member": "coi201707dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2017-08": {
+          "member": "coi201708dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2017-09": {
+          "member": "coi201709dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2017-10": {
+          "member": "coi201710dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2017-11": {
+          "member": "coi201711dhor.hor",
+          "hours": 720,
+          "sentinel_XYZ": [
+            0,
+            0,
+            0
+          ]
+        },
+        "2017-12": {
+          "member": "coi201712dhor.hor",
+          "hours": 744,
+          "sentinel_XYZ": [
+            23,
+            23,
+            23
+          ]
+        }
+      }
+    }
+  },
+  "gfz_sha256": {
+    "2007": "44cb7c1d739d28d7a743030ce0672928962d6ad08ad3d61313e087a7288176d4",
+    "2008": "80b25d916b38a4bcadd622cc06f353f0843c7c70f48750b111eee54ea630d8e9",
+    "2009": "40820a12ecff37f706a1fc2d900c55899924ef65256bd4b17f955bb24f6614e1",
+    "2010": "5b9a662d7ccd555fb8c25f66f37feefc2a97cea3c5aaef800d6bdec0067b74a0",
+    "2011": "542d0bcc61e0579e41b54c4b3bf413c95c0dd7eaf906e0dfcfc01b56daf05428",
+    "2012": "3ff6cecf991c06d6ad77c044f450c3de962f17686c05ca5e08f18d0435363cc3",
+    "2013": "dac1053212e4b9a35bc43c7ef0f3a114343a2a018bcba787a5183815ac8076d0",
+    "2014": "9be0d2c40a565beaa80b6e7c834c46e0f45cbda7320915ad2b3bb6f2cb2f3f85",
+    "2015": "a13688d1408590be02daf5036870a0f837ae66d5a7c37eba7e492201144be899",
+    "2016": "8d0671405e87f6c8a3f4159ec3e6d42ad9386b81973aac557274ac74cb5a4551",
+    "2017": "55d5d967b2f6e79a4cdfa313eb58f23d0bcb32025ebf119535af09901dd359ca"
+  },
+  "missing_sentinels": [
+    "88888.xx",
+    "99999.xx"
+  ],
+  "interpolation": "linear for bracketed missing runs inside month; no month-edge extrapolation or run crossing all-missing day",
+  "printed_resolution_rule": "file-level 10^(-maximum decimal places across annual DAT numeric values); preserve per-value printed decimals in source, no post-hoc choice"
+}

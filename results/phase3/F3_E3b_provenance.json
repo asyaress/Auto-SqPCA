@@ -1,0 +1,7 @@
+{
+  "Phase1_freeze_sha256": "469d3a32fb8e19dbcafe54bd9e9d3e5285bdf68381b9fbe259da54640c53cfef",
+  "Phase1_monthly_QC_sha256": "2f7f62685d7f17290888ddcb07bf9d02c7e8180f9f81f559a1e5128be42edceb",
+  "definition": "Only station-years with >=6 Phase 1 months containing >=15 days of >=90% valid XYZ minutes; strict 60 valid minutes/hour, Rule A truncation to 0.1 nT; all eligible months retained, including low hourly coverage for A3 abstention",
+  "station_months": 166,
+  "inventory_sha256": "591320420f8d601e349db15de011ec1e598da7c69431ebdfc7057a77e0ada111"
+}

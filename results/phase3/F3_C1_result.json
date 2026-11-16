@@ -1,0 +1,27 @@
+{
+  "selected_method": "M-EM",
+  "C1_success": true,
+  "improved_mask_kinds": [
+    "BLOCK24",
+    "MCAR"
+  ],
+  "criterion": "upper 95% cluster-month bootstrap CI of selected/M-INT median error <1 at >=2 of 3 p levels (20,30,40%) within a kind; C1 requires >=2 of MCAR,BLOCK24,DAY kinds",
+  "holdout_cases": 555660,
+  "holdout_status_counts": {
+    "OK": 514438,
+    "NO_MATRIX": 30602,
+    "NO_PASS": 10620
+  },
+  "M_EM_reached_500_iterations": 116777,
+  "denominator_note": "missing/no-pass errors are +infinity and included in medians; pstar UNDEFINED if no level satisfies both thresholds",
+  "CI_method": "2000 bootstrap resamples of station-year-month clusters; median of monthly method medians, ratio selected/M-INT",
+  "pstar_epsilon_0p05_selected": {
+    "MCAR": 0.1,
+    "BLOCK6": "UNDEFINED",
+    "BLOCK24": "UNDEFINED",
+    "BLOCK72": "UNDEFINED",
+    "DAY": "UNDEFINED"
+  },
+  "TND_summary_rows": 108,
+  "holdout_cases_sha256": "1acbda1a8825b6b878704395973fea0c37b4fd1324ee470df106f2344d1aceb3"
+}

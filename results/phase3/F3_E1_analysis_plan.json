@@ -1,0 +1,15 @@
+{
+  "registered_utc": "2026-11-14T00:13:07.166317+00:00",
+  "evaluation_code_sha256": "e2c1ede347e8753b785e26fa89b31cdd18dfaf4335340a9c3cab8de255ff0f16",
+  "CI_resamples": 2000,
+  "seed": 20261114,
+  "C1_rule": "kind improved if upper CI<1 at at least two of p=20,30,40%; C1 success if at least two of MCAR,BLOCK24,DAY kinds improved",
+  "median_no_output": "positive infinity retained",
+  "pstar_epsilons": [
+    0.03,
+    0.05,
+    0.1
+  ],
+  "registered_check": "M-EM count at 500-iteration cap reported",
+  "figure_rule": "mark selected-method pstar on curves; TND finite error and non-output fraction"
+}

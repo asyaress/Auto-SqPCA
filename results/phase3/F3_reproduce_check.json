@@ -1,0 +1,54 @@
+{
+  "mode": "cached_hash_verification",
+  "verified_utc": "2026-11-15T01:15:12.250351+00:00",
+  "all_pass": true,
+  "stages": [
+    {
+      "stage": "frozen_phase1_phase2",
+      "status": "PASS",
+      "count": 161
+    },
+    {
+      "stage": "protocol",
+      "status": "PASS",
+      "sha256": "617c96d0cbda26fa3f6333ea1638030a35db1836fd99ba35f2a3bb18ea091327"
+    },
+    {
+      "stage": "frozen",
+      "status": "PASS",
+      "sha256": "a2a2cd09ccf4c16c87a9033d792de80762d253c2db16455f81cc4329ad26981d"
+    },
+    {
+      "stage": "holdout",
+      "status": "PASS",
+      "sha256": "1acbda1a8825b6b878704395973fea0c37b4fd1324ee470df106f2344d1aceb3"
+    },
+    {
+      "stage": "frozen_E1_code",
+      "status": "PASS",
+      "files": 14
+    },
+    {
+      "stage": "f3_gfz2018",
+      "status": "PASS",
+      "sha256": "bc9e68409a1fdbc9765bc351db47a51a993f18fa52e3698673cfce1c64b84738"
+    },
+    {
+      "stage": "f3_e1_2018_correction",
+      "status": "PASS",
+      "supplement_cases": 79380
+    },
+    {
+      "stage": "f3_e1_eval",
+      "status": "PASS",
+      "C1_success": true
+    },
+    {
+      "stage": "f3a_finalize",
+      "status": "PASS",
+      "archive_sha256": "ece7681a70c886966f3ad6818288f5277f3cfe7f8203bbb8e29af2cf9be5c1d8",
+      "members": 54
+    }
+  ],
+  "limitation": "Does not regenerate E1 simulations; this is the cache mode allowed by F3-v1.1 section 4."
+}
