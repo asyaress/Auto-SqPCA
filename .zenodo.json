@@ -1,7 +1,7 @@
 {
   "title": "Transferring PCA-based extraction of the solar quiet geomagnetic variation to low and equatorial latitudes: an automated workflow with explicit abstention",
   "upload_type": "software",
-  "version": "1.0.1rc1",
+  "version": "1.0.2rc1",
   "license": "MIT",
   "description": "Auto-SqPCA release candidate: frozen historical code and results, audited portable package, post-hoc analysis, and reproducibility materials. This metadata does not assert an existing DOI or publication.",
   "creators": [

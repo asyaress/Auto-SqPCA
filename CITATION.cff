@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: Please cite this software; cite the MethodsX article if and when it is published.
 type: software
 title: 'Transferring PCA-based extraction of the solar quiet geomagnetic variation to low and equatorial latitudes: an automated workflow with explicit abstention'
-version: 1.0.1rc1
+version: 1.0.2rc1
 license: MIT
 authors:
   - given-names: Supriyanto

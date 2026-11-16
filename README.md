@@ -1,6 +1,6 @@
 # Auto-SqPCA
 
-This repository packages the Auto-SqPCA workflow accompanying *Transferring PCA-based extraction of the solar quiet geomagnetic variation to low and equatorial latitudes: an automated workflow with explicit abstention*. It customizes the PCA-based solar quiet (Sq) method of Morozova and Rebbah (2023), *MethodsX* **10**, 101999. Their Sq-mode selection rule is inherited; local-time matrices, missing-data handling, parsimonious candidate selection, day bootstrap, and explicit abstention were added here. The historical Phase 3 code and archived results are frozen. The portable root package is version 1.0.1rc1 and has documented input guards; it is not claimed to have generated the archived Phase 3 results.
+This repository packages the Auto-SqPCA workflow accompanying *Transferring PCA-based extraction of the solar quiet geomagnetic variation to low and equatorial latitudes: an automated workflow with explicit abstention*. It customizes the PCA-based solar quiet (Sq) method of Morozova and Rebbah (2023), *MethodsX* **10**, 101999. Their Sq-mode selection rule is inherited; local-time matrices, missing-data handling, parsimonious candidate selection, day bootstrap, and explicit abstention were added here. The historical Phase 3 code and archived results are frozen. The portable root package is version 1.0.2rc1 and has documented input guards; it is not claimed to have generated the archived Phase 3 results.
 
 ## What the archived results show
 
@@ -33,7 +33,7 @@ The demo uses generated 24-hour data only and writes `demo/output/demo_result.js
 .venv\Scripts\python scripts/00_download/download.py --verify-only
 ```
 
-Omit `--source` to fetch every listed input. Hash mismatches stop the operation; an upstream provider may have changed a file. The Mendeley archive is large and intentionally absent from Git. Archived derived results do not imply that an end-to-end rerun from third-party raw data has been demonstrated. The Phase 3 C5 status is **PARTIAL**.
+Omit `--source` to fetch every listed input. Hash mismatches stop the operation; an upstream provider may have changed a file. The Mendeley archive is large and intentionally absent from Git. The November 2026 clean rerun used an authenticated local input snapshot; a fresh download from current providers has not been tested. See [portable Phase 3 commands](repro/README.md) and the [1.0.2rc1 release report](docs/RELEASE_REPORT_1.0.2rc1.md).
 
 ## Trace the analysis and figures
 
@@ -48,7 +48,7 @@ The detailed [manuscript map](docs/manuscript_map.md) lists each table and figur
 
 ## November 2026 audit and reproduction level
 
-The [audit protocol](audit_20261116/posthoc_protocol.md) identifies the post hoc analyses before their execution. [Case reconciliation](audit_20261116/reconciliation.json) re-aggregates archived E1–E3 and U3/U5 case files; [matched ablation](audit_20261116/ablation_summary.json) recomputes the frozen selected-candidate correlation from authenticated SSB month caches and validates each candidate error against the archived value; [paired pure-null](audit_20261116/paired_null_summary.json) reruns the frozen selection and day bootstrap on a new, paired synthetic bank. A [54-case E2 slice](audit_20261116/rerun_slice.json) reproduces archived values from its authenticated SSB cache, and a [DIFI boundary sensitivity](audit_20261116/difi_boundary_summary.json) recomputes the two affected model months. These are different verification levels. `audit_20261116/case_manifest.csv`, `ablation_cases.csv`, and `paired_null_cases.csv` carry per-case decisions. The full E1/E2/E3 pipeline from third-party raw inputs has not been rerun end to end in a clean environment. Phase 3 C5 therefore remains **PARTIAL**. See [audit closure](audit_20261116/audit_closure.md) for findings, unresolved provenance, and release limitations.
+The [16 November audit protocol](audit_20261116/posthoc_protocol.md), [case reconciliation](audit_20261116/reconciliation.json), [matched ablation](audit_20261116/ablation_summary.json), [paired pure-null](audit_20261116/paired_null_summary.json), [54-case E2 slice](audit_20261116/rerun_slice.json), and [DIFI boundary sensitivity](audit_20261116/difi_boundary_summary.json) are historical 1.0.1rc1 records. The [historical closure](audit_20261116/audit_closure.md) correctly marks full clean rerun as partial *at that time*. The 17 November 1.0.2rc1 investigation rebuilt monthly matrices and DIFI targets from the authenticated raw snapshot in a new Python environment. It matched 555,660 E1, 3,132 E2 development, 5,616 E2 holdout, and 1,068 E3 cases by stable identity, with zero case-value discrepancies at predeclared `rtol=1e-10`, `atol=1e-12`. E1/E2/E3 summary decisions and five analytical figures were also checked. E1 bootstrap confidence limits varied with parallel row order by at most 0.00310 without changing the nine decisions; that limitation is recorded in the [new release report](docs/RELEASE_REPORT_1.0.2rc1.md). The original G1 benchmark reproduction remains numerically limited as stated above. External input redistributions are excluded under provider terms.
 
 ## Provenance and data credit
 
@@ -58,5 +58,5 @@ Observatory source data came through [WDC Edinburgh/BGS](https://www.wdc.bgs.ac.
 
 ## Citation and license
 
-Software code: MIT. `pyproject.toml`, `CITATION.cff`, and `.zenodo.json` carry release candidate version 1.0.1rc1. No DOI, tag, GitHub Release, or Zenodo record is claimed. Third-party datasets retain their providers' terms.
+Software code: MIT. `pyproject.toml`, `CITATION.cff`, and `.zenodo.json` carry release candidate version 1.0.2rc1. No DOI, tag, GitHub Release, or Zenodo record is claimed. Third-party datasets retain their providers' terms.
 

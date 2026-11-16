@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "auto-sqpca"
-version = "1.0.1rc1"
+version = "1.0.2rc1"
 description = "Audited portable distribution of the frozen Auto-SqPCA numerical workflow"
 requires-python = ">=3.12"
 dependencies = ["numpy>=2.5,<3"]

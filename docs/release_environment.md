@@ -10,3 +10,9 @@ On 2026-11-16, a **new** Python 3.12.6 virtual environment installed the source 
 
 A second validation cloned commit `0cbdc638` into a separate temporary directory, installed the editable package from that clone (confirmed by `pip show`), imported from its `auto_sqpca/__init__.py`, passed 17/17 tests, ran the synthetic demo, and passed the CLI `verify` command (17/17 tests). See `audit_20261116/clean_clone_validation.log`. This checks distribution portability from a checkout; it does not expand the raw-input rerun coverage.
 
+## Authenticated-input rerun for candidate 1.0.2rc1
+
+On 2026-11-17, a separate clean Python 3.12.6 virtual environment used NumPy 2.5.4, pandas 2.3.3, pyDIFI 8.1.5, geomaglib 1.2.4, ppigrf 1.1.0, Matplotlib 3.10.8, requests 2.34.2, and pytest 9.2.0. The preserved 3,890-file input tree was copied with per-file SHA-256 verification to an output root outside the source tree. The frozen 161-file preflight passed. New inventory and DIFI/SSB preparation were compared with their frozen identities. E1/E2/E3 cases and five analytical figures were regenerated. The complete execution records, comparator JSONs, environment freeze, input manifest, and original error logs are in the separate 1.0.2rc1 review package; the large raw files are excluded. The source-root wrapper and its narrow GFZ 2018 path adaptation are documented in `repro/README.md`.
+
+The original 1.0.1rc1 statements above describe the earlier audit and are retained as historical evidence. This later rerun does not prove that a newly downloaded current provider snapshot has identical bytes, nor does it turn DIFI agreement into independent Sq truth.
+
