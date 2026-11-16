@@ -1,0 +1,8 @@
+{"code_identity_sha256_prefix":{"auto_sqpca/gaps.py":"a97ddb8595176a9a","auto_sqpca/selection.py":"cf792bdef0dd308d","auto_sqpca/bootstrap.py":"d5f0b6e5a414435a","G2R/pca_core.py":"e4274eb714beb255","G4R/classification_core.py":"144b855a96ef326d"},
+"note":"Synthetic data only; code taken from F3B_review.zip (sha256 5012fffb...6123). The iteration-cap test uses a copy of fill_em with a configurable cap and identical arithmetic.",
+"A_baseline_noop_max_abs_diff_nT":3.4e-12,"B_observed_unchanged":true,"B_rank3_max_err_nT":3.6e-08,"B_iterations":98,
+"C_iteration_cap":[{"gap":"12-h blocks","missing":0.10,"n":52,"capped_at_500":1.0,"median_final_change_nT":0.0174,"converged_by_5000":0.115,"same_candidate_500_vs_5000":0.885,"median_rel_curve_diff":0.058,"max_rel_curve_diff":0.323},
+{"gap":"random","missing":0.05,"n":60,"capped_at_500":0.0,"same_candidate_500_vs_5000":1.0,"max_rel_curve_diff":0.0},
+{"gap":"random","missing":0.10,"n":60,"capped_at_500":0.0,"same_candidate_500_vs_5000":1.0,"max_rel_curve_diff":0.0}],
+"D_null_selfref_A1_pass_rate":0.5625,"D_null_independent_ref_pass_rate":0.4425,"D_null_selfref_accept_after_A2_rate":0.117,"D_n":[400,400,60],
+"E_selected_negative_r":[7,176]}
