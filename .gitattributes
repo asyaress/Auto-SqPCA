@@ -1,0 +1,10 @@
+# Preserve source and frozen result bytes on every platform.
+* -text
+auto_sqpca/** -text
+phase2a/** -text
+phase3/** -text
+provenance/** -text
+results/** -text
+figures/** -text
+docs/analysis_plans/** -text
+

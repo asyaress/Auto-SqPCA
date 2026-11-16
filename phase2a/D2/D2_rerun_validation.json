@@ -1,0 +1,45 @@
+{
+  "all_identical": true,
+  "files": {
+    "D2_report.md": {
+      "first_sha256": "faf01053b0dbe875b0229cfc054bf016c550e601ce3b0fa5e9905c2552ef55f7",
+      "rerun_sha256": "faf01053b0dbe875b0229cfc054bf016c550e601ce3b0fa5e9905c2552ef55f7",
+      "identical": true
+    },
+    "D2_hourly_vs_minute.csv": {
+      "first_sha256": "b84f7dabb9cc624cc15c1e1899a63dcd2c3d368e25455ba4653a05fcab90359e",
+      "rerun_sha256": "b84f7dabb9cc624cc15c1e1899a63dcd2c3d368e25455ba4653a05fcab90359e",
+      "identical": true
+    },
+    "D2_timestamp_diagnostics.csv": {
+      "first_sha256": "90860b7299c2ea8f913a994888c84b09fbbfc08bb6847f3e67a52a67d32ad8d3",
+      "rerun_sha256": "90860b7299c2ea8f913a994888c84b09fbbfc08bb6847f3e67a52a67d32ad8d3",
+      "identical": true
+    },
+    "D2_benchmark_offset.csv": {
+      "first_sha256": "87a86c9dd0d29d75b4b91c22c1c73c9d002662d34ddef990dae596f2ead8cd51",
+      "rerun_sha256": "87a86c9dd0d29d75b4b91c22c1c73c9d002662d34ddef990dae596f2ead8cd51",
+      "identical": true
+    },
+    "D2_meanfield_anomaly.csv": {
+      "first_sha256": "b38b43ecff6164b1cf8033cd87a5830b8d729a127c1e448fa33ed88d2e24059a",
+      "rerun_sha256": "b38b43ecff6164b1cf8033cd87a5830b8d729a127c1e448fa33ed88d2e24059a",
+      "identical": true
+    },
+    "D2_validation.json": {
+      "first_sha256": "6467b486787b5ff12c0c503a57e41d34939c13635063815fec65b0053501dac4",
+      "rerun_sha256": "6467b486787b5ff12c0c503a57e41d34939c13635063815fec65b0053501dac4",
+      "identical": true
+    },
+    "D2_execution.log": {
+      "first_sha256": "70032d5a6a8688c05f6204a27b7ead5a962593203522496e20d42fa5483a67f7",
+      "rerun_sha256": "70032d5a6a8688c05f6204a27b7ead5a962593203522496e20d42fa5483a67f7",
+      "identical": true
+    },
+    "D2_review.zip": {
+      "first_sha256": "8f4920b51e3f829cc83ee09296332f0c18ee968a37b28ee89cdb175b0e5143fe",
+      "rerun_sha256": "8f4920b51e3f829cc83ee09296332f0c18ee968a37b28ee89cdb175b0e5143fe",
+      "identical": true
+    }
+  }
+}

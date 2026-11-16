@@ -1,0 +1,18 @@
+{
+  "E3_cases_sha256": "1777d73c47ea52b629e985b93db3906b7d4467cdf4a00248d88fe1853c81f84e",
+  "summary_sha256": "f02c2739cb4b8cd717fb2e3a89f6c9d851bdf953c8699a283142bd45ae5863d4",
+  "examples_sha256": "85ad690fbf640013acfa0953d7b803e59311dfa0ceb22bc2de448a082ffb070d",
+  "station_component_rows": 24,
+  "primary_station_months": 190,
+  "exploratory_station_months": 166,
+  "status_counts": {
+    "NO_MATRIX_OR_DROPPED_DAY": 69,
+    "OK": 999
+  },
+  "example_status": {
+    "COI": "OK",
+    "KDU": "OK",
+    "PLR": "OK",
+    "TUN": "OK"
+  }
+}

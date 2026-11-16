@@ -1,0 +1,50 @@
+{
+  "utc": "2026-11-13T14:16:58.004537+00:00",
+  "variants": {
+    "V0-A": {
+      "eligible_matrices": 6,
+      "frob_median": 2909.69805648119,
+      "development_pass_all_9": false,
+      "frob_pass_count": 0,
+      "vf_pass_count": 0,
+      "pc1_yz_pass_count": 4
+    },
+    "V1": {
+      "eligible_matrices": 6,
+      "frob_median": 0.015108546869481671,
+      "development_pass_all_9": false,
+      "frob_pass_count": 0,
+      "vf_pass_count": 6,
+      "pc1_yz_pass_count": 4
+    },
+    "V2": {
+      "eligible_matrices": 6,
+      "frob_median": 0.9780797385632725,
+      "development_pass_all_9": false,
+      "frob_pass_count": 0,
+      "vf_pass_count": 0,
+      "pc1_yz_pass_count": 0
+    },
+    "V3": {
+      "eligible_matrices": 6,
+      "frob_median": 0.5086036876595996,
+      "development_pass_all_9": false,
+      "frob_pass_count": 0,
+      "vf_pass_count": 0,
+      "pc1_yz_pass_count": 4
+    }
+  },
+  "passing": [],
+  "chosen": "V1",
+  "selection_rule": "6.4 no_variant_pass; DEVIATION_STRUCTURAL",
+  "label": "DEVIATION_STRUCTURAL",
+  "not_eligible": [
+    "combined-06:X",
+    "combined-06:Y",
+    "combined-06:Z"
+  ],
+  "meanfield_tiebreak": {
+    "daily_all_le_0p1": true,
+    "night_all_le_0p1": false
+  }
+}

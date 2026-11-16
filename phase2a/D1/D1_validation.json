@@ -1,0 +1,2860 @@
+{
+  "schema": "Auto-SqPCA-D1-validation-v1",
+  "scope": "February leap-day diagnostic only; no D2, full PCA, DTW, DIFI, classifier",
+  "protocol_version": "G0-registration-1",
+  "source_paper": "https://arxiv.org/pdf/2103.13899",
+  "parameters": {
+    "components": [
+      "X",
+      "Y",
+      "Z"
+    ],
+    "leap_years": [
+      2008,
+      2012,
+      2016
+    ],
+    "night_hour_indices_0based": [
+      0,
+      1,
+      2,
+      3,
+      23
+    ],
+    "night_time_interpretation": "00:30,01:30,02:30,03:30,23:30 in source; WDC HH:00 rows used provisionally",
+    "quiet_day_order": "GFZ Q1-Q10; candidate 2 substitutes Q6 for Q5=29; candidate 3 uses Q1-Q4",
+    "daily_baseline": "mean of the five selected night hours per day, subtracted before averaging days",
+    "missing_policy": "No interpolation in Sq; selected IQD hours must all be finite; incomplete day excluded from calendar mapping score",
+    "calendar_score": "Median constant offset between WDC complete-day 24h mean and Mendeley meanField; RMSE over remaining complete days",
+    "shape_metric": "Remove each 24-hour series mean solely to diagnose additive offset; not a replacement baseline",
+    "svd": "2008 February X only; V0,V1,V2,V3 × 28/29 days; no final centering choice"
+  },
+  "input_sha256": {
+    "phase2a/G0/Protokol Final Fase 2A Replikasi Morozova & Rebbah (2023) untuk Auto-SqPCA.docx": "6ea948b94aaa58e5f8d06d0c0a732fd48420fe45f22211bc503ae466681b49dd",
+    "phase2a/raw/wdc_hourly/COI_2008_hour_iaga_XYZF.zip": "3a1c487468dcdfe721e38852ec1ef879925139c8563e7291df9383b82a089f74",
+    "phase2a/raw/gfz/QD_days2008.txt": "80b25d916b38a4bcadd622cc06f353f0843c7c70f48750b111eee54ea630d8e9",
+    "phase2a/raw/wdc_hourly/COI_2012_hour_iaga_XYZF.zip": "fccb7e8665af0826fc4563d6dd8bc753615ee941d22e8e1469d89120e3e58856",
+    "phase2a/raw/gfz/QD_days2012.txt": "3ff6cecf991c06d6ad77c044f450c3de962f17686c05ca5e08f18d0435363cc3",
+    "phase2a/raw/wdc_hourly/COI_2016_hour_iaga_XYZF.zip": "043da64621a43fb1d605b0cdd1c0e44247eb48172379763bc45ff69ab61b9358",
+    "phase2a/raw/gfz/QD_days2016.txt": "8d0671405e87f6c8a3f4159ec3e6d42ad9386b81973aac557274ac74cb5a4551",
+    "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/X/m02 -  February/data files/COI_X_meanField_m02.dat": "b13d8c4066e212db1387dacd438f1cf239d42d04c00e0b2d095d6cf980696e0a",
+    "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/X/m02 -  February/data files/COI_X_meanField_m02_y_all.dat": "a9c5b5934163b8d22474d0b59404dd755066fd6174d379705361fdfbaedb27ba",
+    "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/X/m02 -  February/data files/mode 1/COI_X_EOF1_m02.dat": "53cc986dd873a9db1647a0e50b8d9df9787856461e982bf870f8d4788b277392",
+    "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/X/m02 -  February/data files/mode 1/COI_X_EOF1_y_all_m02.dat": "c00794f4a2ea8f92ae7937182d7439daf3bcf9180a7f96c6720b559fa0c90e37",
+    "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/X/m02 -  February/data files/mode 1/COI_X_VF1_m02.dat": "fc74e91d4f3ecda2fe56f1573457f8031fdfee2639642a9a8276f5d298ff4fcd",
+    "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/IQD Sq and SD/X/m02 -  February/data files/COI_X_Sq.SD.S_m02.dat": "c29df6f3ff78ac29b4ca349d0d427799986f6e6ce85766160449cf3f00c9512a",
+    "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Y/m02 -  February/data files/COI_Y_meanField_m02.dat": "0711725279a00903e357cc37740470cf1cc6f43de1daade0730a23cd065bb873",
+    "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Y/m02 -  February/data files/COI_Y_meanField_m02_y_all.dat": "ff2a177dc221cc9155b79c22df1c984b390f166dc484a01c354eae6941bdd220",
+    "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Y/m02 -  February/data files/mode 1/COI_Y_EOF1_m02.dat": "d1764d45ae33e15c119d6f1cde9073155fbdda07dfc959ebbeb26ef5dd74c5d7",
+    "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Y/m02 -  February/data files/mode 1/COI_Y_EOF1_y_all_m02.dat": "4e8320db6b5de5755a8617a9a67b5d3dea57dc323dbdfe97c382493ee9a0cb6e",
+    "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Y/m02 -  February/data files/mode 1/COI_Y_VF1_m02.dat": "6fe96a3c6a2f6cde899de6938759d4b44360442d04088078bc7697f254f5541d",
+    "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/IQD Sq and SD/Y/m02 -  February/data files/COI_Y_Sq.SD.S_m02.dat": "f5c8a885e0c79cd6bb50821681cc32cf8cafc943a2f446ebc88309df8c8f7ba5",
+    "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Z/m02 -  February/data files/COI_Z_meanField_m02.dat": "0711725279a00903e357cc37740470cf1cc6f43de1daade0730a23cd065bb873",
+    "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Z/m02 -  February/data files/COI_Z_meanField_m02_y_all.dat": "ff2a177dc221cc9155b79c22df1c984b390f166dc484a01c354eae6941bdd220",
+    "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Z/m02 -  February/data files/mode 1/COI_Z_EOF1_m02.dat": "52ad2bea43309b3998cacb1fc912f3b6937ad8b4fb3dd4c0a5eecdfd9403379b",
+    "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Z/m02 -  February/data files/mode 1/COI_Z_EOF1_y_all_m02.dat": "fa8778836c1a49fb6f9bdb5d1869bcb42aca05964a102a16c95bb3f02dcd583f",
+    "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Z/m02 -  February/data files/mode 1/COI_Z_VF1_m02.dat": "dc10808eed9a49bace2b160160d41bb54da46cecee3108e0abef13860cce556c",
+    "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/IQD Sq and SD/Z/m02 -  February/data files/COI_Z_Sq.SD.S_m02.dat": "1844b051dbdac6e140fb86c98d3f286b008a5dff41216c53359a2d5b60478b2b"
+  },
+  "raw_integrity": {
+    "files_checked_before": 3659,
+    "files_checked_after": 3659,
+    "all_match_G0_manifest": true,
+    "G0_key_files_before": {
+      "phase2a/G0/G0_report.md": "45c56d6a918e368a59e6dc3b961c9c5a680c071f57ed23eafa2b93420242766d",
+      "phase2a/G0/G0_validation.json": "eeac2cd3c465f368e451eec21870c9de6a777379e28f89d4815dbdfbfd913a6a",
+      "phase2a/G0/input_manifest.csv": "69ade47970855fbaa37102479d632142997dabe932415c633e0bc05b1ff7f947"
+    },
+    "G0_key_files_after": {
+      "phase2a/G0/G0_report.md": "45c56d6a918e368a59e6dc3b961c9c5a680c071f57ed23eafa2b93420242766d",
+      "phase2a/G0/G0_validation.json": "eeac2cd3c465f368e451eec21870c9de6a777379e28f89d4815dbdfbfd913a6a",
+      "phase2a/G0/input_manifest.csv": "69ade47970855fbaa37102479d632142997dabe932415c633e0bc05b1ff7f947"
+    }
+  },
+  "mendeley_structure": {
+    "X": {
+      "meanField": {
+        "file": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/X/m02 -  February/data files/COI_X_meanField_m02.dat",
+        "rows": 28,
+        "columns": 12,
+        "header": [
+          "day",
+          "y.2007",
+          "y.2008",
+          "y.2009",
+          "y.2010",
+          "y.2011",
+          "y.2012",
+          "y.2013",
+          "y.2014",
+          "y.2015",
+          "y.2016",
+          "y.2017"
+        ],
+        "first_index": "1",
+        "last_index": "28"
+      },
+      "meanField_y_all": {
+        "file": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/X/m02 -  February/data files/COI_X_meanField_m02_y_all.dat",
+        "rows": 308,
+        "columns": 2,
+        "header": [
+          "day",
+          "meanField"
+        ],
+        "first_index": "1",
+        "last_index": "308",
+        "exact_year_major_flatten": true
+      },
+      "EOF1": {
+        "file": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/X/m02 -  February/data files/mode 1/COI_X_EOF1_m02.dat",
+        "rows": 28,
+        "columns": 12,
+        "header": [
+          "day",
+          "y.2007",
+          "y.2008",
+          "y.2009",
+          "y.2010",
+          "y.2011",
+          "y.2012",
+          "y.2013",
+          "y.2014",
+          "y.2015",
+          "y.2016",
+          "y.2017"
+        ],
+        "first_index": "1",
+        "last_index": "28"
+      },
+      "EOF1_y_all": {
+        "file": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/X/m02 -  February/data files/mode 1/COI_X_EOF1_y_all_m02.dat",
+        "rows": 341,
+        "columns": 2,
+        "header": [
+          "day",
+          "month.2"
+        ],
+        "first_index": "1",
+        "last_index": "341",
+        "valid_prefix": 308,
+        "trailing_NA": 33
+      },
+      "Sq": {
+        "file": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/IQD Sq and SD/X/m02 -  February/data files/COI_X_Sq.SD.S_m02.dat",
+        "rows": 24,
+        "columns": 37,
+        "header": [
+          "h",
+          "Sq.y.2007",
+          "Sq.y.2008",
+          "Sq.y.2009",
+          "Sq.y.2010",
+          "Sq.y.2011",
+          "Sq.y.2012",
+          "Sq.y.2013",
+          "Sq.y.2014",
+          "Sq.y.2015",
+          "Sq.y.2016",
+          "Sq.y.2017",
+          "Sq.y.all",
+          "SD.y.2007",
+          "SD.y.2008",
+          "SD.y.2009",
+          "SD.y.2010",
+          "SD.y.2011",
+          "SD.y.2012",
+          "SD.y.2013",
+          "SD.y.2014",
+          "SD.y.2015",
+          "SD.y.2016",
+          "SD.y.2017",
+          "SD.y.all",
+          "S.y.2007",
+          "S.y.2008",
+          "S.y.2009",
+          "S.y.2010",
+          "S.y.2011",
+          "S.y.2012",
+          "S.y.2013",
+          "S.y.2014",
+          "S.y.2015",
+          "S.y.2016",
+          "S.y.2017",
+          "S.y.all"
+        ],
+        "first_index": "1",
+        "last_index": "24"
+      },
+      "VF1": {
+        "file": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/X/m02 -  February/data files/mode 1/COI_X_VF1_m02.dat",
+        "rows": 12,
+        "columns": 2,
+        "labels": [
+          "y.2007",
+          "y.2008",
+          "y.2009",
+          "y.2010",
+          "y.2011",
+          "y.2012",
+          "y.2013",
+          "y.2014",
+          "y.2015",
+          "y.2016",
+          "y.2017",
+          "y.all"
+        ]
+      }
+    },
+    "Y": {
+      "meanField": {
+        "file": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Y/m02 -  February/data files/COI_Y_meanField_m02.dat",
+        "rows": 28,
+        "columns": 12,
+        "header": [
+          "day",
+          "y.2007",
+          "y.2008",
+          "y.2009",
+          "y.2010",
+          "y.2011",
+          "y.2012",
+          "y.2013",
+          "y.2014",
+          "y.2015",
+          "y.2016",
+          "y.2017"
+        ],
+        "first_index": "1",
+        "last_index": "28"
+      },
+      "meanField_y_all": {
+        "file": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Y/m02 -  February/data files/COI_Y_meanField_m02_y_all.dat",
+        "rows": 308,
+        "columns": 2,
+        "header": [
+          "day",
+          "meanField"
+        ],
+        "first_index": "1",
+        "last_index": "308",
+        "exact_year_major_flatten": true
+      },
+      "EOF1": {
+        "file": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Y/m02 -  February/data files/mode 1/COI_Y_EOF1_m02.dat",
+        "rows": 28,
+        "columns": 12,
+        "header": [
+          "day",
+          "y.2007",
+          "y.2008",
+          "y.2009",
+          "y.2010",
+          "y.2011",
+          "y.2012",
+          "y.2013",
+          "y.2014",
+          "y.2015",
+          "y.2016",
+          "y.2017"
+        ],
+        "first_index": "1",
+        "last_index": "28"
+      },
+      "EOF1_y_all": {
+        "file": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Y/m02 -  February/data files/mode 1/COI_Y_EOF1_y_all_m02.dat",
+        "rows": 341,
+        "columns": 2,
+        "header": [
+          "day",
+          "month.2"
+        ],
+        "first_index": "1",
+        "last_index": "341",
+        "valid_prefix": 308,
+        "trailing_NA": 33
+      },
+      "Sq": {
+        "file": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/IQD Sq and SD/Y/m02 -  February/data files/COI_Y_Sq.SD.S_m02.dat",
+        "rows": 24,
+        "columns": 37,
+        "header": [
+          "h",
+          "Sq.y.2007",
+          "Sq.y.2008",
+          "Sq.y.2009",
+          "Sq.y.2010",
+          "Sq.y.2011",
+          "Sq.y.2012",
+          "Sq.y.2013",
+          "Sq.y.2014",
+          "Sq.y.2015",
+          "Sq.y.2016",
+          "Sq.y.2017",
+          "Sq.y.all",
+          "SD.y.2007",
+          "SD.y.2008",
+          "SD.y.2009",
+          "SD.y.2010",
+          "SD.y.2011",
+          "SD.y.2012",
+          "SD.y.2013",
+          "SD.y.2014",
+          "SD.y.2015",
+          "SD.y.2016",
+          "SD.y.2017",
+          "SD.y.all",
+          "S.y.2007",
+          "S.y.2008",
+          "S.y.2009",
+          "S.y.2010",
+          "S.y.2011",
+          "S.y.2012",
+          "S.y.2013",
+          "S.y.2014",
+          "S.y.2015",
+          "S.y.2016",
+          "S.y.2017",
+          "S.y.all"
+        ],
+        "first_index": "1",
+        "last_index": "24"
+      },
+      "VF1": {
+        "file": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Y/m02 -  February/data files/mode 1/COI_Y_VF1_m02.dat",
+        "rows": 12,
+        "columns": 2,
+        "labels": [
+          "y.2007",
+          "y.2008",
+          "y.2009",
+          "y.2010",
+          "y.2011",
+          "y.2012",
+          "y.2013",
+          "y.2014",
+          "y.2015",
+          "y.2016",
+          "y.2017",
+          "y.all"
+        ]
+      }
+    },
+    "Z": {
+      "meanField": {
+        "file": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Z/m02 -  February/data files/COI_Z_meanField_m02.dat",
+        "rows": 28,
+        "columns": 12,
+        "header": [
+          "day",
+          "y.2007",
+          "y.2008",
+          "y.2009",
+          "y.2010",
+          "y.2011",
+          "y.2012",
+          "y.2013",
+          "y.2014",
+          "y.2015",
+          "y.2016",
+          "y.2017"
+        ],
+        "first_index": "1",
+        "last_index": "28"
+      },
+      "meanField_y_all": {
+        "file": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Z/m02 -  February/data files/COI_Z_meanField_m02_y_all.dat",
+        "rows": 308,
+        "columns": 2,
+        "header": [
+          "day",
+          "meanField"
+        ],
+        "first_index": "1",
+        "last_index": "308",
+        "exact_year_major_flatten": true
+      },
+      "EOF1": {
+        "file": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Z/m02 -  February/data files/mode 1/COI_Z_EOF1_m02.dat",
+        "rows": 28,
+        "columns": 12,
+        "header": [
+          "day",
+          "y.2007",
+          "y.2008",
+          "y.2009",
+          "y.2010",
+          "y.2011",
+          "y.2012",
+          "y.2013",
+          "y.2014",
+          "y.2015",
+          "y.2016",
+          "y.2017"
+        ],
+        "first_index": "1",
+        "last_index": "28"
+      },
+      "EOF1_y_all": {
+        "file": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Z/m02 -  February/data files/mode 1/COI_Z_EOF1_y_all_m02.dat",
+        "rows": 341,
+        "columns": 2,
+        "header": [
+          "day",
+          "month.2"
+        ],
+        "first_index": "1",
+        "last_index": "341",
+        "valid_prefix": 308,
+        "trailing_NA": 33
+      },
+      "Sq": {
+        "file": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/IQD Sq and SD/Z/m02 -  February/data files/COI_Z_Sq.SD.S_m02.dat",
+        "rows": 24,
+        "columns": 37,
+        "header": [
+          "h",
+          "Sq.y.2007",
+          "Sq.y.2008",
+          "Sq.y.2009",
+          "Sq.y.2010",
+          "Sq.y.2011",
+          "Sq.y.2012",
+          "Sq.y.2013",
+          "Sq.y.2014",
+          "Sq.y.2015",
+          "Sq.y.2016",
+          "Sq.y.2017",
+          "Sq.y.all",
+          "SD.y.2007",
+          "SD.y.2008",
+          "SD.y.2009",
+          "SD.y.2010",
+          "SD.y.2011",
+          "SD.y.2012",
+          "SD.y.2013",
+          "SD.y.2014",
+          "SD.y.2015",
+          "SD.y.2016",
+          "SD.y.2017",
+          "SD.y.all",
+          "S.y.2007",
+          "S.y.2008",
+          "S.y.2009",
+          "S.y.2010",
+          "S.y.2011",
+          "S.y.2012",
+          "S.y.2013",
+          "S.y.2014",
+          "S.y.2015",
+          "S.y.2016",
+          "S.y.2017",
+          "S.y.all"
+        ],
+        "first_index": "1",
+        "last_index": "24"
+      },
+      "VF1": {
+        "file": "phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/Z/m02 -  February/data files/mode 1/COI_Z_VF1_m02.dat",
+        "rows": 12,
+        "columns": 2,
+        "labels": [
+          "y.2007",
+          "y.2008",
+          "y.2009",
+          "y.2010",
+          "y.2011",
+          "y.2012",
+          "y.2013",
+          "y.2014",
+          "y.2015",
+          "y.2016",
+          "y.2017",
+          "y.all"
+        ]
+      }
+    }
+  },
+  "mendeley_Y_Z_meanField_identical_sha256": true,
+  "gfz_february_Q1_Q10": {
+    "2008": [
+      24,
+      25,
+      22,
+      26,
+      9,
+      5,
+      6,
+      23,
+      17,
+      21
+    ],
+    "2012": [
+      17,
+      23,
+      12,
+      2,
+      16,
+      11,
+      10,
+      18,
+      24,
+      9
+    ],
+    "2016": [
+      22,
+      28,
+      27,
+      21,
+      29,
+      10,
+      4,
+      25,
+      20,
+      2
+    ]
+  },
+  "wdc_february": {
+    "2008": {
+      "hourly_rows": 696,
+      "feb29_hours": 24,
+      "feb29_finite_XYZ": {
+        "X": 24,
+        "Y": 24,
+        "Z": 24
+      },
+      "missing_XYZ_month": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      }
+    },
+    "2012": {
+      "hourly_rows": 696,
+      "feb29_hours": 24,
+      "feb29_finite_XYZ": {
+        "X": 24,
+        "Y": 24,
+        "Z": 24
+      },
+      "missing_XYZ_month": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      }
+    },
+    "2016": {
+      "hourly_rows": 696,
+      "feb29_hours": 24,
+      "feb29_finite_XYZ": {
+        "X": 24,
+        "Y": 24,
+        "Z": 24
+      },
+      "missing_XYZ_month": {
+        "X": 1,
+        "Y": 1,
+        "Z": 1
+      }
+    }
+  },
+  "calendar_mapping_sorted": {
+    "2008": {
+      "X": [
+        {
+          "dropped_day": 29,
+          "rmse_nT": 0.06202937892014776,
+          "max_abs_nT": 0.15625000000540012,
+          "offset_fit_nT": 25000.01541666667,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 28,
+          "rmse_nT": 1.0805063503824368,
+          "max_abs_nT": 5.708750000006091,
+          "offset_fit_nT": 25000.01541666667,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 27,
+          "rmse_nT": 1.2860045155798099,
+          "max_abs_nT": 5.7020833333417045,
+          "offset_fit_nT": 25000.008750000005,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 26,
+          "rmse_nT": 1.5296775453870723,
+          "max_abs_nT": 5.697500000006528,
+          "offset_fit_nT": 25000.00416666667,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 25,
+          "rmse_nT": 1.6019217052671064,
+          "max_abs_nT": 5.688333333339813,
+          "offset_fit_nT": 24999.995000000003,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 24,
+          "rmse_nT": 1.7713801676711947,
+          "max_abs_nT": 5.688333333339813,
+          "offset_fit_nT": 24999.995000000003,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 22,
+          "rmse_nT": 2.1887995006333454,
+          "max_abs_nT": 6.799999999996658,
+          "offset_fit_nT": 24999.995000000003,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 23,
+          "rmse_nT": 2.1903671006748806,
+          "max_abs_nT": 6.790833333329942,
+          "offset_fit_nT": 25000.00416666667,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 21,
+          "rmse_nT": 2.2866839120210622,
+          "max_abs_nT": 6.790833333329942,
+          "offset_fit_nT": 25000.00416666667,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 20,
+          "rmse_nT": 2.321269905292921,
+          "max_abs_nT": 6.790833333329942,
+          "offset_fit_nT": 25000.00416666667,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 19,
+          "rmse_nT": 3.0165825716708734,
+          "max_abs_nT": 10.18874999999474,
+          "offset_fit_nT": 25000.008750000005,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 18,
+          "rmse_nT": 3.0412641734680093,
+          "max_abs_nT": 10.18874999999474,
+          "offset_fit_nT": 25000.008750000005,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 17,
+          "rmse_nT": 3.2356453327348165,
+          "max_abs_nT": 10.199999999994304,
+          "offset_fit_nT": 24999.997500000005,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 16,
+          "rmse_nT": 3.2433933612859716,
+          "max_abs_nT": 10.199999999994304,
+          "offset_fit_nT": 24999.997500000005,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 15,
+          "rmse_nT": 3.2815580618806273,
+          "max_abs_nT": 10.199999999994304,
+          "offset_fit_nT": 24999.997500000005,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 14,
+          "rmse_nT": 3.2908697498259483,
+          "max_abs_nT": 10.199999999994304,
+          "offset_fit_nT": 24999.997500000005,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 13,
+          "rmse_nT": 3.3503577271391802,
+          "max_abs_nT": 10.18874999999474,
+          "offset_fit_nT": 25000.008750000005,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 12,
+          "rmse_nT": 3.429191087253043,
+          "max_abs_nT": 10.18874999999474,
+          "offset_fit_nT": 25000.008750000005,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 11,
+          "rmse_nT": 3.43231735213297,
+          "max_abs_nT": 10.18874999999474,
+          "offset_fit_nT": 25000.008750000005,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 10,
+          "rmse_nT": 3.4343148916196795,
+          "max_abs_nT": 10.199999999994304,
+          "offset_fit_nT": 24999.997500000005,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 9,
+          "rmse_nT": 4.281526558093021,
+          "max_abs_nT": 13.532916666665244,
+          "offset_fit_nT": 24999.92375,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 8,
+          "rmse_nT": 4.5245356438706,
+          "max_abs_nT": 13.532916666665244,
+          "offset_fit_nT": 24999.92375,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 7,
+          "rmse_nT": 4.543171815356293,
+          "max_abs_nT": 13.606666666668445,
+          "offset_fit_nT": 24999.997500000005,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 6,
+          "rmse_nT": 4.551895800866075,
+          "max_abs_nT": 13.606666666668445,
+          "offset_fit_nT": 24999.997500000005,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 5,
+          "rmse_nT": 4.629892797513049,
+          "max_abs_nT": 13.617916666668009,
+          "offset_fit_nT": 25000.008750000005,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 4,
+          "rmse_nT": 4.65173348651429,
+          "max_abs_nT": 13.62541666666408,
+          "offset_fit_nT": 25000.01625,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 2,
+          "rmse_nT": 4.730613416736627,
+          "max_abs_nT": 13.645416666660878,
+          "offset_fit_nT": 25000.036249999997,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 3,
+          "rmse_nT": 4.730808260814669,
+          "max_abs_nT": 13.641249999995182,
+          "offset_fit_nT": 25000.03208333333,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 1,
+          "rmse_nT": 4.84021263563206,
+          "max_abs_nT": 13.524999999996055,
+          "offset_fit_nT": 24999.915833333333,
+          "valid_days": 28
+        }
+      ],
+      "Y": [
+        {
+          "dropped_day": 29,
+          "rmse_nT": 1.6616369418103094,
+          "max_abs_nT": 3.822083333333353,
+          "offset_fit_nT": -1923.7495833333332,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 28,
+          "rmse_nT": 1.8009447958607514,
+          "max_abs_nT": 4.1229166666665265,
+          "offset_fit_nT": -1923.7495833333332,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 27,
+          "rmse_nT": 2.1490514184187495,
+          "max_abs_nT": 6.368749999999693,
+          "offset_fit_nT": -1923.7495833333332,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 26,
+          "rmse_nT": 2.2985646994546456,
+          "max_abs_nT": 6.368749999999693,
+          "offset_fit_nT": -1923.7495833333332,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 25,
+          "rmse_nT": 2.30345902657348,
+          "max_abs_nT": 6.368749999999693,
+          "offset_fit_nT": -1923.7495833333332,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 24,
+          "rmse_nT": 2.3159151905116335,
+          "max_abs_nT": 6.368749999999693,
+          "offset_fit_nT": -1923.7495833333332,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 9,
+          "rmse_nT": 2.3294240902552903,
+          "max_abs_nT": 6.328749999999729,
+          "offset_fit_nT": -1923.7095833333333,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 23,
+          "rmse_nT": 2.3461008316146024,
+          "max_abs_nT": 6.593749999999602,
+          "offset_fit_nT": -1923.9745833333332,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 22,
+          "rmse_nT": 2.346443055963746,
+          "max_abs_nT": 6.593749999999602,
+          "offset_fit_nT": -1923.9745833333332,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 5,
+          "rmse_nT": 2.3653129249921077,
+          "max_abs_nT": 6.459583333333114,
+          "offset_fit_nT": -1923.8404166666667,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 8,
+          "rmse_nT": 2.379587690001054,
+          "max_abs_nT": 6.328749999999729,
+          "offset_fit_nT": -1923.7095833333333,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 15,
+          "rmse_nT": 2.399844700869908,
+          "max_abs_nT": 6.368749999999693,
+          "offset_fit_nT": -1923.7495833333332,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 13,
+          "rmse_nT": 2.407590901380949,
+          "max_abs_nT": 6.569166666666263,
+          "offset_fit_nT": -1923.9499999999998,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 12,
+          "rmse_nT": 2.4081208507352003,
+          "max_abs_nT": 6.569166666666263,
+          "offset_fit_nT": -1923.9499999999998,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 10,
+          "rmse_nT": 2.4090830106869614,
+          "max_abs_nT": 6.569166666666263,
+          "offset_fit_nT": -1923.9499999999998,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 20,
+          "rmse_nT": 2.4095770134876697,
+          "max_abs_nT": 6.593749999999602,
+          "offset_fit_nT": -1923.9745833333332,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 11,
+          "rmse_nT": 2.416054987244414,
+          "max_abs_nT": 6.598749999999711,
+          "offset_fit_nT": -1923.9795833333333,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 18,
+          "rmse_nT": 2.4163419578654186,
+          "max_abs_nT": 6.593749999999602,
+          "offset_fit_nT": -1923.9745833333332,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 19,
+          "rmse_nT": 2.418916055987126,
+          "max_abs_nT": 6.593749999999602,
+          "offset_fit_nT": -1923.9745833333332,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 17,
+          "rmse_nT": 2.4262871675962985,
+          "max_abs_nT": 6.593749999999602,
+          "offset_fit_nT": -1923.9745833333332,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 14,
+          "rmse_nT": 2.429316415991864,
+          "max_abs_nT": 6.593749999999602,
+          "offset_fit_nT": -1923.9745833333332,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 16,
+          "rmse_nT": 2.4332446830312033,
+          "max_abs_nT": 6.593749999999602,
+          "offset_fit_nT": -1923.9745833333332,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 21,
+          "rmse_nT": 2.437079354220827,
+          "max_abs_nT": 6.593749999999602,
+          "offset_fit_nT": -1923.9745833333332,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 7,
+          "rmse_nT": 2.4390810450343494,
+          "max_abs_nT": 6.333749999999839,
+          "offset_fit_nT": -1923.7145833333334,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 6,
+          "rmse_nT": 2.488159564986349,
+          "max_abs_nT": 6.598749999999711,
+          "offset_fit_nT": -1923.9795833333333,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 1,
+          "rmse_nT": 2.524975129533293,
+          "max_abs_nT": 6.54249999999962,
+          "offset_fit_nT": -1923.9233333333332,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 4,
+          "rmse_nT": 2.534468852850864,
+          "max_abs_nT": 6.459583333333114,
+          "offset_fit_nT": -1923.8404166666667,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 2,
+          "rmse_nT": 2.560442171208511,
+          "max_abs_nT": 6.427916666666363,
+          "offset_fit_nT": -1923.80875,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 3,
+          "rmse_nT": 2.564042194659028,
+          "max_abs_nT": 6.459583333333114,
+          "offset_fit_nT": -1923.8404166666667,
+          "valid_days": 28
+        }
+      ],
+      "Z": [
+        {
+          "dropped_day": 29,
+          "rmse_nT": 0.05864457782102548,
+          "max_abs_nT": 0.15333333332819166,
+          "offset_fit_nT": 35999.98,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 28,
+          "rmse_nT": 0.11072766176123802,
+          "max_abs_nT": 0.5016666666625156,
+          "offset_fit_nT": 35999.98,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 27,
+          "rmse_nT": 0.8693098858165755,
+          "max_abs_nT": 4.5633333333308315,
+          "offset_fit_nT": 35999.985,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 26,
+          "rmse_nT": 1.0831548731209701,
+          "max_abs_nT": 4.5633333333308315,
+          "offset_fit_nT": 35999.985,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 25,
+          "rmse_nT": 1.2375311744504036,
+          "max_abs_nT": 4.5633333333308315,
+          "offset_fit_nT": 35999.985,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 24,
+          "rmse_nT": 1.288150898805096,
+          "max_abs_nT": 4.556666666662807,
+          "offset_fit_nT": 35999.99166666667,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 23,
+          "rmse_nT": 1.3221177846567778,
+          "max_abs_nT": 4.5633333333308315,
+          "offset_fit_nT": 35999.985,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 22,
+          "rmse_nT": 1.3587485762455151,
+          "max_abs_nT": 4.556666666662807,
+          "offset_fit_nT": 35999.99166666667,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 21,
+          "rmse_nT": 1.3684664035400236,
+          "max_abs_nT": 4.544166666665717,
+          "offset_fit_nT": 36000.004166666666,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 20,
+          "rmse_nT": 1.374989862876375,
+          "max_abs_nT": 4.556666666662807,
+          "offset_fit_nT": 35999.99166666667,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 19,
+          "rmse_nT": 1.5408579844909618,
+          "max_abs_nT": 4.556666666662807,
+          "offset_fit_nT": 35999.99166666667,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 18,
+          "rmse_nT": 1.5854614457728637,
+          "max_abs_nT": 4.5408333333389805,
+          "offset_fit_nT": 36000.00749999999,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 17,
+          "rmse_nT": 1.5864601409334262,
+          "max_abs_nT": 4.5408333333389805,
+          "offset_fit_nT": 36000.00749999999,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 16,
+          "rmse_nT": 1.6240915959090554,
+          "max_abs_nT": 4.556666666662807,
+          "offset_fit_nT": 35999.99166666667,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 15,
+          "rmse_nT": 1.6374499492523524,
+          "max_abs_nT": 4.556666666662807,
+          "offset_fit_nT": 35999.99166666667,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 14,
+          "rmse_nT": 1.6381957809322467,
+          "max_abs_nT": 4.5633333333308315,
+          "offset_fit_nT": 35999.985,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 12,
+          "rmse_nT": 1.651213561353011,
+          "max_abs_nT": 4.5633333333308315,
+          "offset_fit_nT": 35999.985,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 13,
+          "rmse_nT": 1.652144957716291,
+          "max_abs_nT": 4.574166666664553,
+          "offset_fit_nT": 35999.97416666667,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 10,
+          "rmse_nT": 1.6548064838543166,
+          "max_abs_nT": 4.549583333332578,
+          "offset_fit_nT": 35999.99875,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 11,
+          "rmse_nT": 1.6556131300236654,
+          "max_abs_nT": 4.556666666662807,
+          "offset_fit_nT": 35999.99166666667,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 9,
+          "rmse_nT": 1.6801202760109064,
+          "max_abs_nT": 4.549583333332578,
+          "offset_fit_nT": 35999.99875,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 8,
+          "rmse_nT": 1.6876281036025438,
+          "max_abs_nT": 4.549583333332578,
+          "offset_fit_nT": 35999.99875,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 7,
+          "rmse_nT": 1.694004739819616,
+          "max_abs_nT": 4.554583333337234,
+          "offset_fit_nT": 35999.993749999994,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 6,
+          "rmse_nT": 1.7154015796199378,
+          "max_abs_nT": 4.5633333333308315,
+          "offset_fit_nT": 35999.985,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 5,
+          "rmse_nT": 1.7177228243771565,
+          "max_abs_nT": 4.5633333333308315,
+          "offset_fit_nT": 35999.985,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 4,
+          "rmse_nT": 1.749401655078324,
+          "max_abs_nT": 4.5633333333308315,
+          "offset_fit_nT": 35999.985,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 3,
+          "rmse_nT": 1.7533619562995049,
+          "max_abs_nT": 4.580416666663098,
+          "offset_fit_nT": 35999.96791666667,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 2,
+          "rmse_nT": 1.797022835532378,
+          "max_abs_nT": 4.5716666666622245,
+          "offset_fit_nT": 35999.97666666667,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 1,
+          "rmse_nT": 1.7993392815682245,
+          "max_abs_nT": 4.597499999995364,
+          "offset_fit_nT": 35999.950833333336,
+          "valid_days": 28
+        }
+      ]
+    },
+    "2012": {
+      "X": [
+        {
+          "dropped_day": 29,
+          "rmse_nT": 0.0595358618746383,
+          "max_abs_nT": 0.12250000000324235,
+          "offset_fit_nT": 25000.000833333335,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 28,
+          "rmse_nT": 0.549849433756231,
+          "max_abs_nT": 2.8929166666692936,
+          "offset_fit_nT": 25000.002083333333,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 27,
+          "rmse_nT": 0.5527701702444435,
+          "max_abs_nT": 2.8916666666717674,
+          "offset_fit_nT": 25000.00333333333,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 26,
+          "rmse_nT": 2.9972936412088735,
+          "max_abs_nT": 15.587916666670026,
+          "offset_fit_nT": 25000.002083333333,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 25,
+          "rmse_nT": 3.1489247779119895,
+          "max_abs_nT": 15.587916666670026,
+          "offset_fit_nT": 25000.002083333333,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 24,
+          "rmse_nT": 3.181225551096389,
+          "max_abs_nT": 15.587916666670026,
+          "offset_fit_nT": 25000.002083333333,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 23,
+          "rmse_nT": 3.2579609190723215,
+          "max_abs_nT": 15.587916666670026,
+          "offset_fit_nT": 25000.002083333333,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 22,
+          "rmse_nT": 3.4070581355319653,
+          "max_abs_nT": 15.5866666666725,
+          "offset_fit_nT": 25000.000833333335,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 21,
+          "rmse_nT": 3.67439787273853,
+          "max_abs_nT": 15.587916666670026,
+          "offset_fit_nT": 25000.002083333333,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 20,
+          "rmse_nT": 4.222922765871077,
+          "max_abs_nT": 15.589166666667552,
+          "offset_fit_nT": 25000.00333333333,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 19,
+          "rmse_nT": 4.31618831521813,
+          "max_abs_nT": 15.589166666667552,
+          "offset_fit_nT": 25000.00333333333,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 18,
+          "rmse_nT": 6.626750934764379,
+          "max_abs_nT": 26.607083333337982,
+          "offset_fit_nT": 25000.002083333333,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 17,
+          "rmse_nT": 6.712090289291185,
+          "max_abs_nT": 26.60833333333551,
+          "offset_fit_nT": 25000.00333333333,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 16,
+          "rmse_nT": 7.019439110188132,
+          "max_abs_nT": 26.610000000002515,
+          "offset_fit_nT": 25000.004999999997,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 15,
+          "rmse_nT": 8.281021859691513,
+          "max_abs_nT": 26.610000000002515,
+          "offset_fit_nT": 25000.004999999997,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 14,
+          "rmse_nT": 9.306159960974988,
+          "max_abs_nT": 26.610000000002515,
+          "offset_fit_nT": 25000.004999999997,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 13,
+          "rmse_nT": 9.579681524721178,
+          "max_abs_nT": 26.610000000002515,
+          "offset_fit_nT": 25000.004999999997,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 12,
+          "rmse_nT": 9.671576929209765,
+          "max_abs_nT": 26.610000000002515,
+          "offset_fit_nT": 25000.004999999997,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 11,
+          "rmse_nT": 9.68992830804666,
+          "max_abs_nT": 26.625000000001933,
+          "offset_fit_nT": 25000.019999999997,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 10,
+          "rmse_nT": 9.772814084944804,
+          "max_abs_nT": 26.625000000001933,
+          "offset_fit_nT": 25000.019999999997,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 9,
+          "rmse_nT": 9.843493303531773,
+          "max_abs_nT": 26.625000000001933,
+          "offset_fit_nT": 25000.019999999997,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 8,
+          "rmse_nT": 9.883000660656666,
+          "max_abs_nT": 26.765833333336673,
+          "offset_fit_nT": 25000.16083333333,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 7,
+          "rmse_nT": 9.883334019664337,
+          "max_abs_nT": 26.765833333336673,
+          "offset_fit_nT": 25000.16083333333,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 6,
+          "rmse_nT": 9.960197508072305,
+          "max_abs_nT": 26.765833333336673,
+          "offset_fit_nT": 25000.16083333333,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 5,
+          "rmse_nT": 9.97670961773645,
+          "max_abs_nT": 26.765833333336673,
+          "offset_fit_nT": 25000.16083333333,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 4,
+          "rmse_nT": 10.059755734682458,
+          "max_abs_nT": 27.761666666670976,
+          "offset_fit_nT": 25001.156666666666,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 3,
+          "rmse_nT": 10.09980896703714,
+          "max_abs_nT": 27.761666666670976,
+          "offset_fit_nT": 25001.156666666666,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 2,
+          "rmse_nT": 10.102859190075481,
+          "max_abs_nT": 27.761666666670976,
+          "offset_fit_nT": 25001.156666666666,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 1,
+          "rmse_nT": 10.195043495736806,
+          "max_abs_nT": 28.337500000003388,
+          "offset_fit_nT": 25001.7325,
+          "valid_days": 28
+        }
+      ],
+      "Y": [
+        {
+          "dropped_day": 19,
+          "rmse_nT": 2.8369191245165992,
+          "max_abs_nT": 5.25916666666717,
+          "offset_fit_nT": -1636.4741666666664,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 20,
+          "rmse_nT": 3.106103881779411,
+          "max_abs_nT": 7.416666666666373,
+          "offset_fit_nT": -1636.4741666666664,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 21,
+          "rmse_nT": 3.1594277182655572,
+          "max_abs_nT": 7.416666666666373,
+          "offset_fit_nT": -1636.4741666666664,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 22,
+          "rmse_nT": 3.17851470488448,
+          "max_abs_nT": 7.416666666666373,
+          "offset_fit_nT": -1636.4741666666664,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 26,
+          "rmse_nT": 3.274509100037813,
+          "max_abs_nT": 7.132500000000022,
+          "offset_fit_nT": -1636.19,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 23,
+          "rmse_nT": 3.3103401351698163,
+          "max_abs_nT": 7.132500000000022,
+          "offset_fit_nT": -1636.19,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 29,
+          "rmse_nT": 3.310347395061785,
+          "max_abs_nT": 7.462083333333197,
+          "offset_fit_nT": -1636.5195833333332,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 24,
+          "rmse_nT": 3.312573074965196,
+          "max_abs_nT": 7.132500000000022,
+          "offset_fit_nT": -1636.19,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 28,
+          "rmse_nT": 3.313877221935608,
+          "max_abs_nT": 7.132500000000022,
+          "offset_fit_nT": -1636.19,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 27,
+          "rmse_nT": 3.3161328723654506,
+          "max_abs_nT": 7.132500000000022,
+          "offset_fit_nT": -1636.19,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 25,
+          "rmse_nT": 3.348014173914206,
+          "max_abs_nT": 7.132500000000022,
+          "offset_fit_nT": -1636.19,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 9,
+          "rmse_nT": 3.678089687596009,
+          "max_abs_nT": 12.58666666666636,
+          "offset_fit_nT": -1636.4741666666664,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 10,
+          "rmse_nT": 3.692623005092486,
+          "max_abs_nT": 12.58666666666636,
+          "offset_fit_nT": -1636.4741666666664,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 18,
+          "rmse_nT": 3.701501917256362,
+          "max_abs_nT": 12.58666666666636,
+          "offset_fit_nT": -1636.4741666666664,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 17,
+          "rmse_nT": 3.702112425187856,
+          "max_abs_nT": 12.58666666666636,
+          "offset_fit_nT": -1636.4741666666664,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 14,
+          "rmse_nT": 3.721332136752101,
+          "max_abs_nT": 12.58666666666636,
+          "offset_fit_nT": -1636.4741666666664,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 16,
+          "rmse_nT": 3.743296124141942,
+          "max_abs_nT": 12.58666666666636,
+          "offset_fit_nT": -1636.4741666666664,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 13,
+          "rmse_nT": 3.746753591470734,
+          "max_abs_nT": 12.003749999999627,
+          "offset_fit_nT": -1635.8912499999997,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 15,
+          "rmse_nT": 3.761534047813119,
+          "max_abs_nT": 12.58666666666636,
+          "offset_fit_nT": -1636.4741666666664,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 11,
+          "rmse_nT": 3.8041053168787253,
+          "max_abs_nT": 12.58666666666636,
+          "offset_fit_nT": -1636.4741666666664,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 1,
+          "rmse_nT": 3.807700188981111,
+          "max_abs_nT": 12.537916666666433,
+          "offset_fit_nT": -1636.4254166666665,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 12,
+          "rmse_nT": 3.8169856515692997,
+          "max_abs_nT": 12.58666666666636,
+          "offset_fit_nT": -1636.4741666666664,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 6,
+          "rmse_nT": 3.8577987422768762,
+          "max_abs_nT": 12.343749999999773,
+          "offset_fit_nT": -1636.2312499999998,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 5,
+          "rmse_nT": 3.8710787090970014,
+          "max_abs_nT": 12.537916666666433,
+          "offset_fit_nT": -1636.4254166666665,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 3,
+          "rmse_nT": 3.8914081851806186,
+          "max_abs_nT": 12.537916666666433,
+          "offset_fit_nT": -1636.4254166666665,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 4,
+          "rmse_nT": 3.9017040532118163,
+          "max_abs_nT": 12.911666666666633,
+          "offset_fit_nT": -1636.7991666666667,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 2,
+          "rmse_nT": 3.908601863427126,
+          "max_abs_nT": 12.537916666666433,
+          "offset_fit_nT": -1636.4254166666665,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 7,
+          "rmse_nT": 3.9120000060863167,
+          "max_abs_nT": 12.58666666666636,
+          "offset_fit_nT": -1636.4741666666664,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 8,
+          "rmse_nT": 3.9275083450701334,
+          "max_abs_nT": 12.58666666666636,
+          "offset_fit_nT": -1636.4741666666664,
+          "valid_days": 28
+        }
+      ],
+      "Z": [
+        {
+          "dropped_day": 29,
+          "rmse_nT": 0.044923325329869375,
+          "max_abs_nT": 0.10999999998864496,
+          "offset_fit_nT": 35999.99249999999,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 28,
+          "rmse_nT": 0.4797009185207656,
+          "max_abs_nT": 2.5274999999973886,
+          "offset_fit_nT": 35999.99249999999,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 27,
+          "rmse_nT": 0.5826298904844196,
+          "max_abs_nT": 2.5274999999973886,
+          "offset_fit_nT": 35999.99249999999,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 26,
+          "rmse_nT": 1.0810340756064307,
+          "max_abs_nT": 4.818333333341002,
+          "offset_fit_nT": 35999.99333333333,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 25,
+          "rmse_nT": 1.1074230396260147,
+          "max_abs_nT": 4.819166666679962,
+          "offset_fit_nT": 35999.99249999999,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 24,
+          "rmse_nT": 1.1149735075881901,
+          "max_abs_nT": 4.819166666679962,
+          "offset_fit_nT": 35999.99249999999,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 23,
+          "rmse_nT": 1.1772870662303108,
+          "max_abs_nT": 4.820416666681126,
+          "offset_fit_nT": 35999.99124999999,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 22,
+          "rmse_nT": 1.206867902436617,
+          "max_abs_nT": 4.820416666681126,
+          "offset_fit_nT": 35999.99124999999,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 21,
+          "rmse_nT": 1.2387161132114728,
+          "max_abs_nT": 4.825000000009027,
+          "offset_fit_nT": 35999.986666666664,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 20,
+          "rmse_nT": 1.2780227745636055,
+          "max_abs_nT": 4.825000000009027,
+          "offset_fit_nT": 35999.986666666664,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 19,
+          "rmse_nT": 1.2817763146644636,
+          "max_abs_nT": 4.837083333343912,
+          "offset_fit_nT": 35999.97458333333,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 18,
+          "rmse_nT": 1.616619975087429,
+          "max_abs_nT": 5.205000000001746,
+          "offset_fit_nT": 35999.986666666664,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 17,
+          "rmse_nT": 1.6257449833828894,
+          "max_abs_nT": 5.212916666670935,
+          "offset_fit_nT": 35999.978749999995,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 16,
+          "rmse_nT": 1.7037004179401383,
+          "max_abs_nT": 5.229583333333721,
+          "offset_fit_nT": 35999.96208333333,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 15,
+          "rmse_nT": 1.845221836526565,
+          "max_abs_nT": 5.235833333332266,
+          "offset_fit_nT": 35999.95583333333,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 14,
+          "rmse_nT": 2.071742817912765,
+          "max_abs_nT": 5.235833333332266,
+          "offset_fit_nT": 35999.95583333333,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 13,
+          "rmse_nT": 2.1046113980747414,
+          "max_abs_nT": 5.235833333332266,
+          "offset_fit_nT": 35999.95583333333,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 12,
+          "rmse_nT": 2.1057098890649635,
+          "max_abs_nT": 5.235833333332266,
+          "offset_fit_nT": 35999.95583333333,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 11,
+          "rmse_nT": 2.1123213916702235,
+          "max_abs_nT": 5.235833333332266,
+          "offset_fit_nT": 35999.95583333333,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 10,
+          "rmse_nT": 2.1771192182055037,
+          "max_abs_nT": 5.235833333332266,
+          "offset_fit_nT": 35999.95583333333,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 9,
+          "rmse_nT": 2.1846527388322983,
+          "max_abs_nT": 5.235833333332266,
+          "offset_fit_nT": 35999.95583333333,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 8,
+          "rmse_nT": 2.2756540682836315,
+          "max_abs_nT": 5.273333333330811,
+          "offset_fit_nT": 35999.918333333335,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 7,
+          "rmse_nT": 2.281044239471142,
+          "max_abs_nT": 5.273333333330811,
+          "offset_fit_nT": 35999.918333333335,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 6,
+          "rmse_nT": 2.3711919816188534,
+          "max_abs_nT": 5.271666666660167,
+          "offset_fit_nT": 35999.920000000006,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 5,
+          "rmse_nT": 2.396823216831254,
+          "max_abs_nT": 5.229583333333721,
+          "offset_fit_nT": 35999.96208333333,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 4,
+          "rmse_nT": 2.4491047066410454,
+          "max_abs_nT": 5.51875000000291,
+          "offset_fit_nT": 35999.67291666666,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 3,
+          "rmse_nT": 2.4741647771016355,
+          "max_abs_nT": 5.51875000000291,
+          "offset_fit_nT": 35999.67291666666,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 2,
+          "rmse_nT": 2.4979436532953407,
+          "max_abs_nT": 5.672916666662786,
+          "offset_fit_nT": 35999.51875,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 1,
+          "rmse_nT": 2.529317732015343,
+          "max_abs_nT": 5.828750000000582,
+          "offset_fit_nT": 35999.362916666665,
+          "valid_days": 28
+        }
+      ]
+    },
+    "2016": {
+      "X": [
+        {
+          "dropped_day": 29,
+          "rmse_nT": 0.051206884905084,
+          "max_abs_nT": 0.11916666666274978,
+          "offset_fit_nT": 24999.987500000003,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 28,
+          "rmse_nT": 0.19335601452684248,
+          "max_abs_nT": 0.9699999999966167,
+          "offset_fit_nT": 24999.984166666665,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 27,
+          "rmse_nT": 0.4623112728050489,
+          "max_abs_nT": 2.183333333332598,
+          "offset_fit_nT": 24999.984166666665,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 26,
+          "rmse_nT": 0.5064594077387751,
+          "max_abs_nT": 2.183333333332598,
+          "offset_fit_nT": 24999.984166666665,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 25,
+          "rmse_nT": 0.8691040038722986,
+          "max_abs_nT": 3.669166666667593,
+          "offset_fit_nT": 24999.982500000002,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 24,
+          "rmse_nT": 2.609640094897305,
+          "max_abs_nT": 12.785833333332562,
+          "offset_fit_nT": 24999.984166666665,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 23,
+          "rmse_nT": 2.944594558541585,
+          "max_abs_nT": 12.796666666662645,
+          "offset_fit_nT": 24999.973333333335,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 22,
+          "rmse_nT": 2.9447711820804257,
+          "max_abs_nT": 12.79833333333329,
+          "offset_fit_nT": 24999.971666666665,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 21,
+          "rmse_nT": 3.620008220495019,
+          "max_abs_nT": 12.796666666662645,
+          "offset_fit_nT": 24999.973333333335,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 20,
+          "rmse_nT": 3.819332493307657,
+          "max_abs_nT": 12.796666666662645,
+          "offset_fit_nT": 24999.973333333335,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 19,
+          "rmse_nT": 4.000987246351107,
+          "max_abs_nT": 12.796666666662645,
+          "offset_fit_nT": 24999.973333333335,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 18,
+          "rmse_nT": 4.126346927493966,
+          "max_abs_nT": 12.796666666662645,
+          "offset_fit_nT": 24999.973333333335,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 17,
+          "rmse_nT": 4.142629387325144,
+          "max_abs_nT": 12.796666666662645,
+          "offset_fit_nT": 24999.973333333335,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 16,
+          "rmse_nT": 4.177013421876138,
+          "max_abs_nT": 12.796666666662645,
+          "offset_fit_nT": 24999.973333333335,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 15,
+          "rmse_nT": 6.611327054518457,
+          "max_abs_nT": 26.6266666666653,
+          "offset_fit_nT": 24999.971666666665,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 14,
+          "rmse_nT": 6.691766434537401,
+          "max_abs_nT": 26.6266666666653,
+          "offset_fit_nT": 24999.971666666665,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 13,
+          "rmse_nT": 7.0091629824833195,
+          "max_abs_nT": 26.6266666666653,
+          "offset_fit_nT": 24999.971666666665,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 12,
+          "rmse_nT": 7.199272923893602,
+          "max_abs_nT": 26.628333333335945,
+          "offset_fit_nT": 24999.973333333335,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 11,
+          "rmse_nT": 7.273025070273648,
+          "max_abs_nT": 26.628333333335945,
+          "offset_fit_nT": 24999.973333333335,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 10,
+          "rmse_nT": 7.285441053047972,
+          "max_abs_nT": 26.625833333337255,
+          "offset_fit_nT": 24999.970833333336,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 9,
+          "rmse_nT": 7.30938223430062,
+          "max_abs_nT": 26.61416666666821,
+          "offset_fit_nT": 24999.959166666667,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 8,
+          "rmse_nT": 7.510514824018554,
+          "max_abs_nT": 26.61416666666821,
+          "offset_fit_nT": 24999.959166666667,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 7,
+          "rmse_nT": 7.518655045170605,
+          "max_abs_nT": 26.720833333331143,
+          "offset_fit_nT": 25000.06583333333,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 4,
+          "rmse_nT": 7.597851919762436,
+          "max_abs_nT": 26.664166666667484,
+          "offset_fit_nT": 25000.009166666667,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 6,
+          "rmse_nT": 7.733026161949513,
+          "max_abs_nT": 26.720833333331143,
+          "offset_fit_nT": 25000.06583333333,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 5,
+          "rmse_nT": 7.733723130341979,
+          "max_abs_nT": 26.720833333331143,
+          "offset_fit_nT": 25000.06583333333,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 3,
+          "rmse_nT": 7.7350043642798605,
+          "max_abs_nT": 26.720833333331143,
+          "offset_fit_nT": 25000.06583333333,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 2,
+          "rmse_nT": 7.953525942802408,
+          "max_abs_nT": 26.720833333331143,
+          "offset_fit_nT": 25000.06583333333,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 1,
+          "rmse_nT": 8.239783749571874,
+          "max_abs_nT": 27.714166666670394,
+          "offset_fit_nT": 25001.05916666667,
+          "valid_days": 27
+        }
+      ],
+      "Y": [
+        {
+          "dropped_day": 24,
+          "rmse_nT": 3.3417486828394827,
+          "max_abs_nT": 7.534166666666806,
+          "offset_fit_nT": -1396.8033333333333,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 26,
+          "rmse_nT": 3.3923125238190197,
+          "max_abs_nT": 7.534166666666806,
+          "offset_fit_nT": -1396.8033333333333,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 25,
+          "rmse_nT": 3.414437212994495,
+          "max_abs_nT": 7.534166666666806,
+          "offset_fit_nT": -1396.8033333333333,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 27,
+          "rmse_nT": 3.4271636853126894,
+          "max_abs_nT": 7.534166666666806,
+          "offset_fit_nT": -1396.8033333333333,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 23,
+          "rmse_nT": 3.440469357245936,
+          "max_abs_nT": 7.534166666666806,
+          "offset_fit_nT": -1396.8033333333333,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 20,
+          "rmse_nT": 3.476239868219587,
+          "max_abs_nT": 7.312500000000227,
+          "offset_fit_nT": -1397.0249999999999,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 22,
+          "rmse_nT": 3.48070265126198,
+          "max_abs_nT": 7.534166666666806,
+          "offset_fit_nT": -1396.8033333333333,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 21,
+          "rmse_nT": 3.4842619671548056,
+          "max_abs_nT": 7.312500000000227,
+          "offset_fit_nT": -1397.0249999999999,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 28,
+          "rmse_nT": 3.5060524058009133,
+          "max_abs_nT": 7.534166666666806,
+          "offset_fit_nT": -1396.8033333333333,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 17,
+          "rmse_nT": 3.5128018227748985,
+          "max_abs_nT": 6.720000000000027,
+          "offset_fit_nT": -1397.6175,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 18,
+          "rmse_nT": 3.5182761770831146,
+          "max_abs_nT": 6.720000000000027,
+          "offset_fit_nT": -1397.6175,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 29,
+          "rmse_nT": 3.519086084827721,
+          "max_abs_nT": 7.534166666666806,
+          "offset_fit_nT": -1396.8033333333333,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 16,
+          "rmse_nT": 3.52735223082246,
+          "max_abs_nT": 6.720000000000027,
+          "offset_fit_nT": -1397.6175,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 19,
+          "rmse_nT": 3.5315979279778227,
+          "max_abs_nT": 6.720000000000027,
+          "offset_fit_nT": -1397.6175,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 9,
+          "rmse_nT": 3.628635653771123,
+          "max_abs_nT": 7.4166666666667425,
+          "offset_fit_nT": -1397.55,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 13,
+          "rmse_nT": 3.74674835704627,
+          "max_abs_nT": 7.4166666666667425,
+          "offset_fit_nT": -1397.55,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 14,
+          "rmse_nT": 3.7474407144658497,
+          "max_abs_nT": 7.4166666666667425,
+          "offset_fit_nT": -1397.55,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 12,
+          "rmse_nT": 3.7497584524401306,
+          "max_abs_nT": 7.4166666666667425,
+          "offset_fit_nT": -1397.55,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 10,
+          "rmse_nT": 3.7838615467181964,
+          "max_abs_nT": 7.4166666666667425,
+          "offset_fit_nT": -1397.55,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 15,
+          "rmse_nT": 3.7990520497010274,
+          "max_abs_nT": 7.4166666666667425,
+          "offset_fit_nT": -1397.55,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 11,
+          "rmse_nT": 3.8000520051401483,
+          "max_abs_nT": 7.4166666666667425,
+          "offset_fit_nT": -1397.55,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 3,
+          "rmse_nT": 3.8075604039101005,
+          "max_abs_nT": 8.866666666666788,
+          "offset_fit_nT": -1397.55,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 7,
+          "rmse_nT": 3.8327005885459395,
+          "max_abs_nT": 8.866666666666788,
+          "offset_fit_nT": -1397.55,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 5,
+          "rmse_nT": 3.8741566054164776,
+          "max_abs_nT": 8.953333333333603,
+          "offset_fit_nT": -1397.4633333333331,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 4,
+          "rmse_nT": 3.8776385026383022,
+          "max_abs_nT": 8.910000000000082,
+          "offset_fit_nT": -1397.5066666666667,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 6,
+          "rmse_nT": 3.923234026455415,
+          "max_abs_nT": 8.866666666666788,
+          "offset_fit_nT": -1397.55,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 2,
+          "rmse_nT": 3.9386544065137974,
+          "max_abs_nT": 8.953333333333603,
+          "offset_fit_nT": -1397.4633333333331,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 8,
+          "rmse_nT": 3.9766791591444552,
+          "max_abs_nT": 8.799166666666679,
+          "offset_fit_nT": -1397.6175,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 1,
+          "rmse_nT": 4.187858172139889,
+          "max_abs_nT": 8.953333333333603,
+          "offset_fit_nT": -1397.4633333333331,
+          "valid_days": 27
+        }
+      ],
+      "Z": [
+        {
+          "dropped_day": 29,
+          "rmse_nT": 0.07680392302979626,
+          "max_abs_nT": 0.1508333333357541,
+          "offset_fit_nT": 36000.01666666666,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 28,
+          "rmse_nT": 0.15938950853729122,
+          "max_abs_nT": 0.7291666666569654,
+          "offset_fit_nT": 36000.01666666666,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 27,
+          "rmse_nT": 0.3602535044216903,
+          "max_abs_nT": 1.6783333333296468,
+          "offset_fit_nT": 36000.0175,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 25,
+          "rmse_nT": 0.5748986983590075,
+          "max_abs_nT": 2.32750000000496,
+          "offset_fit_nT": 36000.01416666667,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 26,
+          "rmse_nT": 0.5750084093144476,
+          "max_abs_nT": 2.32750000000496,
+          "offset_fit_nT": 36000.01416666667,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 23,
+          "rmse_nT": 0.5814478124839486,
+          "max_abs_nT": 2.32750000000496,
+          "offset_fit_nT": 36000.01416666667,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 24,
+          "rmse_nT": 0.5819293509935524,
+          "max_abs_nT": 2.3308333333389726,
+          "offset_fit_nT": 36000.0175,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 22,
+          "rmse_nT": 0.5864171353094242,
+          "max_abs_nT": 2.325000000002632,
+          "offset_fit_nT": 36000.011666666665,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 21,
+          "rmse_nT": 0.8614105064938341,
+          "max_abs_nT": 3.2816666666604704,
+          "offset_fit_nT": 36000.00583333333,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 20,
+          "rmse_nT": 0.8906521284934068,
+          "max_abs_nT": 3.2816666666604704,
+          "offset_fit_nT": 36000.00583333333,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 18,
+          "rmse_nT": 0.9765152175779735,
+          "max_abs_nT": 3.238333333325585,
+          "offset_fit_nT": 35999.962499999994,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 19,
+          "rmse_nT": 0.979705945532079,
+          "max_abs_nT": 3.2508333333299504,
+          "offset_fit_nT": 35999.975,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 17,
+          "rmse_nT": 1.0144732841429416,
+          "max_abs_nT": 3.2266666666674553,
+          "offset_fit_nT": 35999.950833333336,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 16,
+          "rmse_nT": 1.0326363141021822,
+          "max_abs_nT": 3.2266666666674553,
+          "offset_fit_nT": 35999.950833333336,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 15,
+          "rmse_nT": 1.657631893032172,
+          "max_abs_nT": 6.725000000005821,
+          "offset_fit_nT": 35999.962499999994,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 14,
+          "rmse_nT": 1.6577087352812694,
+          "max_abs_nT": 6.725000000005821,
+          "offset_fit_nT": 35999.962499999994,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 13,
+          "rmse_nT": 1.6845838390846173,
+          "max_abs_nT": 6.712500000001455,
+          "offset_fit_nT": 35999.975,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 12,
+          "rmse_nT": 1.705725591716906,
+          "max_abs_nT": 6.725000000005821,
+          "offset_fit_nT": 35999.962499999994,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 11,
+          "rmse_nT": 1.705756012770475,
+          "max_abs_nT": 6.73666666666395,
+          "offset_fit_nT": 35999.950833333336,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 10,
+          "rmse_nT": 1.733394259375376,
+          "max_abs_nT": 6.73666666666395,
+          "offset_fit_nT": 35999.950833333336,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 9,
+          "rmse_nT": 1.7731750819925252,
+          "max_abs_nT": 6.758333333331393,
+          "offset_fit_nT": 35999.92916666667,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 8,
+          "rmse_nT": 1.8716159241934454,
+          "max_abs_nT": 6.758333333331393,
+          "offset_fit_nT": 35999.92916666667,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 7,
+          "rmse_nT": 1.8864482257498727,
+          "max_abs_nT": 6.758333333331393,
+          "offset_fit_nT": 35999.92916666667,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 6,
+          "rmse_nT": 1.9224308921201911,
+          "max_abs_nT": 6.73666666666395,
+          "offset_fit_nT": 35999.950833333336,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 4,
+          "rmse_nT": 1.9606760809587291,
+          "max_abs_nT": 6.7308333333348855,
+          "offset_fit_nT": 35999.956666666665,
+          "valid_days": 28
+        },
+        {
+          "dropped_day": 5,
+          "rmse_nT": 1.986062884677162,
+          "max_abs_nT": 6.725000000005821,
+          "offset_fit_nT": 35999.962499999994,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 3,
+          "rmse_nT": 1.9966423461490101,
+          "max_abs_nT": 6.725000000005821,
+          "offset_fit_nT": 35999.962499999994,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 2,
+          "rmse_nT": 2.0142716366808293,
+          "max_abs_nT": 6.681666666670935,
+          "offset_fit_nT": 36000.00583333333,
+          "valid_days": 27
+        },
+        {
+          "dropped_day": 1,
+          "rmse_nT": 2.1161557843170726,
+          "max_abs_nT": 6.819999999999709,
+          "offset_fit_nT": 35999.8675,
+          "valid_days": 27
+        }
+      ]
+    }
+  },
+  "limited_svd_2008_X": [
+    {
+      "days": 28,
+      "variant": "V0",
+      "vf1": 0.9999998796891043,
+      "benchmark_vf1": 0.462985484018089,
+      "vf1_abs_delta": 0.5370143956710154,
+      "eof1_abs_corr": 0.38004308659107766
+    },
+    {
+      "days": 28,
+      "variant": "V1",
+      "vf1": 0.46201209908644014,
+      "benchmark_vf1": 0.462985484018089,
+      "vf1_abs_delta": 0.0009733849316488352,
+      "eof1_abs_corr": 0.9999325445645593
+    },
+    {
+      "days": 28,
+      "variant": "V2",
+      "vf1": 0.44578875650947525,
+      "benchmark_vf1": 0.462985484018089,
+      "vf1_abs_delta": 0.01719672750861373,
+      "eof1_abs_corr": 0.5131790729035522
+    },
+    {
+      "days": 28,
+      "variant": "V3",
+      "vf1": 0.4416191149728948,
+      "benchmark_vf1": 0.462985484018089,
+      "vf1_abs_delta": 0.021366369045194178,
+      "eof1_abs_corr": 0.89764398582092
+    },
+    {
+      "days": 29,
+      "variant": "V0",
+      "vf1": 0.999999873570892,
+      "benchmark_vf1": 0.462985484018089,
+      "vf1_abs_delta": 0.537014389552803,
+      "eof1_abs_corr": 0.38003758242255364
+    },
+    {
+      "days": 29,
+      "variant": "V1",
+      "vf1": 0.4609575215943576,
+      "benchmark_vf1": 0.462985484018089,
+      "vf1_abs_delta": 0.0020279624237313776,
+      "eof1_abs_corr": 0.9987831052567748
+    },
+    {
+      "days": 29,
+      "variant": "V2",
+      "vf1": 0.4346983440314577,
+      "benchmark_vf1": 0.462985484018089,
+      "vf1_abs_delta": 0.028287139986631293,
+      "eof1_abs_corr": 0.5357724745715678
+    },
+    {
+      "days": 29,
+      "variant": "V3",
+      "vf1": 0.46044046647953896,
+      "benchmark_vf1": 0.462985484018089,
+      "vf1_abs_delta": 0.0025450175385500207,
+      "eof1_abs_corr": 0.8739444702374358
+    }
+  ],
+  "sq_iqd_metrics": {
+    "2008": {
+      "X": {
+        "official_Q1_Q5": {
+          "correlation": 0.9985360324794176,
+          "rmse_nT": 2.492690113109938,
+          "max_abs_nT": 2.7769999999996773,
+          "mean_residual_nT": 2.4894999999991927,
+          "shape_rmse_nT": 0.12607041683144993,
+          "shape_max_abs_nT": 0.28750000000048503,
+          "amplitude_nT": 6.7,
+          "benchmark_amplitude_nT": 6.8,
+          "amplitude_delta_nT": -0.09999999999999964,
+          "days": [
+            24,
+            25,
+            22,
+            26,
+            9
+          ],
+          "benchmark_mean_24h_nT": 7.297495940861154e-13,
+          "benchmark_night_mean_nT": -2.5449999999992703,
+          "candidate_night_mean_nT": 1.455224829527424e-13,
+          "candidate_mean_24h_nT": 2.489499999999922
+        }
+      },
+      "Y": {
+        "official_Q1_Q5": {
+          "correlation": 0.9998948293625523,
+          "rmse_nT": 3.0567285344520676,
+          "max_abs_nT": 3.275666666666669,
+          "mean_residual_nT": -3.054833333333358,
+          "shape_rmse_nT": 0.1076226690288295,
+          "shape_max_abs_nT": 0.3391666666666815,
+          "amplitude_nT": 25.50000000000009,
+          "benchmark_amplitude_nT": 25.4,
+          "amplitude_delta_nT": 0.10000000000009024,
+          "days": [
+            24,
+            25,
+            22,
+            26,
+            9
+          ],
+          "benchmark_mean_24h_nT": 3.301063126552132e-14,
+          "benchmark_night_mean_nT": 3.1516666666667,
+          "candidate_night_mean_nT": 4.4408920985006264e-17,
+          "candidate_mean_24h_nT": -3.0548333333333253
+        }
+      },
+      "Z": {
+        "official_Q1_Q5": {
+          "correlation": 0.9996140421227698,
+          "rmse_nT": 1.1381204779015102,
+          "max_abs_nT": 1.4406666666662238,
+          "mean_residual_nT": -1.1264999999984289,
+          "shape_rmse_nT": 0.1622219843988523,
+          "shape_max_abs_nT": 0.345833333332791,
+          "amplitude_nT": 20.959999999999127,
+          "benchmark_amplitude_nT": 21.2,
+          "amplitude_delta_nT": -0.2400000000008724,
+          "days": [
+            24,
+            25,
+            22,
+            26,
+            9
+          ],
+          "benchmark_mean_24h_nT": -9.672262990534364e-13,
+          "benchmark_night_mean_nT": 1.0366666666656985,
+          "candidate_night_mean_nT": -4.163336342344337e-18,
+          "candidate_mean_24h_nT": -1.126499999999396
+        }
+      }
+    },
+    "2012": {
+      "X": {
+        "official_Q1_Q5": {
+          "correlation": 0.9996747281505846,
+          "rmse_nT": 5.887149272402276,
+          "max_abs_nT": 6.0543333333320355,
+          "mean_residual_nT": 5.885999999999242,
+          "shape_rmse_nT": 0.11632091624284517,
+          "shape_max_abs_nT": 0.23166666666720648,
+          "amplitude_nT": 13.699999999999271,
+          "benchmark_amplitude_nT": 13.8,
+          "amplitude_delta_nT": -0.10000000000072973,
+          "days": [
+            17,
+            23,
+            12,
+            2,
+            16
+          ],
+          "benchmark_mean_24h_nT": 4.834651197901015e-13,
+          "benchmark_night_mean_nT": -5.89833333333285,
+          "candidate_night_mean_nT": 1.4566126083082054e-13,
+          "candidate_mean_24h_nT": 5.885999999999726
+        }
+      },
+      "Y": {
+        "official_Q1_Q5": {
+          "correlation": 0.9999098007649253,
+          "rmse_nT": 6.033856294093969,
+          "max_abs_nT": 6.2503333333333115,
+          "mean_residual_nT": -6.0328333333333015,
+          "shape_rmse_nT": 0.11110243021645498,
+          "shape_max_abs_nT": 0.22250000000004455,
+          "amplitude_nT": 27.880000000000017,
+          "benchmark_amplitude_nT": 27.80000000000005,
+          "amplitude_delta_nT": 0.07999999999996632,
+          "days": [
+            17,
+            23,
+            12,
+            2,
+            16
+          ],
+          "benchmark_mean_24h_nT": 7.993605777301127e-15,
+          "benchmark_night_mean_nT": 6.0983333333333505,
+          "candidate_night_mean_nT": 3.6337599595981375e-14,
+          "candidate_mean_24h_nT": -6.0328333333332935
+        }
+      },
+      "Z": {
+        "official_Q1_Q5": {
+          "correlation": 0.999822978525526,
+          "rmse_nT": 4.0139797928991205,
+          "max_abs_nT": 4.244333333335813,
+          "mean_residual_nT": -4.011833333336408,
+          "shape_rmse_nT": 0.13125198411205646,
+          "shape_max_abs_nT": 0.2675000000005918,
+          "amplitude_nT": 22.739999999997963,
+          "benchmark_amplitude_nT": 22.799999999999997,
+          "amplitude_delta_nT": -0.060000000002034426,
+          "days": [
+            17,
+            23,
+            12,
+            2,
+            16
+          ],
+          "benchmark_mean_24h_nT": 9.667822098435863e-13,
+          "benchmark_night_mean_nT": 4.0283333333343005,
+          "candidate_night_mean_nT": -2.619349181998132e-12,
+          "candidate_mean_24h_nT": -4.011833333335441
+        }
+      }
+    },
+    "2016": {
+      "X": {
+        "official_Q1_Q5": {
+          "correlation": 0.9991346992958408,
+          "rmse_nT": 1.3475119459395464,
+          "max_abs_nT": 1.6286666666688672,
+          "mean_residual_nT": 1.3411666666686555,
+          "shape_rmse_nT": 0.130615529959766,
+          "shape_max_abs_nT": 0.2875000000002117,
+          "amplitude_nT": 12.379999999998835,
+          "benchmark_amplitude_nT": 12.4,
+          "amplitude_delta_nT": -0.020000000001164864,
+          "days": [
+            22,
+            28,
+            27,
+            21,
+            29
+          ],
+          "benchmark_mean_24h_nT": -4.839554682926442e-13,
+          "benchmark_night_mean_nT": -1.396666666667151,
+          "candidate_night_mean_nT": 1.3096190798478347e-12,
+          "candidate_mean_24h_nT": 1.3411666666681714
+        },
+        "replace_29_with_Q6": {
+          "correlation": 0.7432756321187524,
+          "rmse_nT": 2.8551648327596055,
+          "max_abs_nT": 6.288666666668721,
+          "mean_residual_nT": 1.4370000000017464,
+          "shape_rmse_nT": 2.4671840673573926,
+          "shape_max_abs_nT": 4.851666666666975,
+          "amplitude_nT": 12.379999999999562,
+          "benchmark_amplitude_nT": 12.4,
+          "amplitude_delta_nT": -0.020000000000438334,
+          "days": [
+            22,
+            28,
+            27,
+            21,
+            10
+          ],
+          "benchmark_mean_24h_nT": -4.839554682926442e-13,
+          "benchmark_night_mean_nT": -1.396666666667151,
+          "candidate_night_mean_nT": 1.1641354547009542e-12,
+          "candidate_mean_24h_nT": 1.4370000000012624
+        },
+        "omit_29_no_replacement": {
+          "correlation": 0.808604394069717,
+          "rmse_nT": 2.288759367965051,
+          "max_abs_nT": 4.8266666666686415,
+          "mean_residual_nT": 0.9329166666685665,
+          "shape_rmse_nT": 2.0899966357627924,
+          "shape_max_abs_nT": 3.893750000000075,
+          "amplitude_nT": 13.224999999999454,
+          "benchmark_amplitude_nT": 12.4,
+          "amplitude_delta_nT": 0.824999999999454,
+          "days": [
+            22,
+            28,
+            27,
+            21
+          ],
+          "benchmark_mean_24h_nT": -4.839554682926442e-13,
+          "benchmark_night_mean_nT": -1.396666666667151,
+          "candidate_night_mean_nT": 1.2732925824820995e-12,
+          "candidate_mean_24h_nT": 0.9329166666680825
+        }
+      },
+      "Y": {
+        "official_Q1_Q5": {
+          "correlation": 0.9999528623710539,
+          "rmse_nT": 5.228778155554066,
+          "max_abs_nT": 5.474333333333284,
+          "mean_residual_nT": -5.2276666666666065,
+          "shape_rmse_nT": 0.10780641085865217,
+          "shape_max_abs_nT": 0.2466666666666768,
+          "amplitude_nT": 39.93999999999992,
+          "benchmark_amplitude_nT": 39.8,
+          "amplitude_delta_nT": 0.1399999999999224,
+          "days": [
+            22,
+            28,
+            27,
+            21,
+            29
+          ],
+          "benchmark_mean_24h_nT": -3.2862601528904634e-14,
+          "benchmark_night_mean_nT": 5.2583333333333,
+          "candidate_night_mean_nT": 9.059419880941277e-15,
+          "candidate_mean_24h_nT": -5.227666666666639
+        },
+        "replace_29_with_Q6": {
+          "correlation": 0.9973343463761253,
+          "rmse_nT": 5.030264914605454,
+          "max_abs_nT": 6.846333333333311,
+          "mean_residual_nT": -4.893833333333281,
+          "shape_rmse_nT": 1.1635980477238184,
+          "shape_max_abs_nT": 3.127500000000083,
+          "amplitude_nT": 36.11999999999989,
+          "benchmark_amplitude_nT": 39.8,
+          "amplitude_delta_nT": -3.6800000000001063,
+          "days": [
+            22,
+            28,
+            27,
+            21,
+            10
+          ],
+          "benchmark_mean_24h_nT": -3.2862601528904634e-14,
+          "benchmark_night_mean_nT": 5.2583333333333,
+          "candidate_night_mean_nT": 9.103828801926284e-15,
+          "candidate_mean_24h_nT": -4.893833333333315
+        },
+        "omit_29_no_replacement": {
+          "correlation": 0.9979375068434158,
+          "rmse_nT": 4.382132598531285,
+          "max_abs_nT": 5.818333333333303,
+          "mean_residual_nT": -4.312083333333267,
+          "shape_rmse_nT": 0.7803995370962299,
+          "shape_max_abs_nT": 1.8437500000000817,
+          "amplitude_nT": 38.624999999999886,
+          "benchmark_amplitude_nT": 39.8,
+          "amplitude_delta_nT": -1.1750000000001108,
+          "days": [
+            22,
+            28,
+            27,
+            21
+          ],
+          "benchmark_mean_24h_nT": -3.2862601528904634e-14,
+          "benchmark_night_mean_nT": 5.2583333333333,
+          "candidate_night_mean_nT": 1.1368683772161604e-14,
+          "candidate_mean_24h_nT": -4.312083333333301
+        }
+      },
+      "Z": {
+        "official_Q1_Q5": {
+          "correlation": 0.9998368694107035,
+          "rmse_nT": 3.472420961424698,
+          "max_abs_nT": 3.767000000002736,
+          "mean_residual_nT": -3.469500000001183,
+          "shape_rmse_nT": 0.14239762404412826,
+          "shape_max_abs_nT": 0.2975000000015524,
+          "amplitude_nT": 25.860000000000582,
+          "benchmark_amplitude_nT": 26.0,
+          "amplitude_delta_nT": -0.13999999999941792,
+          "days": [
+            22,
+            28,
+            27,
+            21,
+            29
+          ],
+          "benchmark_mean_24h_nT": 0.0,
+          "benchmark_night_mean_nT": 3.5149999999999997,
+          "candidate_night_mean_nT": -1.1641354547009542e-12,
+          "candidate_mean_24h_nT": -3.4695000000011835
+        },
+        "replace_29_with_Q6": {
+          "correlation": 0.9936798193103532,
+          "rmse_nT": 4.329394953879704,
+          "max_abs_nT": 6.527000000001862,
+          "mean_residual_nT": -4.216166666668141,
+          "shape_rmse_nT": 0.983666257200834,
+          "shape_max_abs_nT": 2.310833333333721,
+          "amplitude_nT": 26.600000000001458,
+          "benchmark_amplitude_nT": 26.0,
+          "amplitude_delta_nT": 0.600000000001458,
+          "days": [
+            22,
+            28,
+            27,
+            21,
+            10
+          ],
+          "benchmark_mean_24h_nT": 0.0,
+          "benchmark_night_mean_nT": 3.5149999999999997,
+          "candidate_night_mean_nT": -1.4551915228366853e-12,
+          "candidate_mean_24h_nT": -4.216166666668141
+        },
+        "omit_29_no_replacement": {
+          "correlation": 0.9974419776138309,
+          "rmse_nT": 3.6071087221406932,
+          "max_abs_nT": 5.370000000001528,
+          "mean_residual_nT": -3.551250000001422,
+          "shape_rmse_nT": 0.632342289296996,
+          "shape_max_abs_nT": 1.8187500000001053,
+          "amplitude_nT": 27.0,
+          "benchmark_amplitude_nT": 26.0,
+          "amplitude_delta_nT": 1.0,
+          "days": [
+            22,
+            28,
+            27,
+            21
+          ],
+          "benchmark_mean_24h_nT": 0.0,
+          "benchmark_night_mean_nT": 3.5149999999999997,
+          "candidate_night_mean_nT": -1.4551915228366853e-12,
+          "candidate_mean_24h_nT": -3.551250000001422
+        }
+      }
+    }
+  },
+  "decisions": {
+    "D1-PCA": {
+      "status": "CONFIRMED",
+      "handling": "Use February days 1–28 for PCA matrices; exclude 29 February in leap years",
+      "basis": "28 indexed per-year rows, exact 308 year-major combined meanField, and X/Z independent WDC calendar mapping"
+    },
+    "D1-IQD": {
+      "status": "PROVISIONAL",
+      "handling_hypothesis": "Keep official GFZ Q1–Q5, including 29 February 2016",
+      "basis": "2016 X/Y/Z Sq curve shapes favor official Q5=29; absolute residual retains unexplained baseline offset and time convention awaits D2"
+    }
+  },
+  "G1_status": "NOT_EVALUATED: D2 not run",
+  "limitations": [
+    "WDC HH:00 versus source HH:30 not resolved (D2).",
+    "Published Sq columns have 24h mean near zero, whereas night-baseline candidates have night-hour mean zero; source calculation or export includes an unreported additive centering step.",
+    "Mendeley February Y meanField is byte-identical to Z meanField; Y excluded from calendar mapping vote.",
+    "WDC data may differ from data used by authors; no D2 comparison performed.",
+    "V0–V3 SVD results diagnose calendar only and do not choose preprocessing.",
+    "Potential source/protocol inconsistency (S7) in benchmark Sq baseline and duplicated Y/Z meanField requires review before later gates."
+  ],
+  "errors": [],
+  "evidence_rows": 320,
+  "python": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]",
+  "numpy_version": "2.5.3",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "script_sha256": "06feb063cc9802abb7a230adf8ee819825af4cda4b175d6e044c17964336dcb4"
+}

@@ -1,0 +1,38 @@
+{
+  "created_utc": "2026-11-15T00:56:18.703391+00:00",
+  "theta_s": 0.5,
+  "theta_w": "INF",
+  "theta_d": 0.9,
+  "development_unmasked_coverage": 0.7324393358876118,
+  "development_unmasked_accepted_median_error": 0.04054782643315157,
+  "selection_rule": "F3-v1.1 A-4: maximum coverage, tie minimum accepted median error; C3 still fails if holdout coverage<0.80",
+  "feasible_grid_points": 0,
+  "grid_s": [
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9
+  ],
+  "grid_w": [
+    0.25,
+    0.5,
+    1.0,
+    "INF"
+  ],
+  "primary_stratum": "NONE",
+  "masked_stratum": "MCAR20 descriptive only",
+  "bootstrap_B": 200,
+  "seed": 20261114,
+  "E1_method": "M-EM",
+  "E1_frozen_sha256": "a2a2cd09ccf4c16c87a9033d792de80762d253c2db16455f81cc4329ad26981d",
+  "protocol_sha256": "617c96d0cbda26fa3f6333ea1638030a35db1836fd99ba35f2a3bb18ea091327",
+  "amendment_sha256": "8dae6289ef71f1829d37ba6d5726253fd206c679221da7106b1a820421900a8f",
+  "SSB_manifest_sha256": "e3b64a35f725dd4a43a02cf0884621cb7e35b46966e418bd4d8ddafda10737d7",
+  "E2_case_code_sha256": "f36d60a03004be8c6f7603f69ae2d35d338eb5efaeb6ed3fd29ba83a4f052c09",
+  "E2_evaluator_code_sha256": "a65f9dcf9b65de1ae17c76e87aa21ff72a47c5a833aa2191dacb73782ac8ecc9",
+  "E2_zero_code_sha256": "1086fffc6d74f4b7f71f103141e9ce22c246ab9175e6fb416f61b34118c90248",
+  "E2_development_cases_sha256": "09dfa52a63373482dd8eff000d7a80a7bc30dd4a66fbf8d82b9d146098d8946b",
+  "E2_development_grid_sha256": "d9ab93cbc595addd18915e31ec83bf997d10de541d16f20506fa039bc79a0c28",
+  "E2_development_selection_code_sha256": "1e6d32319e3e32bba91063e3fac553b6989b4f5d49e7f2f5458c6dcfd97881d6"
+}

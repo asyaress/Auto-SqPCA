@@ -1,0 +1,17 @@
+{
+  "unmasked_cases": 2808,
+  "months": 104,
+  "accepted": 2083,
+  "coverage": 0.7418091168091168,
+  "AUTO_NA_all_median_error": 0.06560124357354935,
+  "AUTO_accepted_median_error": 0.04622949041873955,
+  "median_error_difference": 0.019371753154809802,
+  "CI95_lower": 0.015641582104838434,
+  "CI95_upper": 0.02275440331224888,
+  "bootstrap_finite_draws": 2000,
+  "C3_success": false,
+  "unmasked_reason_counts_overlapping": {
+    "A2": 564,
+    "A1": 247
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema": "Auto-SqPCA-S7C-G1-v1",
+  "protocol": "G0-registration-3 APPROVED",
+  "registration2_historical_status": "HOLD",
+  "registration2_decision_sha256": "26cb5921b1143a29679794bfe4212d7c559021d63b066b8a6ab57b0c057e043c",
+  "registration3_status": "HOLD",
+  "triggered_rows": [
+    "0a_WDC_FORMAT_INCONSISTENT"
+  ],
+  "selected_row": "0a_WDC_FORMAT_INCONSISTENT",
+  "priority_A3": "HOLD > CONDITIONAL PASS with exclusions > CONDITIONAL PASS; no competing evaluated row here",
+  "other_rows": {
+    "0b": "NOT_EVALUATED_D2C_STOPPED",
+    "1": "NOT_EVALUATED_D2C_STOPPED",
+    "2": "NOT_EVALUATED_D2C_STOPPED",
+    "3": "NOT_EVALUATED_D2C_STOPPED",
+    "4": "NOT_EVALUATED_D2C_STOPPED"
+  },
+  "numeric_evidence": {
+    "paired_valid_component_hours": 375824,
+    "mismatch_gt_0p1_nT": 267475,
+    "mismatch_percent": 71.17028183404999,
+    "stop_threshold_percent": 0.1,
+    "XYZ_component_mismatch_counts": {
+      "X": 66644,
+      "Y": 66388,
+      "Z": 66603
+    },
+    "D2c_comparison_rows": 0
+  },
+  "affected_months_REVISION_LIKE": "NOT_EVALUATED_D2C_STOPPED",
+  "excluded_months_registration3": [],
+  "excluded_months_reason": "No D2c classification was permitted after stop 0a; do not infer exclusions from historical D2b labels",
+  "A5_suspect_year_months": [
+    "2008-04:X",
+    "2008-06:X",
+    "2008-09:X",
+    "2008-11:X"
+  ],
+  "A5_policy_delta_rows": 72,
+  "A5_granularity": "72 X PCA DAT entries with target_year=2008 series-level overlay; annual columns for other years and Y/Z unchanged",
+  "pilot_months": {
+    "development": [
+      "2017-06",
+      "2017-10"
+    ],
+    "holdout": [
+      "2009-01",
+      "2015-03"
+    ],
+    "affected_by_D2c": "NOT_EVALUATED_D2C_STOPPED",
+    "replacement": "NOT_SELECTED"
+  },
+  "pilot_G2_ready": false,
+  "consequence": "Registration-3 row 0a directs transition to K10 documented reimplementation; do not run original G2 pilot or PCA in S7-C",
+  "claims": {
+    "R1": "NOT_TARGET",
+    "R2": "PRIOR_SHAPE_EVIDENCE_ONLY_O1_LIMITATION",
+    "R3": "NOT_TESTED",
+    "R4": "NOT_TESTED"
+  },
+  "source_sha256": "cb5fdd487d460d986ec568916979bac0e7b6c0bb6d4891f3d423e770c2889573",
+  "corrected_WDC_archive_sha256": "5fa0161e935fa759d133f733ba769dda9f000ce1e45bc1e3a49ec565a0d0c9d3",
+  "crosscheck_summary_sha256": "f19cfb80cedc8e543ba179e45088458566c1fde1212de52a4ca78267eb4d1aa5",
+  "D2c_summary_sha256": "4992d460dbc90cea26018f2bce901fe38b14cd75d4485c520d7ef7125957c2fb",
+  "limitations": [
+    "WDC fixed-width I4 hourly values differ at sub-nT resolution from IAGA hourly decimals; 0.1 nT crosscheck rule fails.",
+    "Maximum difference is larger than sub-nT precision; no further forensic attribution is authorized.",
+    "D2c transformed daily residuals, H-a and affected pilot months were not evaluated after stop 0a.",
+    "D2b and registration-2 G1 HOLD remain unchanged."
+  ]
+}

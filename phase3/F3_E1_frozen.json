@@ -1,0 +1,37 @@
+{
+  "method": "M-EM",
+  "selection_score_mean_of_family_component_medians": {
+    "M-INT": 0.09343148124201846,
+    "M-EXC": 0.16361371464427105,
+    "M-EM": 0.08314270161296293
+  },
+  "tie_order": [
+    "M-INT",
+    "M-EXC",
+    "M-EM"
+  ],
+  "seed": 20261114,
+  "mask_replicates": 20,
+  "development_cases_sha256": "ce0b8a3fb8f888d6d889c69095907a9b5cf82156f48398146e0d7519ed285f20",
+  "data_inventory_sha256": "e5f673f271937c51c3c0586c62b22beb64d076298b4966247fa8da970d7dab94",
+  "TND_mask_cache_sha256": "172805788f8ef83a1441a735d877055738a9ea336bd59776a1b268c042312bec",
+  "protocol_sha256": "617c96d0cbda26fa3f6333ea1638030a35db1836fd99ba35f2a3bb18ea091327",
+  "code_sha256": {
+    "auto_sqpca/__init__.py": "636ef4e7eb7efd8dea5765c756449fcb02aef7832f14a96fa7fd1ffb9177e3f4",
+    "auto_sqpca/abstain.py": "45426623b378848d839310cd405f2937ba8aa599a462223e55f4d3b1e8911022",
+    "auto_sqpca/bootstrap.py": "d5f0b6e5a414435af6b1365c8e1fbb8fd3a37c901757136c2c4e6f3808349687",
+    "auto_sqpca/candidates.py": "b886fbfa307a85c0b0a911499dfe0838db516ddda5d9ac055c2f48e84924d573",
+    "auto_sqpca/cli.py": "bca5f29cacd1ce6b39c807e5a6da4c49057c758bf3944e526c31c404641a8f7e",
+    "auto_sqpca/gaps.py": "a97ddb8595176a9a518238761fd79d6089a933be6bc8cbe732597289338eeaa4",
+    "auto_sqpca/io.py": "94e8ebfbca3713a53687b15ad56a17995b026c8c4efdbb97c79d68331ec1a4e0",
+    "auto_sqpca/localtime.py": "c5d8558cf008d0c2de92582aaaf7b611726333d8b51179f87d405647d18e9cfb",
+    "auto_sqpca/metrics.py": "bc28c78e173af067ddd0006791301531cbc7323874d2c13119d5a0bda8dcff3f",
+    "auto_sqpca/pca.py": "9bcacbbe208fca2b4319f505107ddeebac34b954065622d44ddd3a9ec55b01ca",
+    "auto_sqpca/selection.py": "cf792bdef0dd308da3a44905feb95022455c04343e64e22ba76909c5b14cb185",
+    "auto_sqpca/ssb.py": "5c9f25e8cfc3dc91d66a95c0638004af22cb42b664310562cea83f6835df8dec",
+    "f3_e1.py": "8c18c1a42af44de2e53e2995c456d8700d9fbd8cb1a67d9c0fdf078cec1fc774",
+    "f3_inventory.py": "c9324b7386d1422520cbb21504ef222ee1f547cf4c63b6285ad0562a04ddeff0"
+  },
+  "method_definition_note": "M-EM uses documented 1e-8 nT precision guard instead of F3-v1 1e-4; 500-iteration cap retained; requires reviewer scrutiny",
+  "selection_formula": "mean across mask families x components of median relative-L2 errors for nominal p<=0.30; TND included only when actual missing fraction<=0.30; all non-output cases inf"
+}

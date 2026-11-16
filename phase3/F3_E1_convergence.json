@@ -1,0 +1,23 @@
+{
+  "source_path": "work/E1_holdout_cases.csv",
+  "source_sha256": "1acbda1a8825b6b878704395973fea0c37b4fd1324ee470df106f2344d1aceb3",
+  "methods_and_mask_settings": 69,
+  "M_EM_cases": 185220,
+  "M_EM_reached_500_iterations": 116777,
+  "capped_fraction_of_M_EM": 0.6304772702731887,
+  "capped_final_change_finite": 116777,
+  "capped_below_1e-4_nT": 7635,
+  "capped_below_1e-4_fraction": 0.0653810253731471,
+  "capped_below_1e-6_nT": 2990,
+  "capped_below_1e-6_fraction": 0.025604357022358856,
+  "capped_final_change_quantiles_nT": {
+    "0": 9.632458386477083e-09,
+    "0.25": 0.009864629541880277,
+    "0.5": 0.029380971325736027,
+    "0.75": 0.06332848280726466,
+    "0.9": 0.1078242188217701,
+    "0.99": 0.23524624146200954,
+    "1": 2.9534067970816977
+  },
+  "denominator_note": "All E1 method cases in secondary table; finite metrics exclude nonfinite values and report count. Capped EM fractions use all cases at 500 iterations."
+}

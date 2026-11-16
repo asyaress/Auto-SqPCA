@@ -1,0 +1,18 @@
+{
+  "target_total": 432,
+  "annual_target": 396,
+  "combined_target": 36,
+  "status_counts": {
+    "ELIGIBLE": 381,
+    "EXCLUDED": 12,
+    "UNRESOLVED_MISSING": 33,
+    "SUSPECT_DIAGNOSTIC": 6
+  },
+  "development_seen": 303,
+  "february": 36,
+  "comparable": 387,
+  "main_eligible": 381,
+  "main_frob_pass": 62,
+  "main_all_metrics_pass": 56,
+  "cache_sha256": "a8e6a9bf76a470c45dc21413d99a6985832ecf07627f6edd10b58078a7a50835"
+}

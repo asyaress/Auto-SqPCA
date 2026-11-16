@@ -1,0 +1,290 @@
+{
+  "audit_label": "EXPLORATORY_POST_HOC",
+  "n_cases": 20,
+  "n_capped": 10,
+  "n_uncapped": 10,
+  "bit_identical": true,
+  "frozen_gaps_py_sha256": "a97ddb8595176a9a518238761fd79d6089a933be6bc8cbe732597289338eeaa4",
+  "cases": [
+    {
+      "case_key": [
+        "COI",
+        2012,
+        4,
+        "Y",
+        "BLOCK6",
+        0
+      ],
+      "iterations": 500,
+      "final_change_nT": 0.1112087082274229,
+      "filled_sha256": "c0b93c8ddbb18f054f4b807bdcbf3813f5189313bdcc98afe24d3342291a9b59",
+      "keep_sha256": "5cc7f71eb464de4bb7ad9c0356a7fe564e4e9ea0df09364c54f495d0dc2c12e6"
+    },
+    {
+      "case_key": [
+        "COI",
+        2012,
+        4,
+        "Z",
+        "BLOCK6",
+        0
+      ],
+      "iterations": 500,
+      "final_change_nT": 0.04614725848659873,
+      "filled_sha256": "7bf96f93e778f90db037234997c60c0825e426fcf957455d41bb6af4168dba26",
+      "keep_sha256": "5cc7f71eb464de4bb7ad9c0356a7fe564e4e9ea0df09364c54f495d0dc2c12e6"
+    },
+    {
+      "case_key": [
+        "COI",
+        2012,
+        4,
+        "Y",
+        "BLOCK6",
+        1
+      ],
+      "iterations": 500,
+      "final_change_nT": 0.002985957592500199,
+      "filled_sha256": "de358500a5305f759cabc1f4e2c88bea0f599d6eebb5621ea4a305a77d18bee2",
+      "keep_sha256": "5cc7f71eb464de4bb7ad9c0356a7fe564e4e9ea0df09364c54f495d0dc2c12e6"
+    },
+    {
+      "case_key": [
+        "COI",
+        2012,
+        4,
+        "Z",
+        "BLOCK6",
+        1
+      ],
+      "iterations": 500,
+      "final_change_nT": 0.075033477274701,
+      "filled_sha256": "1b905086ed81b5503249172526dda981e46b4619af3115a2a414da4baf8b3e62",
+      "keep_sha256": "5cc7f71eb464de4bb7ad9c0356a7fe564e4e9ea0df09364c54f495d0dc2c12e6"
+    },
+    {
+      "case_key": [
+        "COI",
+        2012,
+        4,
+        "Y",
+        "BLOCK6",
+        2
+      ],
+      "iterations": 500,
+      "final_change_nT": 0.21361478150697621,
+      "filled_sha256": "718891933c2ff4c05feaa041087cab004e7ba9f3eac8d31e1889229a54a9fce7",
+      "keep_sha256": "5cc7f71eb464de4bb7ad9c0356a7fe564e4e9ea0df09364c54f495d0dc2c12e6"
+    },
+    {
+      "case_key": [
+        "COI",
+        2012,
+        4,
+        "Z",
+        "BLOCK6",
+        2
+      ],
+      "iterations": 500,
+      "final_change_nT": 0.0019837929430650547,
+      "filled_sha256": "61774f5f24097a3e82a217f446087e4e1d392f96d6e58c00d99a8a5a34229967",
+      "keep_sha256": "5cc7f71eb464de4bb7ad9c0356a7fe564e4e9ea0df09364c54f495d0dc2c12e6"
+    },
+    {
+      "case_key": [
+        "COI",
+        2012,
+        4,
+        "Y",
+        "BLOCK6",
+        3
+      ],
+      "iterations": 500,
+      "final_change_nT": 0.024554326854058672,
+      "filled_sha256": "98ea49a3323009ca3fed491555679de6481e16ee9e8140dfd6896decfe96f689",
+      "keep_sha256": "5cc7f71eb464de4bb7ad9c0356a7fe564e4e9ea0df09364c54f495d0dc2c12e6"
+    },
+    {
+      "case_key": [
+        "COI",
+        2012,
+        4,
+        "Z",
+        "BLOCK6",
+        3
+      ],
+      "iterations": 500,
+      "final_change_nT": 0.015831754506507423,
+      "filled_sha256": "9cee295ce25c39c2ff57b42d37ece96aaafcc052581e1e0d2e54a66e963fc15f",
+      "keep_sha256": "5cc7f71eb464de4bb7ad9c0356a7fe564e4e9ea0df09364c54f495d0dc2c12e6"
+    },
+    {
+      "case_key": [
+        "COI",
+        2012,
+        4,
+        "Y",
+        "BLOCK6",
+        4
+      ],
+      "iterations": 500,
+      "final_change_nT": 0.06648312327547501,
+      "filled_sha256": "c1e5c91dc72d6f5c8d871149c61e209fd214236db5551ceeb4ee32bfeab08ad3",
+      "keep_sha256": "5cc7f71eb464de4bb7ad9c0356a7fe564e4e9ea0df09364c54f495d0dc2c12e6"
+    },
+    {
+      "case_key": [
+        "COI",
+        2012,
+        4,
+        "Z",
+        "BLOCK6",
+        4
+      ],
+      "iterations": 500,
+      "final_change_nT": 0.0013271050993353128,
+      "filled_sha256": "d213439346244ef63ea0501d91f316dcb6320656a5fe55acf6ff63ea71b7ce72",
+      "keep_sha256": "5cc7f71eb464de4bb7ad9c0356a7fe564e4e9ea0df09364c54f495d0dc2c12e6"
+    },
+    {
+      "case_key": [
+        "COI",
+        2012,
+        4,
+        "Y",
+        "MCAR",
+        0
+      ],
+      "iterations": 75,
+      "final_change_nT": 9.681571100372821e-09,
+      "filled_sha256": "4f54e52a9648187ecd4b0469f1bc8088c2dbf97992de6641ffc4e7b2e89f7a37",
+      "keep_sha256": "5cc7f71eb464de4bb7ad9c0356a7fe564e4e9ea0df09364c54f495d0dc2c12e6"
+    },
+    {
+      "case_key": [
+        "COI",
+        2012,
+        4,
+        "Z",
+        "MCAR",
+        0
+      ],
+      "iterations": 85,
+      "final_change_nT": 8.811184670776129e-09,
+      "filled_sha256": "0ba0fea7043278e7ea31c51b1df931c4e6919dca7b2ea390c4ed69aa1af7c50d",
+      "keep_sha256": "5cc7f71eb464de4bb7ad9c0356a7fe564e4e9ea0df09364c54f495d0dc2c12e6"
+    },
+    {
+      "case_key": [
+        "COI",
+        2012,
+        4,
+        "Y",
+        "MCAR",
+        1
+      ],
+      "iterations": 66,
+      "final_change_nT": 8.260258255177177e-09,
+      "filled_sha256": "88638b5b0ec1587f24c75ce19f92cf6fbbe51984d02f2388f47d87958fe26579",
+      "keep_sha256": "5cc7f71eb464de4bb7ad9c0356a7fe564e4e9ea0df09364c54f495d0dc2c12e6"
+    },
+    {
+      "case_key": [
+        "COI",
+        2012,
+        4,
+        "Z",
+        "MCAR",
+        1
+      ],
+      "iterations": 48,
+      "final_change_nT": 6.7739165388047695e-09,
+      "filled_sha256": "e4ffff2daf6dacf2b12e43921905d987897b374f83e989baea7e359bb80de815",
+      "keep_sha256": "5cc7f71eb464de4bb7ad9c0356a7fe564e4e9ea0df09364c54f495d0dc2c12e6"
+    },
+    {
+      "case_key": [
+        "COI",
+        2012,
+        4,
+        "Y",
+        "MCAR",
+        2
+      ],
+      "iterations": 232,
+      "final_change_nT": 9.23341758607421e-09,
+      "filled_sha256": "1e7ed11a5cb32287f07e2f7ec90f73bfbb9efc5fcea55e603ec61537563fc330",
+      "keep_sha256": "5cc7f71eb464de4bb7ad9c0356a7fe564e4e9ea0df09364c54f495d0dc2c12e6"
+    },
+    {
+      "case_key": [
+        "COI",
+        2012,
+        4,
+        "Z",
+        "MCAR",
+        2
+      ],
+      "iterations": 81,
+      "final_change_nT": 8.454662747681141e-09,
+      "filled_sha256": "9f26f1e92f5af9415cf5e03a9ab3347cfbf1c705d73efd279225d74b3e13550b",
+      "keep_sha256": "5cc7f71eb464de4bb7ad9c0356a7fe564e4e9ea0df09364c54f495d0dc2c12e6"
+    },
+    {
+      "case_key": [
+        "COI",
+        2012,
+        4,
+        "Y",
+        "MCAR",
+        3
+      ],
+      "iterations": 408,
+      "final_change_nT": 9.97420102066826e-09,
+      "filled_sha256": "9c62e98d0ee488cf30ec375a92acf0a71d3aaf4d8e0b3184fe033c68efaa3bfe",
+      "keep_sha256": "5cc7f71eb464de4bb7ad9c0356a7fe564e4e9ea0df09364c54f495d0dc2c12e6"
+    },
+    {
+      "case_key": [
+        "COI",
+        2012,
+        4,
+        "Z",
+        "MCAR",
+        3
+      ],
+      "iterations": 111,
+      "final_change_nT": 8.840288501232862e-09,
+      "filled_sha256": "b044da964c5d4e23c98e1a8da3bc1a0eab36c2244897053c5476da603eeace17",
+      "keep_sha256": "5cc7f71eb464de4bb7ad9c0356a7fe564e4e9ea0df09364c54f495d0dc2c12e6"
+    },
+    {
+      "case_key": [
+        "COI",
+        2012,
+        4,
+        "Y",
+        "MCAR",
+        4
+      ],
+      "iterations": 168,
+      "final_change_nT": 9.540599421598017e-09,
+      "filled_sha256": "148092da9fc2e516812bafcf02fc33224f69ff3e95960c830a8a265dce058b48",
+      "keep_sha256": "5cc7f71eb464de4bb7ad9c0356a7fe564e4e9ea0df09364c54f495d0dc2c12e6"
+    },
+    {
+      "case_key": [
+        "COI",
+        2012,
+        4,
+        "Z",
+        "MCAR",
+        4
+      ],
+      "iterations": 47,
+      "final_change_nT": 9.225914254784584e-09,
+      "filled_sha256": "02880b8342a679b23555a87701510004c0dbd107ae09b0a2934418743bda0a09",
+      "keep_sha256": "5cc7f71eb464de4bb7ad9c0356a7fe564e4e9ea0df09364c54f495d0dc2c12e6"
+    }
+  ]
+}

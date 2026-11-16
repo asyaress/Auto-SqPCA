@@ -1,0 +1,12 @@
+# G4-R — catatan transisi dan pelaksanaan
+
+- Protokol G4R-v1 diberikan sebagai APPROVED; SHA-256 `423e27bb28c326f0ef56d92e89f6b7764523b3d619352f8c98d0296f346f415e`. Ini protokol G4-R, bukan amandemen G0–G2-R. Status G1 registration-2/3 tetap HOLD dan label G2-R tetap S-DEVIATE.
+- R1/R2 dari bagian 0 protokol dicatat sebagai **HASIL_LOKAL_G2R**: V1 unggul pada pengembangan, sedangkan holdout struktur 3/9 lulus. Tidak dipakai untuk mengubah ambang atau label G2-R.
+- R3 dicatat sebagai **ANALISIS_REVIEWER**: batas |r| ≥0,999 dan galat Frobenius ≤1% mengukur hal berbeda dan secara geometri tidak setara. Label S-DEVIATE tidak diubah.
+- R4 dicatat sebagai **HIPOTESIS_BELUM_DIUJI**: galat absolut sekitar 0,05 nT mungkin tampak besar relatif pada Sq yang lemah. Tidak diuji sebagai sebab di G4-R.
+- Enam uji klasifikasi sintetis lulus sebelum data nyata; uji konsistensi aturan memberi 200/200 keputusan sama di luar zona. Uji ketujuh memeriksa adaptor VF.
+- Kegagalan upaya awal G3-R tercatat verbatim: `RuntimeError: phase2a/raw/mendeley/jcmdrm5f5x-1/Datasets of the solar quiet (Sq) and solar disturbed (SD) variations of the geomagnetic field at a midlatitudinal station in Europe obtained by different methods/PCA modes/X/m01 - January/data files/mode 1/COI_X_VF1_m01.dat lacks y.2007`. DAT VF tidak mempunyai header; baris `y.2007` adalah data pertama. Adaptor G4-R membaca baris pertama itu dan mendelegasikan baris lain ke loader beku. Upaya awal dihentikan tanpa metrik final, adaptor diuji, lalu G3-R dijalankan ulang sekali. File kode dan konfigurasi G2-R tidak diubah.
+- Kelayakan seri memakai kebijakan S7-B/S7-C dengan cakupan seri yang dijelaskan protokol G4-R: Y Februari EXCLUDED; Z Februari 2014 dan gabungan serta X empat bulan 2008 dan gabungan SUSPECT_DIAGNOSTIC. Beberapa seri suspect juga mempunyai jam hilang dan berada pada kategori eksklusif UNRESOLVED_MISSING.
+- `DEVELOPMENT_SEEN` dilaporkan sebagai bendera yang tumpang tindih. Penyebut D-agreement utama adalah perbandingan retrospektif semua seri eligible; strata yang belum terlihat dilaporkan tersendiri. Tidak ada klaim evaluasi prospektif dari penyebut utama.
+- Surrogate IC1 mengacak fase deret **acuan Sq**, mempertahankan amplitudo FFT, DC dan Nyquist. Seed 20261113 dipakai konsisten per acuan/matriks. P-value memakai 1.000 surrogate dan koreksi +1.
+- Tidak ada DIFI, DTW, CM5, classifier ML, atau analisis stasiun K11. Kategori X dari tabel asli tidak diklaim direplikasi.

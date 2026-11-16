@@ -1,0 +1,53 @@
+{
+  "schema": "Auto-SqPCA-G4R-v1",
+  "completed_utc": "2026-11-13T14:54:20.662426+00:00",
+  "protocol_sha256": "423e27bb28c326f0ef56d92e89f6b7764523b3d619352f8c98d0296f346f415e",
+  "G2R_config_sha256": "25676d831262eef44857d6bd9b14f4aba72909ec4968760d53406f906976a320",
+  "G0_manifest_rows_verified": 3702,
+  "frozen_files_verified_unchanged": 146,
+  "unit_tests_passed": 7,
+  "rule_consistency": {
+    "synthetic_cases": 200,
+    "noise_sd_nT": 0.05,
+    "outside_sensitive_zone": 200,
+    "same_decision": 200,
+    "same_fraction": 1.0,
+    "threshold": 0.95,
+    "status": "PASS"
+  },
+  "G3R_denominator": {
+    "target_total": 432,
+    "annual_target": 396,
+    "combined_target": 36,
+    "status_counts": {
+      "ELIGIBLE": 381,
+      "EXCLUDED": 12,
+      "UNRESOLVED_MISSING": 33,
+      "SUSPECT_DIAGNOSTIC": 6
+    },
+    "development_seen": 303,
+    "february": 36,
+    "comparable": 387,
+    "main_eligible": 381,
+    "main_frob_pass": 62,
+    "main_all_metrics_pass": 56,
+    "cache_sha256": "a8e6a9bf76a470c45dc21413d99a6985832ecf07627f6edd10b58078a7a50835"
+  },
+  "G4R_label": "D-AGREE",
+  "G4R_denominator": {
+    "target_total": 432,
+    "excluded": 12,
+    "suspect": 6,
+    "development_seen": 303,
+    "unresolved": 33,
+    "eligible": 381,
+    "agree": 2661,
+    "disagree_in_zone": 6,
+    "disagree_outside_zone": 0
+  },
+  "G1_registration2": "HOLD",
+  "G1_registration3": "HOLD",
+  "G2R_label": "S-DEVIATE",
+  "pca_cache_sha256": "a8e6a9bf76a470c45dc21413d99a6985832ecf07627f6edd10b58078a7a50835",
+  "sq_cache_sha256": "0021ba8e4a8cffded113e79825650db9d5de9943b9e540d7a81674adf626d5f2"
+}

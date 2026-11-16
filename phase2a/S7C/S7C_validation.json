@@ -1,0 +1,35 @@
+{
+  "schema": "Auto-SqPCA-S7C-validation-v1",
+  "completed_utc": "2026-11-13T13:36:10.783708+00:00",
+  "completed_local_Asia_Makassar": "2026-11-13T21:36:10.783708+08:00",
+  "registration3_source_sha256": "cb5fdd487d460d986ec568916979bac0e7b6c0bb6d4891f3d423e770c2889573",
+  "registration3_copy_sha256": "cb5fdd487d460d986ec568916979bac0e7b6c0bb6d4891f3d423e770c2889573",
+  "G0_manifest": {
+    "rows": 3702,
+    "all_sha256_match": true,
+    "manifest_sha256": "69ade47970855fbaa37102479d632142997dabe932415c633e0bc05b1ff7f947"
+  },
+  "frozen_output_files_checked": 77,
+  "frozen_output_sha256_mismatches": 0,
+  "raw_WDC_format_zip_sha256": {
+    "first_partial": "b7549f1f7de7f32a3105c7337440f0ab38c6f0ef95c4d140894acdfb2fcd7861",
+    "complete": "5fa0161e935fa759d133f733ba769dda9f000ce1e45bc1e3a49ec565a0d0c9d3"
+  },
+  "raw_zip_sha256_unchanged_after": true,
+  "crosscheck_component_hours": 385728,
+  "crosscheck_paired_valid": 375824,
+  "crosscheck_mismatch_count": 267475,
+  "crosscheck_mismatch_percent": 71.17028183404999,
+  "crosscheck_stop_threshold_percent": 0.1,
+  "D2c_status": "NOT_RUN_WDC_FORMAT_INCONSISTENT",
+  "G1_registration2": "HOLD",
+  "G1_registration3": "HOLD",
+  "A5_policy_delta_rows": 72,
+  "excluded_months_registration3": [],
+  "environment": {
+    "python": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "errors": [],
+  "acquisition_correction": "Initial years parameter selected two endpoint years; corrected start/end request selected 11 years"
+}

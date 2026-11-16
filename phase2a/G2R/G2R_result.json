@@ -1,0 +1,17 @@
+{
+  "label": "S-DEVIATE",
+  "variant": "V1",
+  "config_sha256": "25676d831262eef44857d6bd9b14f4aba72909ec4968760d53406f906976a320",
+  "denominator": {
+    "target_total": 9,
+    "not_eligible": 0,
+    "suspect": 0,
+    "eligible": 9,
+    "pass": 3,
+    "fail": 6
+  },
+  "frob_pass": 3,
+  "pc1_yz_all_pass": true,
+  "ineligible": [],
+  "utc": "2026-11-13T14:17:44.101256+00:00"
+}

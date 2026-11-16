@@ -1,0 +1,63 @@
+{
+  "C1": {
+    "status": "BERHASIL",
+    "method": "M-EM",
+    "qualifications": [
+      "GFZ 2018 input corrected after preliminary C1 was seen; preliminary and corrected C1 both succeeded",
+      "DAY mask is equivalent by construction under all three gap methods"
+    ]
+  },
+  "C2": {
+    "status": "GAGAL",
+    "rule": "X paired median ASAL minus AUTO-NA lower 95% cluster bootstrap CI >0",
+    "PC_combinations_contribution_allowed": false
+  },
+  "C3": {
+    "status": "GAGAL",
+    "rule": "median error reduction lower 95% CI >0 and unmasked holdout coverage >=0.80",
+    "unmasked_holdout_coverage": 0.7418091168091168,
+    "masked_abstain_fraction": 1.0
+  },
+  "C4": {
+    "status": "DESCRIPTIVE",
+    "stations_primary": [
+      "COI",
+      "KDU",
+      "GUA",
+      "PLR",
+      "TUN"
+    ],
+    "stations_exploratory": [
+      "HUA",
+      "TTB",
+      "MBO"
+    ],
+    "reference": "DIFI8 independent of IQD selection"
+  },
+  "C5": {
+    "status": "PARTIAL",
+    "cached_F3A_hash_verification": true,
+    "limitation": "F3A cached hash verification passed; one-command full Phase 3 rerun from raw data is not demonstrated"
+  },
+  "allowed_title": "Auto-SqPCA: A Quality-Aware Workflow for Extracting Solar Quiet Geomagnetic Variations at Low and Equatorial Latitudes",
+  "allowed_claim_sentences": [
+    "Auto-SqPCA dengan M-EM menunjukkan ketahanan lebih baik daripada interpolasi linear untuk MCAR dan blok 24 jam pada holdout E1.",
+    "Kombinasi PC diperlakukan sebagai opsi, karena C2 tidak menunjukkan peningkatan nyata pada komponen X.",
+    "Abstain menurunkan median galat pada kasus diterima, tetapi coverage 74,18% berada di bawah syarat 80%; klaim uncertainty-guided tidak didukung.",
+    "Hasil transfer E3 bersifat deskriptif dan berlaku hanya untuk stasiun yang diuji; E3b eksploratoris.",
+    "Topeng DAY setara menurut konstruksi bagi metode celah yang dibandingkan."
+  ],
+  "prohibited_claims": [
+    "uncertainty-guided",
+    "PC combination as validated contribution",
+    "berlaku untuk Indonesia"
+  ],
+  "source_sha256": {
+    "F3_protocol_v1.md": "617c96d0cbda26fa3f6333ea1638030a35db1836fd99ba35f2a3bb18ea091327",
+    "F3_amendment_v1.1.md": "8dae6289ef71f1829d37ba6d5726253fd206c679221da7106b1a820421900a8f",
+    "F3_E1_frozen.json": "a2a2cd09ccf4c16c87a9033d792de80762d253c2db16455f81cc4329ad26981d",
+    "F3_E2_frozen.json": "7a4597814baad09c6fe1ca781f991181c7286ba1c6fca2f376c7e6cf8592a34e",
+    "F3_E2_result.json": "128c37e4e8886a27a7beb8b13ba9596ca26c79944f39ec75847fb48574e78240",
+    "F3_E3_cases.csv": "1777d73c47ea52b629e985b93db3906b7d4467cdf4a00248d88fe1853c81f84e"
+  }
+}
