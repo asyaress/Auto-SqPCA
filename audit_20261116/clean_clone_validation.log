@@ -1,0 +1,11 @@
+2026-11-16 clean-checkout portability validation
+Source commit: 0cbdc638d17c34599dd60e76dc0befb3176e5575
+Checkout: git clone --branch audit-revision-20261116 --single-branch --no-hardlinks <local repo> <temporary clone>
+Environment: fresh Python 3.12 virtual environment within the clone
+Install: python -m pip install -e ".[demo,test]" from clone directory
+Verified editable project location: temporary clone directory
+Direct import path: temporary clone/auto_sqpca/__init__.py
+python -m pytest -q tests: 17 passed in 4.54s
+python -m auto_sqpca.cli demo --output demo/output: selected PC1; stability 1.0; relative_width 0.012933211126863506; bootstrap_B 200; seed 20261114; hours 24; abstained false
+python -m auto_sqpca.cli verify: 17 passed in 1.10s
+Scope: source-package import, synthetic demo and tests; full raw-input chain not run
