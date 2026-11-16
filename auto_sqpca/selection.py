@@ -1,12 +1,7 @@
 """Local-IQD reference and F3-v1 candidate selection."""
 from __future__ import annotations
-import sys
-from pathlib import Path
 import numpy as np
-
-G4R = Path(__file__).resolve().parents[2] / "phase2a/G4R"
-sys.path.insert(0, str(G4R))
-from classification_core import classify_curve, random_phase_surrogates
+from ._frozen.classification_core import classify_curve, random_phase_surrogates
 from .candidates import NAMES, SUBSETS, curves
 
 NIGHT = (23, 0, 1, 2, 3)
@@ -26,8 +21,14 @@ def sq_iqd(a: np.ndarray, quiet_days: list[int]) -> np.ndarray:
 
 
 def choose(pca: dict, reference: np.ndarray, surrogates: np.ndarray | None = None) -> dict:
+    reference = np.asarray(reference, dtype=float)
+    if reference.shape != (24,) or not np.isfinite(reference).all() or np.ptp(reference) == 0:
+        raise ValueError("Reference must be a finite nonconstant 24-hour curve")
     if surrogates is None: surrogates = random_phase_surrogates(reference)
     candidates = curves(pca)
+    if any(np.asarray(curve).shape != (24,) or not np.isfinite(curve).all() or np.ptp(curve) == 0
+           for curve in candidates.values()):
+        raise ValueError("Candidate must be a finite nonconstant 24-hour curve")
     scored = {name: classify_curve(curve, reference, surrogates)
               for name, curve in candidates.items()}
     passing = [name for name in NAMES if scored[name]["decision"] == "SQ_LIKE"]

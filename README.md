@@ -1,6 +1,6 @@
 # Auto-SqPCA
 
-This repository packages the frozen Auto-SqPCA workflow accompanying *Transferring PCA-based extraction of the solar quiet geomagnetic variation to low and equatorial latitudes: an automated workflow with explicit abstention*. It customizes the PCA-based solar quiet (Sq) method of Morozova and Rebbah (2023), *MethodsX* **10**, 101999. Their Sq-mode selection rule is inherited; local-time matrices, missing-data handling, parsimonious candidate selection, day bootstrap, and explicit abstention were added here. The scientific code and archived small results were copied without numerical changes.
+This repository packages the Auto-SqPCA workflow accompanying *Transferring PCA-based extraction of the solar quiet geomagnetic variation to low and equatorial latitudes: an automated workflow with explicit abstention*. It customizes the PCA-based solar quiet (Sq) method of Morozova and Rebbah (2023), *MethodsX* **10**, 101999. Their Sq-mode selection rule is inherited; local-time matrices, missing-data handling, parsimonious candidate selection, day bootstrap, and explicit abstention were added here. The historical Phase 3 code and archived results are frozen. The portable root package is version 1.0.1rc1 and has documented input guards; it is not claimed to have generated the archived Phase 3 results.
 
 ## What the archived results show
 
@@ -16,9 +16,10 @@ Python **3.12** was used. Frozen analysis versions were NumPy 2.5.4, pandas 2.3.
 
 ```powershell
 py -3.12 -m venv .venv
-.venv\Scripts\python -m pip install -r requirements.txt
-.venv\Scripts\python demo/synthetic_month.py
-.venv\Scripts\python -m pytest -q tests
+.venv\Scripts\python -m pip install -e ".[demo,test]"
+.venv\Scripts\python -c "from auto_sqpca.pca import decompose_v1; print('import OK')"
+.venv\Scripts\python -m auto_sqpca.cli demo --output demo/output
+.venv\Scripts\python -m auto_sqpca.cli verify
 ```
 
 The demo uses generated 24-hour data only and writes `demo/output/demo_result.json`, a 24-row curve/band CSV, and a PNG. Its 200 day resamples use the frozen seed. It is illustrative; it does not reproduce an observatory result.
@@ -36,7 +37,7 @@ Omit `--source` to fetch every listed input. Hash mismatches stop the operation;
 
 ## Trace the analysis and figures
 
-Original scripts retain their original relative layout in `phase2a/` and `phase3/`; byte-identical copies are in `provenance/original_scripts/`. The top-level `auto_sqpca/` is the required byte-identical package copy; its frozen `pca.py` and `selection.py` resolve Phase 2 cores from the `phase3/auto_sqpca/` placement. Run modules from that original layout, as the demo and tests do. The `scripts/` folders are entry-point inventories of those same scripts. Read the relevant internal plan and frozen configuration before running an analysis, then work in a separate copy so archived outputs stay unchanged:
+Original scripts retain their original relative layout in `phase2a/` and `phase3/`; byte-identical copies are in `provenance/original_scripts/`. The top-level `auto_sqpca/` imports byte-identical vendored Phase 2 numerical cores from `auto_sqpca/_frozen/`; its NaN/infinity guard, reference validation, and bootstrap edge-case behavior are versioned release corrections. Valid finite inputs were compared against the historical code with exact equality in targeted tests. The `scripts/` folders are entry-point inventories of the historical scripts. Read the relevant internal plan and frozen configuration before running an analysis, then work in a separate copy so archived outputs stay unchanged:
 
 - Phase 2: `phase2a/G2R/g2r.py` (V1 PCA) and `phase2a/G4R/g4r_run.py` (classification).
 - Phase 3 E1: `phase3/f3_e1.py`, E2: `phase3/f3b_e2_eval.py`, E3: `phase3/f3b_e3.py`.
@@ -44,6 +45,10 @@ Original scripts retain their original relative layout in `phase2a/` and `phase3
 - Archived figure script: `.venv\Scripts\python scripts/40_figures/render_frozen_figures.py`. It runs the unmodified F3B renderer from frozen CSV/JSON in a temporary directory and writes to `scripts/40_figures/output/`. The original PNGs are in `phase3/`.
 
 The detailed [manuscript map](docs/manuscript_map.md) lists each table and figure, its source script and result hash. Some manuscript graphics are editorial compositions for which no exact one-command source is archived; the map identifies those limits. Do not substitute newly drawn figures as if they were archived originals.
+
+## November 2026 audit and reproduction level
+
+The [audit protocol](audit_20261116/posthoc_protocol.md) identifies the post hoc analyses before their execution. [Case reconciliation](audit_20261116/reconciliation.json) re-aggregates archived E1–E3 and U3/U5 case files; [matched ablation](audit_20261116/ablation_summary.json) recomputes the frozen selected-candidate correlation from authenticated SSB month caches and validates each candidate error against the archived value; [paired pure-null](audit_20261116/paired_null_summary.json) reruns the frozen selection and day bootstrap on a new, paired synthetic bank. A [54-case E2 slice](audit_20261116/rerun_slice.json) reproduces archived values from its authenticated SSB cache, and a [DIFI boundary sensitivity](audit_20261116/difi_boundary_summary.json) recomputes the two affected model months. These are different verification levels. `audit_20261116/case_manifest.csv`, `ablation_cases.csv`, and `paired_null_cases.csv` carry per-case decisions. The full E1/E2/E3 pipeline from third-party raw inputs has not been rerun end to end in a clean environment. Phase 3 C5 therefore remains **PARTIAL**. See [audit closure](audit_20261116/audit_closure.md) for findings, unresolved provenance, and release limitations.
 
 ## Provenance and data credit
 
@@ -53,5 +58,5 @@ Observatory source data came through [WDC Edinburgh/BGS](https://www.wdc.bgs.ac.
 
 ## Citation and license
 
-Software code: MIT. `CITATION.cff` and `.zenodo.json` carry version 1.0.0. **DOI: to be added after Zenodo release.** The repository itself has no tag or GitHub Release yet; the owner will create those after review. Third-party datasets retain their providers' terms.
+Software code: MIT. `pyproject.toml`, `CITATION.cff`, and `.zenodo.json` carry release candidate version 1.0.1rc1. No DOI, tag, GitHub Release, or Zenodo record is claimed. Third-party datasets retain their providers' terms.
 

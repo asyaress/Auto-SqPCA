@@ -1,0 +1,24 @@
+{
+  "verification_level": "TARGETED_RAW_WDC_TO_MATRIX_RERUN",
+  "station": "GUA",
+  "year": 2014,
+  "month": 1,
+  "raw_zip_project_relative_path": "phase3/raw/hourly/GUA_2014_hour_iaga_XYZF.zip",
+  "raw_zip_sha256": "b483ce9313be1eec86a533ef11ace8efa0403f8999529103109dde7d0ce08703",
+  "archived_matrix_sha256": "235af6ece24fdaf34153a7ba8c711a55228313fc215439b3f2b07a3d82e9978e",
+  "shape": [
+    24,
+    31,
+    3
+  ],
+  "finite_xyz_hours": 734,
+  "matrix_equal_including_nan": true,
+  "SSB_cache_sha256": "dc914e228e0410633f0868dd8a1b96a92970923e4d46480b4651939b017ca7f0",
+  "M_EM_iterations_XYZ": [
+    500,
+    245,
+    123
+  ],
+  "SSB_filled_equal": true,
+  "SSB_residual_equal": true
+}

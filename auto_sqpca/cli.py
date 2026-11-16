@@ -1,40 +1,29 @@
-"""Single command entry point for the Phase 3 Task A workflow.
+"""Portable commands for a source clone.
 
-On a fresh workspace containing frozen Phase 1-2 data and this package:
-    python -m phase3.auto_sqpca.cli f3a
-Existing E1 outputs are protected against accidental holdout reruns.
+Historical F3 scripts and results stay under phase3/. Rebuilding them requires
+separately acquired raw data and is not an implicit side effect of these checks.
 """
 from __future__ import annotations
-import os
+import argparse
 import subprocess
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2]
-PHASE3 = ROOT / "phase3"
-
-
-def run(args: list[str], env: dict | None = None) -> None:
-    print("RUN", " ".join(map(str,args)), flush=True)
-    subprocess.run(args, cwd=ROOT, env=env, check=True)
+ROOT = Path(__file__).resolve().parents[1]
 
 
 def main() -> None:
-    if len(sys.argv) != 2 or sys.argv[1] not in ("f3a", "verify"):
-        raise SystemExit("Usage: python -m auto_sqpca.cli f3a|verify")
-    env = os.environ.copy()
-    env["PYTHONPATH"] = os.pathsep.join((str(ROOT / "phase2a/G2R/_deps"), str(PHASE3), env.get("PYTHONPATH", "")))
-    if sys.argv[1] == "verify":
-        run([sys.executable, "-c", "import f3_preflight; print(f3_preflight.verify_snapshot())"], env)
-        return
-    run([sys.executable, str(PHASE3 / "f3_preflight.py")], env)
-    run([sys.executable, "-m", "pytest", str(PHASE3 / "tests"), "-q"], env)
-    run([sys.executable, str(PHASE3 / "f3_acquire.py")], env)
-    run([sys.executable, str(PHASE3 / "f3_inventory.py")], env)
-    run([sys.executable, str(PHASE3 / "f3_e1.py"), "development"], env)
-    run([sys.executable, str(PHASE3 / "f3_e1.py"), "holdout"], env)
-    run([sys.executable, str(PHASE3 / "f3_e1_eval.py")], env)
-    run([sys.executable, str(PHASE3 / "f3a_finalize.py")], env)
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("command", choices=("demo", "verify"))
+    parser.add_argument("--output", type=Path, help="demo output directory")
+    args = parser.parse_args()
+    if args.command == "demo":
+        command = [sys.executable, str(ROOT / "demo/synthetic_month.py")]
+        if args.output is not None:
+            command += ["--output", str(args.output)]
+    else:
+        command = [sys.executable, "-m", "pytest", "-q", str(ROOT / "tests")]
+    subprocess.run(command, cwd=ROOT, check=True)
 
 
 if __name__ == "__main__":

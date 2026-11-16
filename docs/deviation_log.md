@@ -14,3 +14,14 @@ This log describes recorded deviations. It does not alter the archived numerical
 
 Additional limits: G1 held under both registration-2 and registration-3; 56/381 matrices met all structural 1% metrics. A one-command full Phase 3 rerun from raw data has not been demonstrated (C5 PARTIAL). Hashes establish identity but not timing or independent registration.
 
+## Release candidate 1.0.1rc1 audit corrections (2026-11-16)
+
+| Item | Versioned change and scope | Verification |
+|---|---|---|
+| Root package imports | Root `auto_sqpca` now imports exact copies of the frozen G2R and G4R numerical cores from `auto_sqpca/_frozen/`. The earlier direct import raised `ModuleNotFoundError: No module named 'pca_core'`. Historical `phase3/auto_sqpca/` stays unchanged. | Direct import, vendored byte equality, and valid-input exact-output tests in `tests/`. |
+| Nonfinite input guard | Root M-EM now maps NaN and infinity to missing before computing daily initial means. Historical M-EM could pass infinity to SVD. This is a new behavior for formerly failing input only. | Infinity test, observed-value preservation, valid-input exact-output comparison. |
+| Selection and bootstrap edge cases | Root selection rejects nonfinite or constant references and candidates explicitly; root bootstrap validates positive B and returns zero stability when the original selection is absent. Historical behavior remains in Phase 3. | Targeted unit tests in `tests/test_public_contract.py`. |
+| Post hoc ablation | A matched-acceptance comparison on frozen E2 holdout cases was declared in `audit_20261116/posthoc_protocol.md` before execution. Correlation ranking was recomputed from SSB caches. It is descriptive and its holdout threshold is not a deployment threshold. | `audit_20261116/ablation.py`, cases, risk table, cluster resamples, summary. |
+| Post hoc paired null | A new shared bank was declared before execution. It does not overwrite or pair the original 400/400/60 archives. | `audit_20261116/paired_null.py`, per-case transitions and summary. |
+| U3 explanation and rounding | `audit_u3.py` fills original gaps before applying synthetic masks. Realized random mask fractions below 90%, not addition of original gaps, explain part of MCAR 10% abstention. The M-EM median `0.0224832947` rounds to `0.022` at three decimals. | Frozen code, `U3_summary.csv`, `audit_20261116/reconciliation.json`. |
+

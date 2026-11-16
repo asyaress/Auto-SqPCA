@@ -42,11 +42,16 @@ def fill_exc(a: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
 
 def fill_em(a: np.ndarray) -> tuple[np.ndarray, np.ndarray, int, float]:
     a = np.asarray(a, dtype=float)
+    if a.ndim != 2 or a.shape[0] != 24:
+        raise ValueError("M-EM input must be a 24 x N matrix")
     keep = np.isfinite(a).sum(axis=0) >= 6
     out = a[:, keep].copy()
     if not out.size: return out, keep, 0, 0.0
     missing = ~np.isfinite(out)
     if not missing.any(): return out, keep, 0, 0.0
+    # Infinity is missing by contract.  Convert it before nanmean, which
+    # otherwise includes +inf/-inf and can pass a nonfinite matrix to SVD.
+    out[missing] = np.nan
     means = np.nanmean(out, axis=0)
     out[missing] = np.broadcast_to(means, out.shape)[missing]
     change = float("inf")

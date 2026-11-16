@@ -1,0 +1,35 @@
+{
+  "level": "ARCHIVED_SUMMARY_TO_MANUSCRIPT",
+  "n_checks": 318,
+  "failed": [],
+  "by_table": {
+    "3": {
+      "checks": 29,
+      "failed": 0
+    },
+    "4": {
+      "checks": 27,
+      "failed": 0
+    },
+    "5": {
+      "checks": 60,
+      "failed": 0
+    },
+    "6": {
+      "checks": 30,
+      "failed": 0
+    },
+    "7": {
+      "checks": 36,
+      "failed": 0
+    },
+    "8": {
+      "checks": 16,
+      "failed": 0
+    },
+    "9": {
+      "checks": 120,
+      "failed": 0
+    }
+  }
+}

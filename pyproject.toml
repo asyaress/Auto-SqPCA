@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "auto-sqpca"
+version = "1.0.1rc1"
+description = "Audited portable distribution of the frozen Auto-SqPCA numerical workflow"
+requires-python = ">=3.12"
+dependencies = ["numpy>=2.5,<3"]
+
+[project.optional-dependencies]
+demo = ["matplotlib>=3.10,<4"]
+test = ["pytest>=9,<10"]
+
+[project.scripts]
+auto-sqpca = "auto_sqpca.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["auto_sqpca*"]

@@ -1,0 +1,26 @@
+{
+  "verification_level": "TARGETED_DERIVED_INPUT_RERUN",
+  "month": "GUA 2014-01",
+  "cases": 54,
+  "fields_checked": [
+    "status",
+    "AUTO_A1",
+    "AUTO_candidate",
+    "AUTO_NA_candidate",
+    "ASAL_candidate",
+    "observed_fraction",
+    "stability",
+    "relative_width",
+    "AUTO_curve_error",
+    "AUTO_NA_error",
+    "ASAL_error",
+    "M_EM_iterations",
+    "M_EM_final_change_nT",
+    "bootstrap_successful",
+    "bootstrap_seed"
+  ],
+  "mismatches": 0,
+  "source_script_sha256": "f36d60a03004be8c6f7603f69ae2d35d338eb5efaeb6ed3fd29ba83a4f052c09",
+  "source_cache_sha256": "dc914e228e0410633f0868dd8a1b96a92970923e4d46480b4651939b017ca7f0",
+  "difference_details": []
+}

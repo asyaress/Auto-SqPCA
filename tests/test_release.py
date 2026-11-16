@@ -4,13 +4,11 @@ import hashlib
 import csv
 import gzip
 import json
-import sys
 from pathlib import Path
 
 import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "phase3"))
 from auto_sqpca import candidates, gaps, pca, selection
 from phase2a.G2R.pca_core import center
 
@@ -18,14 +16,15 @@ from phase2a.G2R.pca_core import center
 def test_frozen_hashes():
     lines = (ROOT / "phase3/F3B_checksums.sha256").read_text(encoding="utf-8").splitlines()
     names = {line.split(None, 1)[1].strip() for line in lines if "  auto_sqpca/" in line}
-    assert names == {"auto_sqpca/" + p.name for p in (ROOT / "auto_sqpca").glob("*.py")}
+    assert names == {"auto_sqpca/" + p.name for p in (ROOT / "phase3/auto_sqpca").glob("*.py")}
     for line in lines:
         if "  auto_sqpca/" not in line:
             continue
         expected, name = line.split(None, 1)
-        assert hashlib.sha256((ROOT / name).read_bytes()).hexdigest() == expected
-        assert (ROOT / name).read_bytes() == (ROOT / "phase3" / name).read_bytes()
-    assert hashlib.sha256((ROOT / "auto_sqpca/gaps.py").read_bytes()).hexdigest() == "a97ddb8595176a9a518238761fd79d6089a933be6bc8cbe732597289338eeaa4"
+        assert hashlib.sha256((ROOT / "phase3" / name).read_bytes()).hexdigest() == expected
+    assert hashlib.sha256((ROOT / "phase3/auto_sqpca/gaps.py").read_bytes()).hexdigest() == "a97ddb8595176a9a518238761fd79d6089a933be6bc8cbe732597289338eeaa4"
+    assert (ROOT / "auto_sqpca/_frozen/pca_core.py").read_bytes() == (ROOT / "phase2a/G2R/pca_core.py").read_bytes()
+    assert (ROOT / "auto_sqpca/_frozen/classification_core.py").read_bytes() == (ROOT / "phase2a/G4R/classification_core.py").read_bytes()
 
 
 def test_em_observed_daily_means_rank3():
@@ -119,9 +118,17 @@ def test_release_manifest():
     with (ROOT / "docs/release_manifest.csv").open(encoding="utf-8", newline="") as f:
         rows = list(csv.DictReader(f))
     assert len(rows) > 400
+    # This is the immutable 2dadbbd manifest.  Root package files are now an
+    # audited portable distribution; the phase3 copies remain frozen above.
+    changed = {"auto_sqpca/pca.py", "auto_sqpca/selection.py", "auto_sqpca/gaps.py",
+               "auto_sqpca/bootstrap.py", "auto_sqpca/cli.py", "demo/synthetic_month.py",
+                   "README.md", "docs/deviation_log.md", "docs/release_environment.md", "docs/manuscript_map.md", "CITATION.cff", ".zenodo.json",
+                   ".gitignore", "tests/test_release.py"}
     for row in rows:
         path = ROOT / row["path"]
         assert path.is_file()
+        if row["path"] in changed:
+            continue
         assert path.stat().st_size == int(row["bytes"])
         assert hashlib.sha256(path.read_bytes()).hexdigest() == row["sha256"]
 

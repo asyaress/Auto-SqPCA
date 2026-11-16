@@ -15,8 +15,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
-# The frozen package resolves the G2-R/G4-R cores from its Phase 3 position.
-sys.path.insert(0, str(ROOT / "phase3"))
+sys.path.insert(0, str(ROOT))
 from auto_sqpca import abstain, bootstrap, pca, selection
 
 

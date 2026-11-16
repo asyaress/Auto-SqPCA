@@ -1,0 +1,140 @@
+{
+  "verification_level": "ARCHIVED_CASE_REAGGREGATION",
+  "source_files": {
+    "E1_truth": {
+      "project_relative_path": "phase3/work/E1_holdout_truth_status.csv",
+      "sha256": "e742ee9b829c8d4ce38bc3a165a06e7867b0831bfa5cb3e50930958f24fde804",
+      "rows": 447
+    },
+    "E2_manifest": {
+      "project_relative_path": "release/auto-sqpca/phase3/F3_ssb_manifest.csv",
+      "sha256": "e3b64a35f725dd4a43a02cf0884621cb7e35b46966e418bd4d8ddafda10737d7",
+      "rows": 8748
+    },
+    "E2_holdout": {
+      "project_relative_path": "phase3/work/E2_holdout_cases.csv",
+      "sha256": "30cb6b1c401e1cfc30131a8abaac626d1b20e3e8019fa36beca5cfc5fdd4642d",
+      "rows": 5616
+    },
+    "E2_development": {
+      "project_relative_path": "phase3/work/E2_development_cases.csv",
+      "sha256": "09dfa52a63373482dd8eff000d7a80a7bc30dd4a66fbf8d82b9d146098d8946b",
+      "rows": 3132
+    },
+    "E3": {
+      "project_relative_path": "release/auto-sqpca/phase3/F3_E3_cases.csv",
+      "sha256": "1777d73c47ea52b629e985b93db3906b7d4467cdf4a00248d88fe1853c81f84e",
+      "rows": 1068
+    },
+    "U3": {
+      "project_relative_path": "release/auto-sqpca/phase3/audit_add/U3_full_pipeline_cases.csv",
+      "sha256": "7e0532152e4a4d30872d7ec2893d46530a3a464526a9a3f782d163b26a05592f",
+      "rows": 25200
+    },
+    "U3_summary": {
+      "project_relative_path": "release/auto-sqpca/phase3/audit_add/U3_summary.csv",
+      "sha256": "7e71907caafc614068478fec9f6a0f075ef4c74433944320073c0f36a0da3417",
+      "rows": 12
+    },
+    "U5": {
+      "project_relative_path": "release/auto-sqpca/phase3/audit_add/U5_band_coverage.csv",
+      "sha256": "57e5cdb87f155ba5463f2252c8e37f8c35f885c1a755099d2277c031c51ebdc0",
+      "rows": 2092
+    },
+    "E1_full_cases_gzip": {
+      "project_relative_path": "release/auto-sqpca/results/phase3/F3_E1_holdout_cases.csv.gz",
+      "sha256": "4f559d2f51f60b8641a6bafb1a34febb84e21399db4f48bf48eddb9a1f9a4499",
+      "rows": 555660
+    }
+  },
+  "E1": {
+    "station_months": 149,
+    "component_slots": 447,
+    "truth_status": {
+      "OK": 420,
+      "UNRESOLVED_TRUTH": 27
+    },
+    "full_mask_method_cases": 555660,
+    "full_case_status_counts": {
+      "OK": 514438,
+      "NO_MATRIX": 30602,
+      "NO_PASS": 10620
+    },
+    "full_case_index": "results/phase3/F3_E1_holdout_cases.csv.gz (mask, replicate, seed, realized fraction, decision)",
+    "unresolved_reason_counts": {
+      "RuntimeError: Complete-data S8 has NO_PASS candidate; E1 relative target undefined": 27
+    }
+  },
+  "E2": {
+    "manifest_cases": 8748,
+    "development": 3132,
+    "holdout": 5616,
+    "holdout_unmasked": 2808,
+    "upstream_eligible": 2561,
+    "frozen_accepted": 2083,
+    "coverage": 0.7418091168091168,
+    "accepted_error": {
+      "n": 2083,
+      "median": 0.04622949041873955,
+      "p90": 0.21519555990510572
+    },
+    "A1_fail": 247,
+    "A2_fail": 564
+  },
+  "E3": {
+    "cases": 1068,
+    "accepted": 830,
+    "by_scope": {
+      "E3_primary": {
+        "cases": 570,
+        "accepted": 426
+      },
+      "E3b_exploratory": {
+        "cases": 498,
+        "accepted": 404
+      }
+    },
+    "status_counts": {
+      "NO_MATRIX_OR_DROPPED_DAY": 69,
+      "OK": 999
+    }
+  },
+  "U3": {
+    "settings": 12,
+    "cases_per_setting": 2100,
+    "MCAR_10_M_EM_accepted_error_median": 0.022483294703952408,
+    "MCAR_10_M_EM_round_3": "0.022"
+  },
+  "U5": {
+    "0.5": {
+      "cases": 440,
+      "at_least_22": 301,
+      "fraction": 0.6840909090909091,
+      "cluster_ci95": [
+        0.6179959209961357,
+        0.7444618430525557
+      ],
+      "clusters": 92
+    },
+    "1.0": {
+      "cases": 746,
+      "at_least_22": 678,
+      "fraction": 0.9088471849865952,
+      "cluster_ci95": [
+        0.8789601221070145,
+        0.9386679665738161
+      ],
+      "clusters": 103
+    },
+    "2.0": {
+      "cases": 897,
+      "at_least_22": 867,
+      "fraction": 0.9665551839464883,
+      "cluster_ci95": [
+        0.9489773242630386,
+        0.9822227155012948
+      ],
+      "clusters": 104
+    }
+  }
+}

@@ -7,6 +7,8 @@ phase2a/raw/
 phase3/raw/
 raw/
 demo/output/
+audit_20261116/demo/
+audit_20261116/clean_demo/
 scripts/40_figures/output/
 *.egg-info/
 

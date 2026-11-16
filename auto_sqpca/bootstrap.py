@@ -7,6 +7,8 @@ from .selection import choose
 
 def summarize(a: np.ndarray, reference: np.ndarray, selected: str | None,
               n_boot: int = 200, seed: int = 20261114) -> dict:
+    if n_boot < 1:
+        raise ValueError("n_boot must be positive")
     rng = np.random.default_rng(seed)
     curves = []
     labels = []
@@ -15,7 +17,7 @@ def summarize(a: np.ndarray, reference: np.ndarray, selected: str | None,
         result = choose(decompose_v1(a[:, indices]), reference)
         labels.append(result["selected"])
         if result["curve"] is not None: curves.append(result["curve"])
-    stability = sum(label == selected for label in labels) / n_boot
+    stability = sum(label == selected for label in labels) / n_boot if selected is not None else 0.0
     if curves:
         arr = np.stack(curves)
         lo, hi = np.percentile(arr, [5,95], axis=0)

@@ -1,0 +1,57 @@
+{
+  "label": "POST_HOC",
+  "source_sha256": {
+    "cases": "30cb6b1c401e1cfc30131a8abaac626d1b20e3e8019fa36beca5cfc5fdd4642d",
+    "manifest": "e3b64a35f725dd4a43a02cf0884621cb7e35b46966e418bd4d8ddafda10737d7"
+  },
+  "n_all_unmasked": 2808,
+  "n_upstream_eligible": 2561,
+  "n_A1_fail": 247,
+  "frozen_full": {
+    "accepted": 2083,
+    "median": 0.04622949041873955,
+    "p90": 0.21519555990510572
+  },
+  "no_A2_native": {
+    "accepted": 2561,
+    "median": 0.059025104315246046,
+    "p90": 0.4766108545662516
+  },
+  "correlation_matched": {
+    "accepted": 2083,
+    "median": 0.04595349898113757,
+    "p90": 0.2163704950300961
+  },
+  "random_matched": {
+    "replicates": 1000,
+    "median_error_median": 0.058990005149167524,
+    "median_error_interval95": [
+      0.05776846015965316,
+      0.06003706114534024
+    ],
+    "p90_error_median": 0.4779760247212084,
+    "p90_error_interval95": [
+      0.46136520681838034,
+      0.5268283936723138
+    ]
+  },
+  "cluster_bootstrap_full_minus_corr": {
+    "median_full_minus_corr": [
+      -0.0017561146451343546,
+      0.001904530537590441
+    ],
+    "p90_full_minus_corr": [
+      -0.03341716223692985,
+      0.03196433499902554
+    ],
+    "median_full_minus_random": [
+      -0.016115946186172066,
+      -0.009901234999779138
+    ],
+    "p90_full_minus_random": [
+      -0.42297956609726445,
+      -0.14417478975417766
+    ]
+  },
+  "correlation_cutoff_descriptive": 0.9155419912255829
+}
