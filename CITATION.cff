@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: Please cite the MethodsX article and this software when using Auto-SqPCA.
+type: software
+title: 'Transferring PCA-based extraction of the solar quiet geomagnetic variation to low and equatorial latitudes: an automated workflow with explicit abstention'
+version: 1.0.0
+license: MIT
+authors:
+  - given-names: Supriyanto
+    family-names: Supriyanto
+    affiliation: Department of Physics, Universitas Mulawarman, Samarinda, Indonesia
+    email: supriyanto@fmipa.unmul.ac.id
+  - given-names: Muhammad Ibadurrahman Arrasyid
+    family-names: Supriyanto
+    affiliation: Department of Informatics, Universitas Mulawarman
+  - given-names: Chalsi Mala
+    family-names: Sari
+    affiliation: Department of Civil Engineering, Universitas Mulawarman
+  - given-names: Athasyahri Syawal
+    family-names: Fahrezy
+    affiliation: Department of Informatics, Universitas Mulawarman
+# ORCID: TODO after author verification.
+

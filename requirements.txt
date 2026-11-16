@@ -1,0 +1,10 @@
+numpy==2.5.4
+pandas==2.3.3
+matplotlib==3.10.8
+ppigrf==1.1.0
+pyDIFI==8.1.5
+geomaglib==1.2.4
+requests==2.34.2
+PyYAML==6.0.3
+pytest==9.2.0
+

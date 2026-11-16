@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+config/paths.yaml
+phase2a/raw/
+phase3/raw/
+raw/
+demo/output/
+scripts/40_figures/output/
+*.egg-info/
+

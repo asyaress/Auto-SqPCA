@@ -1,0 +1,15 @@
+{
+  "title": "Transferring PCA-based extraction of the solar quiet geomagnetic variation to low and equatorial latitudes: an automated workflow with explicit abstention",
+  "upload_type": "software",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "Frozen Auto-SqPCA code, authenticated small results, and reproducibility materials. ORCID identifiers and DOI are pending owner verification.",
+  "creators": [
+    {"name": "Supriyanto, Supriyanto", "affiliation": "Department of Physics, Universitas Mulawarman, Samarinda, Indonesia"},
+    {"name": "Supriyanto, Muhammad Ibadurrahman Arrasyid", "affiliation": "Department of Informatics, Universitas Mulawarman"},
+    {"name": "Sari, Chalsi Mala", "affiliation": "Department of Civil Engineering, Universitas Mulawarman"},
+    {"name": "Fahrezy, Athasyahri Syawal", "affiliation": "Department of Informatics, Universitas Mulawarman"}
+  ],
+  "keywords": ["geomagnetism", "solar quiet variation", "PCA", "reproducibility"]
+}
+

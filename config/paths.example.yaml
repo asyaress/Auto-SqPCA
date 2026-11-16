@@ -1,0 +1,7 @@
+# Copy to paths.yaml only if local scripts need explicit directories.
+repository_root: .
+phase1_raw: raw/phase1
+phase2_raw: phase2a/raw
+phase3_raw: phase3/raw
+results_root: results
+
